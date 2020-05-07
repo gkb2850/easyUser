@@ -1,14 +1,57 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/loginpage/login/login"
+    "pages/loginpage/login/login",
+    "pages/loginpage/register/register",
+    "pages/loginpage/forgetpass/forgetpass",
+    "pages/news/news",
+    "pages/takeout/takeout",
+    "pages/travel/travel",
+    "pages/my/my"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#31CC90",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "商城",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar":{
+    "color": "#AAAAAA",
+    "selectedColor": "#31CC90",
+    "backgroundColor": "#fffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text":"首页",
+        "iconPath": "./assets/images/index_icon.png",
+        "selectedIconPath": "./assets/images/index_icon_ac.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "论坛",
+        "iconPath": "./assets/images/news_icon.png",
+        "selectedIconPath": "./assets/images/news_icon_ac.png"
+      },
+      {
+        "pagePath": "pages/takeout/takeout",
+        "text": "外卖",
+        "iconPath": "./assets/images/takeout_icon.png",
+        "selectedIconPath": "./assets/images/takeout_icon_ac.png"
+      },
+      {
+        "pagePath": "pages/travel/travel",
+        "text": "旅游",
+        "iconPath": "./assets/images/travel_icon.png",
+        "selectedIconPath": "./assets/images/travel_icon_ac.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "./assets/images/my_icon.png",
+        "selectedIconPath": "./assets/images/my_icon_ac.png"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

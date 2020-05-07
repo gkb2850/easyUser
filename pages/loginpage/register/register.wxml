@@ -7,7 +7,7 @@
     </view>
   </view>
   <view class="input_box">
-    <view class="title">欢迎登录</view>
+    <view class="title">欢迎注册</view>
     <view class="item_box">
       <image class="header_icon" src="../../../assets/images/login_iphone.png"></image>
       <view class="padd_view">
@@ -25,9 +25,28 @@
       <image src="" class="last_icon"></image>
     </view>
     <view class="item_box">
+      <image class="header_icon" src="../../../assets/images/login_txt.png"></image>
+      <input type="number" placeholder="请输入验证码" placeholder-class="input_place"></input>
+      <view class="yz_txt">获取验证码</view>
+    </view>
+    <view class="item_box">
       <image class="header_icon" src="../../../assets/images/login_pass.png"></image>
       <input type="number" password placeholder="请输入密码" placeholder-class="input_place"></input>
       <image src="" class="last_icon"></image>
+    </view>
+    <view class="item_box">
+      <image class="header_icon" src="../../../assets/images/login_pass.png"></image>
+      <input type="number" password placeholder="请再次输入密码" placeholder-class="input_place"></input>
+      <image src="" class="last_icon"></image>
+    </view>
+    <view class="item_box">
+      <image class="header_icon" src="../../../assets/images/login_type.png"></image>
+      <input type="number" password placeholder="请选择入驻分类" placeholder-class="input_place"></input>
+      <image src="../../../assets/images/tobotg_icon.png" class="itmeimgicon"></image>
+    </view>
+    <view class="item_box">
+      <image class="header_icon" src="../../../assets/images/login_yq.png"></image>
+      <input type="number" password placeholder="请输入邀请码(选填)" placeholder-class="input_place"></input>
     </view>
     <view class="bot_txt">
       <image src="../../../assets/images/login_kk.png"></image>
@@ -37,8 +56,7 @@
   <view class="login_box">
     <view class="login_btn">登录</view>
     <view class="btn_txt">
-      <view bindtap="forgetPassPage">忘记密码</view>
-      <view bindtap="toRegisterPage">立即注册</view>
+      <view bindtap="toLoginPage">立即登录</view>
     </view>
   </view>
 </view>

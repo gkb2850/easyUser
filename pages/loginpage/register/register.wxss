@@ -1,10 +1,9 @@
 page {
-  height: 100%;
+  background: #31CC90;
 }
 
 .container {
-  height: 100%;
-  padding: 0 64rpx;
+  padding: 0 64rpx 100rpx 64rpx;
   box-sizing: border-box;
   background: #31CC90;
   overflow: hidden;
@@ -88,9 +87,17 @@ page {
 .container .input_box .item_box .last_icon {
   height: 24rpx;
   width: 24rpx;
-  border-top: 32rpx solid transparent;
+  border: 6rpx solid transparent;
+  margin: 26rpx 0;
+}
+
+.container .input_box .item_box .itmeimgicon {
+  height: 14rpx;
+  width: 28rpx;
+  display: block;
+  border-top: 37rpx solid transparent;
   border-right: 28rpx solid transparent;
-  border-bottom: 32rpx solid transparent;
+  border-bottom: 37rpx solid transparent;
   border-left: 10rpx solid transparent;
 }
 
@@ -111,6 +118,20 @@ page {
   color:#CCCCCC;
   height: 100%;
   line-height: 88rpx;
+}
+
+.container .input_box .item_box .yz_txt {
+  height: 52rpx;
+  width: 148rpx;
+  line-height: 52rpx;
+  text-align: center;
+  background: #31CC90;
+  border-radius: 4rpx;
+  color: #fff;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  margin: 18rpx 28rpx 18rpx 0;
 }
 
 .container .input_box .item_box .padd_view {
@@ -215,7 +236,7 @@ page {
 
 .container .login_box .btn_txt {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .container .login_box .btn_txt>view {

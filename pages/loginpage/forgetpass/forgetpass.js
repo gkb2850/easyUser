@@ -1,13 +1,14 @@
-// pages/loginpage/login/login.js
+// pages/loginpage/forgetpass/forgetpass.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    prefixTxt: '+853',
+    prefixTxt:'+853',
     prefixTxtShow: false
   },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -28,7 +29,7 @@ Page({
   onShow: function () {
 
   },
-  toPhonePrefix () {
+  toPhonePrefix() {
     this.setData({
       prefixTxtShow: true
     })
@@ -38,16 +39,6 @@ Page({
     this.setData({
       prefixTxt: str,
       prefixTxtShow: false
-    })
-  },
-  toRegisterPage () {
-    wx.navigateTo({
-      url: '/pages/loginpage/register/register',
-    })
-  },
-  forgetPassPage () {
-    wx.navigateTo({
-      url: '/pages/loginpage/forgetpass/forgetpass',
     })
   },
   /**

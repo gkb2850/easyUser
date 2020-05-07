@@ -15,7 +15,7 @@
 		"scopeDataCheck": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.11.0",
+	"libVersion": "2.10.4",
 	"appid": "wx7d661eae9b696a1f",
 	"projectname": "easyUser",
 	"debugOptions": {
@@ -52,6 +52,20 @@
 					"id": -1,
 					"name": "pages/loginpage/login/login",
 					"pathName": "pages/loginpage/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/loginpage/register/register",
+					"pathName": "pages/loginpage/register/register",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/loginpage/forgetpass/forgetpass",
+					"pathName": "pages/loginpage/forgetpass/forgetpass",
 					"scene": null
 				}
 			]

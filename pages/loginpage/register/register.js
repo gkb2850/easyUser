@@ -1,4 +1,4 @@
-// pages/loginpage/login/login.js
+// pages/loginpage/register/register.js
 Page({
 
   /**
@@ -8,6 +8,7 @@ Page({
     prefixTxt: '+853',
     prefixTxtShow: false
   },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -28,7 +29,7 @@ Page({
   onShow: function () {
 
   },
-  toPhonePrefix () {
+  toPhonePrefix() {
     this.setData({
       prefixTxtShow: true
     })
@@ -40,14 +41,9 @@ Page({
       prefixTxtShow: false
     })
   },
-  toRegisterPage () {
+  toLoginPage () {
     wx.navigateTo({
-      url: '/pages/loginpage/register/register',
-    })
-  },
-  forgetPassPage () {
-    wx.navigateTo({
-      url: '/pages/loginpage/forgetpass/forgetpass',
+      url: '/pages/loginpage/login/login',
     })
   },
   /**

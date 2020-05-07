@@ -1,0 +1,203 @@
+page {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  padding: 0 64rpx;
+  box-sizing: border-box;
+  background: #31CC90;
+}
+
+.container .top_title {
+  height: 96rpx;
+  display: flex;
+  margin-bottom: 60rpx;
+}
+
+.container .top_title>image {
+  height: 96rpx;
+  width: 96rpx;
+  display: block;
+  margin: 0 25rpx 0 0;
+}
+
+.container .top_title .right_txt {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  font-family:Source Han Sans CN;
+  font-weight: 400;
+  color:rgba(255,255,255,1);
+}
+
+.container .top_title .right_txt>view:first-child {
+  margin-top: 15rpx;
+  font-weight: 500;
+  font-size: 44rpx;
+  height: 44rpx;
+  line-height: 44rpx;
+}
+
+.container .top_title .right_txt>view:last-child {
+  font-weight: 500;
+  font-size: 20rpx;
+  width: 100%;
+  letter-spacing:27rpx;
+  line-height: 20rpx;
+  margin-top: 7rpx;
+}
+
+.container .input_box {
+  font-family:PingFang SC;
+  font-weight: 400;
+  color:rgba(255,255,255,1);
+}
+
+.container .input_box .title {
+  height: 42rpx;
+  font-size: 42rpx;
+  line-height: 42rpx;
+  font-weight: 500;
+  margin-bottom: 60rpx;
+}
+
+.container .input_box .item_box {
+  height: 88rpx;
+  background: #fff;
+  box-shadow:0px 7rpx 0px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 10rpx;
+  display: flex;
+  margin-top: 20rpx;
+}
+
+.container .input_box .item_box:nth-child(1) {
+  margin: 0;
+}
+
+.container .input_box .item_box .header_icon {
+  height: 36rpx;
+  width: 26rpx;
+  display: block;
+  margin: 26rpx 21rpx;
+}
+
+.container .input_box .item_box .last_icon {
+  height: 24rpx;
+  width: 24rpx;
+  border: 6rpx solid transparent;
+  margin: 26rpx 0;
+}
+
+.container .input_box .item_box .padd_view {
+  display: inline-flex;
+  height: 100%;
+  position: relative;
+}
+
+.container .input_box .item_box .padd_view .txt {
+  height: 25rpx;
+  line-height: 25rpx;
+  margin: 32rpx 10rpx 31rpx 0;
+  font-size:32rpx;
+  color: #000;
+  font-weight: 500;
+}
+
+.container .input_box .item_box .padd_view .more_icon {
+  width: 16rpx;
+  height: 10rpx;
+  margin: 39rpx 0;
+}
+
+.container .input_box .item_box .padd_view .eject_box {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 130rpx;
+}
+
+.container .input_box .item_box .padd_view .eject_box>image {
+  height: 30rpx;
+  width: 30rpx;
+  display: block;
+  margin-left: 100rpx;
+}
+
+.container .input_box .item_box .padd_view .eject_box .item_txt {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 26rpx;
+  color: #000;
+  text-align: center;
+  background: #EEEEEE;
+}
+
+.container .input_box .item_box .padd_view .eject_box .item_txt:nth-child(2) {
+  border-radius: 8rpx 8rpx 0 0;
+  border-bottom: 2rpx solid #D3D3D3;
+}
+
+.container .input_box .item_box .padd_view .eject_box .item_txt:last-child {
+  border-radius: 0 0 8rpx 8rpx;
+}
+
+
+.container .input_box .bot_txt {
+  height: 26rpx;
+  display: flex;
+  margin-top: 36rpx;
+}
+
+.container .input_box .bot_txt>image {
+  height: 26rpx;
+  width: 26rpx;
+  display: block;
+  margin: 0 13rpx 0 0;
+}
+
+.container .input_box .bot_txt .agree_txt {
+  height: 26rpx;
+  line-height: 26rpx;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+}
+
+.container .login_box {
+  margin-top: 118rpx;
+}
+
+.container .login_box .login_btn {
+  background: #fff;
+  text-align: center;
+  height: 88rpx;
+  line-height: 88rpx;
+  border-radius: 44rpx;
+  font-size:30rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(49,204,144,1);
+  margin-bottom: 15rpx;
+}
+
+.container .login_box .btn_txt {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .login_box .btn_txt>view {
+  height: 25rpx;
+  padding-top: 20rpx;
+  line-height: 25rpx;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+}
+
+
+
+

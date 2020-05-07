@@ -1,0 +1,42 @@
+<view class="container">
+  <view class="top_title">
+    <image src="../../../assets/images/login_logo.png"></image>
+    <view class="right_txt">
+      <view>用户端</view>
+      <view>USER</view>
+    </view>
+  </view>
+  <view class="input_box">
+    <view class="title">欢迎登录</view>
+    <view class="item_box">
+      <image class="header_icon" src="../../../assets/images/login_iphone.png"></image>
+      <view class="padd_view">
+        <view class="txt">+853</view>
+        <image class="more_icon" src=""></image>
+        <view class="eject_box" wx:if="{{false}}">
+          <image src=""></image>
+          <view class="item_txt">+86</view>
+          <view class="item_txt">+853</view>
+        </view>
+      </view>
+      <input type="number"></input>
+      <image src="" class="last_icon"></image>
+    </view>
+    <view class="item_box">
+      <image class="header_icon" src="../../../assets/images/login_pass.png"></image>
+      <input type="number" password></input>
+      <image src="" class="last_icon"></image>
+    </view>
+    <view class="bot_txt">
+      <image src="../../../assets/images/login_kk.png"></image>
+      <view class="agree_txt">同意并遵守《用户使用协议》</view>
+    </view>
+  </view>
+  <view class="login_box">
+    <view class="login_btn">登录</view>
+    <view class="btn_txt">
+      <view>忘记密码</view>
+      <view>立即注册</view>
+    </view>
+  </view>
+</view>

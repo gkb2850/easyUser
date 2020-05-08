@@ -1,0 +1,8 @@
+<view class="container">
+  <view class="item_box">
+    <image src="../../assets/images/banner@2x.png"></image>
+    <view class="name_txt">这是海底捞这是海底捞这是海底捞这是海底捞这是海底捞这是海底捞这是海底捞这是海底捞</view>
+    <view class="score_txt">4.9分</view>
+    <view class="bot_txt">人均￥25|月售500</view>
+  </view>
+</view>

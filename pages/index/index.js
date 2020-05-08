@@ -4,9 +4,14 @@ const app = getApp()
 
 Page({
   data: {
-
+    headerIconShow: false
   },
   onLoad: function () {
     
-  }
+  },
+  toSeeMoreIcon () {
+    this.setData({
+      headerIconShow: !this.data.headerIconShow
+    })
+  },
 })

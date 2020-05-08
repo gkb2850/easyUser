@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "v-foodItem": "../../component/foodItem/foodItem"
+  },
   "navigationBarTitleText": "我的"
 }

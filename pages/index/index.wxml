@@ -1,25 +1,44 @@
 <view class="container">
   <view class="header_box">
     <view class="userbox">
-      <image src=""></image>
+      <image src="../../assets/images/icon-user-img.png"></image>
     </view>
     <view class="ordericon_box">
-      <image class="sooneso_icon" src=""></image>
-      <image class="add_icon" src=""></image>
+      <image class="sooneso_icon" src="../../assets/images/scon_icon.png"></image>
+      <view class="addIcon_box">
+        <image class="add_icon" bindtap="toSeeMoreIcon" src="../../assets/images/add_icon.png"></image>
+        <view class="mask_box" wx:if="{{headerIconShow}}">
+          <view class="top_icon"></view>
+          <view class="txt_box">
+            <view class="txt_item">
+              <image src="../../assets/images/dingdan_icon.png"></image>
+              <view>订单</view>
+            </view>
+            <view class="txt_item">
+              <image src="../../assets/images/erweima_icon.png"></image>
+              <view>付款码</view>
+            </view>
+            <view class="txt_item">
+              <image src="../../assets/images/set_icon.png"></image>
+              <view>设定及收藏</view>
+            </view>
+          </view>
+        </view>
+      </view>
     </view>
   </view>
   <view class="search_box">
     <view class="searchinset_box">
-      <image class="search_img" src=""></image>
-      <input placeholder="搜你喜欢"></input>
-      <image class="voice_icon" src=""></image>
+      <image class="search_img" src="../../assets/images/search_iocn.png"></image>
+      <input placeholder="搜你喜欢" placeholder-class="inputplace"></input>
+      <image class="voice_icon" src="../../assets/images/vioce_icon.png"></image>
     </view>
   </view>
   <view class="chartImg_box">
     <image class="bg_img" src="../../assets/images/banner_bg.png"></image>
     <view class="chartPic_box">
-      <swiper>
-        <swiper-item>
+      <swiper class="swiperbox">
+        <swiper-item class="swiperItem">
           <image src="../../assets/images/banner@2x.png"></image>
         </swiper-item>
       </swiper>
@@ -74,7 +93,7 @@
     </view>
     <view class="article_box">
       <view class="left">
-        <image src=""></image>
+        <image src="../../assets/images/banner@2x.png"></image>
         <view>本地萝卜</view>
       </view>
       <view class="right">
@@ -90,11 +109,11 @@
       <view class="second_txt">人气特色区</view>
     </view>
     <view class="order_box">
-      <scroll-view scroll-x>
+      <scroll-view scroll-x style="width: 100%;">
         <view class="orderall">
           <view class="order_itme">
             <image src="../../assets/images/banner@2x.png"></image>
-            <view>进口饼干好吃进口饼干好吃进口饼干好吃进口饼干好吃进口饼干好吃</view>
+            <view>进口饼干好吃进口饼干好吃进口饼干</view>
           </view>
           <view class="order_itme">
             <image src="../../assets/images/banner@2x.png"></image>
@@ -134,5 +153,8 @@
       <image src="../../assets/images/banner@2x.png"></image>
       <image src="../../assets/images/banner@2x.png"></image>
     </view>
+  </view>
+  <view class="assembly_box">
+    <v-foodItem></v-foodItem>
   </view>
 </view>

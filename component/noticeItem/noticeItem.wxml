@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="left">
+    <image src="../../assets/images/login_logo.png"></image>
+  </view>
+  <view class="right">
+    <view class="title_box">
+      <view class="name">本地萝卜</view>
+      <view class="assess">
+        <view class="txt">4.5分</view>
+        <view class="line"></view>
+        <view class="txt">100人阅读</view>
+      </view>
+    </view>
+    <view class="cont_txt">这是一段内容这是一段内容这是一段内容这是一段内容这是一段内容这是一段内容这是一段内容这是一段内容</view>
+  </view>
+</view>

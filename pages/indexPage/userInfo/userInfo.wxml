@@ -1,0 +1,62 @@
+<view class="container">
+  <view class="user_top">
+    <view class="user_img">
+      <image src="../../../assets/images/login_logo.png"></image>
+      <view>滴滴哒</view>
+    </view>
+    <view class="user_info">
+      <view>经验值：60</view>
+      <view>积分：200</view>
+    </view>
+  </view>
+  <view class="user_cont">
+    <view class="item_box">
+      <view class="left">
+        <image src="../../../assets/images/mycode_iocn.png"></image>
+        <view>我的二维码</view>
+      </view>
+      <view class="right">
+        <image src="../../../assets/images/rightbtn_iocn.png"></image>
+      </view>
+    </view>
+    <view class="item_box">
+      <view class="left">
+        <image src="../../../assets/images/userpeople_icon.png"></image>
+        <view>个人信息</view>
+      </view>
+      <view class="right">
+        <view>头像，昵称，收货地址</view>
+        <image src="../../../assets/images/rightbtn_iocn.png"></image>
+      </view>
+    </view>
+    <view class="item_box">
+      <view class="left">
+        <image src="../../../assets/images/crd_iocn.png"></image>
+        <view>证件信息</view>
+      </view>
+      <view class="right">
+        <view>身份证</view>
+        <image src="../../../assets/images/rightbtn_iocn.png"></image>
+      </view>
+    </view>
+    <view class="item_box">
+      <view class="left">
+        <image src="../../../assets/images/anquan_icon.png"></image>
+        <view>账户与安全</view>
+      </view>
+      <view class="right">
+        <image src="../../../assets/images/rightbtn_iocn.png"></image>
+      </view>
+    </view>
+    <view class="item_box">
+      <view class="left">
+        <image src="../../../assets/images/userwary_icon.png"></image>
+        <view>支付设置</view>
+      </view>
+      <view class="right">
+        <image src="../../../assets/images/rightbtn_iocn.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="user_bot">退出登录</view>
+</view>

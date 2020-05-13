@@ -4,6 +4,7 @@ import * as Alert from './utils/alert.js'
 App({
   ajax: Ajax,
   alert: Alert,
+  manager: requirePlugin("WechatSI").getRecordRecognitionManager(),
   onLaunch: function () {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []

@@ -1,0 +1,74 @@
+.container {
+  background:rgba(49,204,144,1);
+  border-radius:10rpx;
+  overflow: hidden;
+  display: flex;
+  padding: 20rpx;
+  box-sizing: border-box;
+  margin-top: 32rpx;
+}
+
+.container .left {
+  height: 100rpx;
+}
+
+.container .left image {
+  width:80rpx;
+  height:80rpx;
+  border-radius:8rpx;
+  display: block;
+}
+
+.container .right {
+  flex: 1;
+  overflow: hidden;
+}
+
+.container .right .title_box {
+  height: 26rpx;
+  margin: 27rpx 0 19rpx 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .right .title_box .name {
+  height: 100%;
+  line-height: 26rpx;
+  font-size:26rpx;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:rgba(255,255,255,1);
+}
+
+.container .right .title_box .assess {
+  display: inline-flex;
+  height: 100%;
+  overflow: hidden;
+}
+
+.container .right .title_box .assess .txt {
+  height: 22rpx;
+  line-height: 22rpx;
+  margin: 2rpx 0;
+  font-size:22rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+}
+
+.container .right .title_box .assess .line {
+  width: 2rpx;
+  height: 14rpx;
+  background: #fff;
+  margin: 6rpx 12rpx;
+}
+
+.container .right .cont_txt {
+  line-height: 32rpx;
+  font-size:22rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+  padding-right: 22rpx;
+  box-sizing: border-box;
+}

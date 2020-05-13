@@ -1,0 +1,42 @@
+<view class="container {{navtitleIndex === 1 ? 'containers':''}}">
+  <view class="title_box">
+    <view class="item_nav" bindtap="navtitleItem" data-index= '0'>
+      <view class="txt {{navtitleIndex === 0 ? 'active': ''}}">主页设定</view>
+      <view class="line" wx:if="{{navtitleIndex === 0}}"></view>
+    </view>
+    <view class="item_nav" bindtap="navtitleItem" data-index= '1'>
+      <view class="txt {{navtitleIndex === 1 ? 'active': ''}}">收藏</view>
+      <view class="line" wx:if="{{navtitleIndex === 1}}"></view>
+    </view>
+  </view>
+  <view class="cont_box" wx:if="{{navtitleIndex === 0}}">
+    <view class="settxtbox">
+      <view class="item_box">
+      <view>美食</view>
+      <image src="../../../assets/images/indexsetandcoll_icon.png"></image>
+    </view>
+    <view class="item_box">
+      <view>美食</view>
+      <image src="../../../assets/images/indexsetandcoll_icon.png"></image>
+    </view>
+    <view class="item_box">
+      <view class="active">美食</view>
+      <image src="../../../assets/images/indexsetandcoll_icon.png"></image>
+    </view>
+    <view class="item_box">
+      <view>美食</view>
+      <image src="../../../assets/images/indexsetandcoll_icon.png"></image>
+    </view>
+    <view class="item_box">
+      <view>美食</view>
+      <image src="../../../assets/images/indexsetandcoll_icon.png"></image>
+    </view>
+    </view>
+  </view>
+  <view class="bot_box" wx:if="{{navtitleIndex === 0}}">
+    <view>提交</view>
+  </view>
+  <view  class="food_box" wx:if="{{navtitleIndex === 1}}">
+    <v-foodItem></v-foodItem>
+  </view>
+</view>

@@ -1,0 +1,231 @@
+page {
+  background: #fff;
+  height: 100%;
+}
+
+.container {
+  padding: 0 28rpx;
+  box-sizing: border-box;
+  height: 100%;
+  position: relative;
+}
+
+.container .userInfo_box .item_box {
+  height: 116rpx;
+  display: flex;
+  box-sizing: border-box;
+  border-bottom: 2rpx solid #EEEEEE;
+}
+
+.container .userInfo_box .item_box:first-child {
+  height: 146rpx;
+}
+
+.container .userInfo_box .item_box .left {
+  height: 100%;
+  display: flex;
+  flex: 1;
+}
+
+.container .userInfo_box .item_box .left>view {
+  height: 26rpx;
+  line-height: 26rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+  margin: 45rpx 0;
+}
+
+.container .userInfo_box .item_box:first-child .left>view {
+  margin: 60rpx 0;
+}
+
+.container .userInfo_box .item_box .right {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container .userInfo_box .item_box .right>image {
+  height: 40rpx;
+  width: 40rpx;
+  margin: 38rpx 0;
+}
+
+.container .userInfo_box .item_box:first-child .right>image {
+  height: 80rpx;
+  width: 80rpx;
+  margin: 32rpx 0;
+  border-radius: 40rpx;
+}
+
+.container .userInfo_box .item_box .right>view {
+  height: 28rpx;
+  line-height: 28rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+  margin: 44rpx 0;
+}
+
+.container .userInfo_box .item_box:nth-child(4) .right>view {
+  color: #999999;
+}
+
+.container .mask_box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.container .mask_box .mask_bg {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.container .mask_box .user_namebox {
+  background: #fff;
+  border-radius: 20rpx;
+  overflow: hidden;
+  width: 560rpx;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: -280rpx;
+}
+
+.container .mask_box .user_namebox .title {
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  background: #31CC90;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+}
+
+.container .mask_box .user_namebox .cont {
+  padding: 48rpx 32rpx;
+  box-sizing: border-box;
+}
+
+.container .mask_box .user_namebox .cont>input {
+  height: 68rpx;
+  line-height: 68rpx;
+  border: 2rpx solid #cccccc;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 34rpx;
+  font-size:26rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(204,204,204,1);
+}
+
+.container .mask_box .user_namebox .cont>input.inputplace {
+  height: 68rpx;
+  line-height: 68rpx;
+  font-size:26rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(204,204,204,1);
+}
+
+.container .mask_box .user_namebox .cont .submit_name {
+  width: 260rpx;
+  height: 68rpx;
+  line-height: 68rpx;
+  background: #31CC90;
+  text-align: center;
+  border-radius: 34rpx;
+  margin: 28rpx auto 0;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+}
+
+.container .mask_box .user_datebox {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: -320rpx;
+  width: 640rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+
+.container .mask_box .user_datebox .title {
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  background: #31CC90;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+}
+
+.container .mask_box .user_datebox .cont {
+  background: #fff;
+  padding-bottom: 48rpx;
+}
+
+.container .mask_box .user_datebox .cont .date_select .datepicker {
+  background: #fff;
+  height: 240rpx;
+  width: 100%;
+  padding: 0 28rpx;
+  box-sizing: border-box;
+}
+
+.container .mask_box .user_datebox .cont .date_select .datepicker_centerItem {
+  height: 80rpx;
+  line-height: 80rpx;
+  border-top: 2rpx solid #31CC90;
+  border-bottom: 2rpx solid #31CC90;
+}
+
+.container .mask_box .user_datebox .cont .date_select .datepicker_mask {
+  background: #fff;
+  opacity: 0.2;
+}
+
+.container .mask_box .user_datebox .cont .date_select .pickerview {
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size:30rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(153,153,153,1);
+  text-align: center;
+}
+
+.container .mask_box .user_datebox .cont .submit_name {
+  width: 260rpx;
+  height: 68rpx;
+  line-height: 68rpx;
+  background: #31CC90;
+  text-align: center;
+  border-radius: 34rpx;
+  margin: 28rpx auto 0;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+}
+
+
+
+
+

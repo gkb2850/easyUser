@@ -1,0 +1,9 @@
+<view class="container">
+  <view class="code_title">
+    <image src="../../../assets/images/login_logo.png"></image>
+    <view>滴滴哒</view>
+  </view>
+  <view class="code_img">
+    <image src=""></image>
+  </view>
+</view>

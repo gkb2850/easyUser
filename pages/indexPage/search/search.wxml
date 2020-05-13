@@ -1,0 +1,20 @@
+<view class="container">
+  <view class="search_box">
+    <view class="search_box_in">
+      <view class="left_f">
+        <view class="txt">美食</view>
+        <image src="../../../assets/images/toboth_icon.png"></image>
+        <view class="line"></view>
+      </view>
+      <view class="cont_c">
+        <image src="../../../assets/images/search_iocn.png"></image>
+        <input placeholder="搜你喜欢"></input>
+      </view>
+      <view class="right_t">
+        <image bindtouchstart="viocestart" bindtouchend="vioceend" class="vioce_iocn" src="../../../assets/images/vioce_icon.png"></image>
+        <view class="line"></view>
+        <view class="srarch_btn">搜索</view>
+      </view>
+    </view>
+  </view>
+</view>

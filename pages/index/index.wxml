@@ -88,19 +88,31 @@
       </view>
     </view>
     <view class="notice_box">
-      <image src="../../assets/images/notice_icon.png"></image>
-      <view class="notice_txt">这一条公告通知这一条公告通知这一条公告通知这一条公告通知</view>
+      <swiper class="notice_swiper">
+        <swiper-item class="notice_swiperItem">
+          <view class="notice_swiperItem_box">
+            <image src="../../assets/images/notice_icon.png"></image>
+            <view class="notice_txt">这一条公告通知这一条公告通知这一条公告通知这一条公告通知</view>
+          </view>
+        </swiper-item>
+      </swiper>
     </view>
     <view class="article_box">
-      <view class="left">
-        <image src="../../assets/images/banner@2x.png"></image>
-        <view>本地萝卜</view>
-      </view>
-      <view class="right">
-        <view class="txt">4.5分</view>
-        <view class="line"></view>
-        <view class="txt">阅读数: 10</view>
-      </view>
+      <swiper class="article_swiper">
+        <swiper-item class="article_swiperItem">
+          <view class="article_swiperItem_box">
+            <view class="left">
+                <image src="../../assets/images/banner@2x.png"></image>
+                <view>本地萝卜</view>
+              </view>
+              <view class="right">
+                <view class="txt">4.5分</view>
+                <view class="line"></view>
+                <view class="txt">阅读数: 10</view>
+              </view>
+            </view>
+        </swiper-item>
+      </swiper>
     </view>
   </view>
   <view class="select_box">

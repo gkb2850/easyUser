@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "v-foodItem": "../../../component/foodItem/foodItem"
+  },
+  "navigationBarTitleText":"主页设定及收藏"
+}

@@ -7,7 +7,13 @@
     "pages/news/news",
     "pages/takeout/takeout",
     "pages/travel/travel",
-    "pages/my/my"
+    "pages/my/my",
+    "pages/indexPage/userShare/userShare",
+    "pages/indexPage/search/search",
+    "pages/indexPage/indexSetandcoll/indexSetandcoll",
+    "pages/indexPage/userInfo/userInfo",
+    "pages/indexPage/myCode/myCode",
+    "pages/indexPage/personalInfo/personalInfo"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -15,7 +21,7 @@
     "navigationBarTitleText": "商城",
     "navigationBarTextStyle": "black"
   },
-  "tabBar":{
+  "tabBar": {
     "color": "#AAAAAA",
     "selectedColor": "#31CC90",
     "backgroundColor": "#fffff",
@@ -23,7 +29,7 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text":"首页",
+        "text": "首页",
         "iconPath": "./assets/images/index_icon.png",
         "selectedIconPath": "./assets/images/index_icon_ac.png"
       },
@@ -52,6 +58,12 @@
         "selectedIconPath": "./assets/images/my_icon_ac.png"
       }
     ]
+  },
+  "plugins": {
+    "WechatSI": {
+      "version": "0.0.7",
+      "provider": "wx069ba97219f66d99"
+    }
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

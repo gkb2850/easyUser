@@ -1,0 +1,41 @@
+page {
+  background: #fff;
+}
+
+.container {
+  padding: 80rpx 28rpx 0 28rpx
+}
+
+.container .code_title {
+  height: 100rpx;
+  display: flex;
+}
+
+.container .code_title>image {
+  height: 100rpx;
+  width: 100rpx;
+  display: block;
+  margin: 0 23rpx 0 0;
+  border-radius: 6rpx;
+}
+
+.container .code_title>view {
+  height: 38rpx;
+  line-height: 38rpx;
+  font-size:36rpx;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:rgba(0,0,0,1);
+  margin-top: 33rpx;
+}
+
+.container .code_img {
+  margin-top: 100rpx;
+}
+
+.container .code_img>image {
+  height: 458rpx;
+  width: 458rpx;
+  display: block;
+  margin: 0 auto;
+}

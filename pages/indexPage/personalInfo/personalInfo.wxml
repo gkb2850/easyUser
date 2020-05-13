@@ -1,0 +1,71 @@
+<view class="container">
+  <view class="userInfo_box">
+    <view class="item_box">
+      <view class="left">
+        <view>头像</view>
+      </view>
+      <view class="right">
+        <image src="../../../assets/images/login_logo.png"></image>
+      </view>
+    </view>
+    <view class="item_box">
+      <view class="left">
+        <view>昵称</view>
+      </view>
+      <view class="right">
+        <view>滴滴哒</view>
+        <image src="../../../assets/images/rightbtn_iocn.png"></image>
+      </view>
+    </view>
+    <view class="item_box">
+      <view class="left">
+        <view>生日</view>
+      </view>
+      <view class="right">
+        <view>2020-01-01</view>
+        <image src="../../../assets/images/rightbtn_iocn.png"></image>
+      </view>
+    </view>
+    <view class="item_box">
+      <view class="left">
+        <view>收货地址</view>
+      </view>
+      <view class="right">
+        <view>添加修改</view>
+        <image src="../../../assets/images/rightbtn_iocn.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="mask_box" wx:if="{{nameBoxShow}}">
+    <view class="mask_bg"></view>
+    <view class="user_namebox">
+      <view class="title">修改昵称</view>
+      <view class="cont">
+        <input placeholder="请输入昵称" placeholder-class="inputplace"></input>
+        <view class="submit_name">提交</view>
+      </view>
+    </view>
+  </view>
+  <view class="mask_box">
+    <view class="mask_bg"></view>
+    <view class="user_datebox">
+      <view class="title">出生日期</view>
+      <view class="cont">
+        <view class="date_select">
+          <picker-view class="datepicker" indicator-class="datepicker_centerItem" mask-class="datepicker_mask" value="{{value}}" bindchange="bindChangeDate">
+            <picker-view-column>
+              <view class="pickerview {{ active}}" wx:for="{{years}}" wx:key="index" >{{item}}</view>
+            </picker-view-column>
+            <picker-view-column>
+              <view class="pickerview" wx:for="{{months}}" wx:key="index">{{item}}</view>
+            </picker-view-column>
+            <picker-view-column>
+              <view class="pickerview" wx:for="{{days}}" wx:key="index">{{item}}</view>
+            </picker-view-column>
+          </picker-view>
+        </view>
+        <view class="submit_name">提交</view>
+      </view>
+    </view>
+  </view>
+</view>

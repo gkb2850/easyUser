@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "v-noticeItem": "../../../component/noticeItem/noticeItem"
+  },
+  "navigationBarTitleText" : "用户分享"
+}

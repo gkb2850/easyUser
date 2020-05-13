@@ -237,6 +237,23 @@
 .container .main_box .notice_box {
   height: 80rpx;
   margin: 48rpx 0 28rpx 0;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+
+.container .main_box .notice_box .notice_swiper {
+  height: 100%;
+  width: 100%;
+}
+
+.container .main_box .notice_box .notice_swiper .notice_swiperItem {
+  height: 100%;
+  width: 100%;
+}
+
+.container .main_box .notice_box .notice_swiper .notice_swiperItem .notice_swiperItem_box {
+  height: 100%;
+  width: 100%;
   background: linear-gradient(90deg,rgba(255,239,214,1) 0%,rgba(252,224,184,1) 100%);
   display: flex;
   padding: 0 24rpx;
@@ -245,7 +262,7 @@
   overflow: hidden;
 }
 
-.container .main_box .notice_box>image {
+.container .main_box .notice_box .notice_swiperItem_box>image {
   height: 40rpx;
   width: 40rpx;
   display: block;
@@ -268,9 +285,25 @@
 
 .container .main_box .article_box {
   height: 80rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+
+.container .main_box .article_box .article_swiper {
+  height: 100%;
+  width: 100%;
+}
+
+.container .main_box .article_box .article_swiperItem {
+  height: 100%;
+  width: 100%;
+}
+
+.container .main_box .article_box .article_swiper .article_swiperItem_box {
+  height: 100%;
+  width: 100%;
   display: flex;
   background: #31CC90;
-  border-radius: 10rpx;
   padding: 0 24rpx;
   box-sizing: border-box;
   justify-content: space-between;

@@ -106,8 +106,8 @@
 				},
 				{
 					"id": 8,
-					"name": "绑定身份证",
-					"pathName": "pages/indexPage/submitIDcard/submitIDcard",
+					"name": "修改密码",
+					"pathName": "pages/indexPage/changePassword/changePassword",
 					"query": "",
 					"scene": null
 				},

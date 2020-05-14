@@ -3,12 +3,14 @@
   <view class="cont_box">
     <view class="item_box">
       <image class="l_img" src="../../../assets/images/changephone_icon.png"></image>
-      <v-phone></v-phone>
-      <input type="number" placeholder="请输入手机号"></input>
+      <view class="sel_phone_change">
+        <v-phone></v-phone>
+      </view>
+      <input type="number" placeholder="请输入手机号" placeholder-class="inputplace"></input>
     </view>
     <view class="item_box">
       <image class="l_img" src="../../../assets/images/yzphone_icon.png"></image>
-      <input type="number" placeholder="请输入验证码"></input>
+      <input type="number" placeholder="请输入验证码" placeholder-class="inputplace"></input>
       <view class="yz_btn">获取验证码</view>
     </view>
   </view>

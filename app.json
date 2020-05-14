@@ -18,7 +18,8 @@
     "pages/indexPage/editUserAddress/editUserAddress",
     "pages/indexPage/submitIDcard/submitIDcard",
     "pages/indexPage/userAccount/userAccount",
-    "pages/indexPage/changePhone/changePhone"
+    "pages/indexPage/changePhone/changePhone",
+    "pages/indexPage/changePassword/changePassword"
   ],
   "window": {
     "backgroundTextStyle": "light",

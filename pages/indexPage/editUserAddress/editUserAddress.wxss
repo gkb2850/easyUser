@@ -1,0 +1,127 @@
+.container {
+  padding: 0 28rpx;
+  box-sizing: border-box;
+}
+
+.container .editaddress_box .item_box {
+  height: 88rpx;
+  display: flex;
+  border-bottom: 2rpx solid #EEEEEE;
+  box-sizing: border-box;
+}
+
+.container .editaddress_box .item_box .item_name {
+  height: 100%;
+  line-height: 86rpx;
+  width: 194rpx;
+  font-size:26rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+}
+
+.container .editaddress_box .item_box .item_right {
+  flex: 1;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.container .editaddress_box .item_box .item_right input {
+  height: 100%;
+  line-height: 86rpx;
+  font-size:26rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(153,153,153,1);
+}
+
+.container .editaddress_box .item_box .item_right input.inputplace {
+  line-height: 86rpx;
+  font-size:26rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(153,153,153,1);
+}
+
+.container .editaddress_box .item_box .item_right .pickerAddress {
+  height: 100%;
+  flex: 1;
+}
+
+.container .editaddress_box .item_box .item_right .pickerAddress view {
+  height: 100%;
+  line-height: 86rpx;
+  font-size:26rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+}
+
+.container .editaddress_box .item_box .item_right .rightImg {
+  height: 20rpx;
+  width: 20rpx;
+  display: block;
+}
+
+.container .editaddress_box .item_box .item_right .label_box {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.container .editaddress_box .item_box .item_right .label_box>view {
+  height: 46rpx;
+  width: 96rpx;
+  box-sizing: border-box;
+  border: 2rpx solid #cccccc;
+  line-height: 42rpx;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(51,51,51,1);
+  text-align: center;
+  border-radius: 4rpx;
+}
+
+.container .editaddress_box .item_box .item_right .switchbtn {
+  transform: scale(0.7);
+  margin-left: auto;
+}
+
+.container .address_btn {
+  margin-top: 120rpx;
+  padding: 0 95rpx;
+  box-sizing: border-box;
+}
+
+.container .address_btn .keep {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+  background: #31CC90;
+  text-align: center;
+  font-size:30rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+  margin-bottom: 28rpx;
+}
+
+.container .address_btn .del {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+  background: #fff;
+  text-align: center;
+  font-size:30rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:#000000;
+  border: 2rpx solid #31CC90;
+  box-sizing: border-box;
+}

@@ -1,0 +1,15 @@
+<view class="container">
+  <view class="item_box">
+    <view class="txt">手机号</view>
+    <view class="right">
+      <view class="txts">+853 855345415</view>
+      <image src="../../../assets/images/rightbtn_iocn.png"></image>
+    </view>
+  </view>
+  <view class="item_box">
+    <view class="txt">修改登录密码</view>
+    <view class="right">
+      <image src="../../../assets/images/rightbtn_iocn.png"></image>
+    </view>
+  </view>
+</view>

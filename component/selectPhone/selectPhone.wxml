@@ -1,0 +1,9 @@
+<view class="phone_box" bindtap="selectPhone">
+  <view class="txt">{{phoneTxt}}</view>
+  <image src="../../assets/images/toboth_icon.png"></image>
+  <view class="select_box" wx:if="{{showPhoneBox}}">
+    <view class="item_phone" catchtap="selectphonetxt" data-txt="+853">+853</view>
+    <view class="item_phone" catchtap="selectphonetxt" data-txt="+86">+86</view>
+  </view>
+  <view class="mask_phone" catchtap="hidePhoneBox" wx:if="{{showPhoneBox}}"></view>
+</view>

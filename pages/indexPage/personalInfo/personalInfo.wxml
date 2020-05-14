@@ -46,7 +46,7 @@
       </view>
     </view>
   </view>
-  <view class="mask_box">
+  <view class="mask_box" wx:if="{{dateBoxShow}}">
     <view class="mask_bg"></view>
     <view class="user_datebox">
       <view class="title">出生日期</view>

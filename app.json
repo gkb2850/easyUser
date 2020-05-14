@@ -13,7 +13,12 @@
     "pages/indexPage/indexSetandcoll/indexSetandcoll",
     "pages/indexPage/userInfo/userInfo",
     "pages/indexPage/myCode/myCode",
-    "pages/indexPage/personalInfo/personalInfo"
+    "pages/indexPage/personalInfo/personalInfo",
+    "pages/indexPage/useraddress/useraddress",
+    "pages/indexPage/editUserAddress/editUserAddress",
+    "pages/indexPage/submitIDcard/submitIDcard",
+    "pages/indexPage/userAccount/userAccount",
+    "pages/indexPage/changePhone/changePhone"
   ],
   "window": {
     "backgroundTextStyle": "light",

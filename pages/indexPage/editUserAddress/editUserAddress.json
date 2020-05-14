@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "v-phone": "../../../component/selectPhone/selectPhone"
+  },
+  "navigationBarTitleText": "编辑收货地址"
+}

@@ -1,0 +1,114 @@
+.container {
+  padding: 0 28rpx;
+  box-sizing: border-box;
+}
+
+.container .txt_top .item_box {
+  border-bottom: 2rpx solid #EEEEEE;
+  height: 118rpx;
+  box-sizing: border-box;
+  display: flex;
+  padding: 0 4rpx 0 6rpx;
+}
+
+.container .txt_top .item_box .txt {
+  height: 100%;
+  line-height: 116rpx;
+  font-size:26rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+  width: 160rpx;
+}
+
+.container .txt_top .item_box>input {
+  height: 100%;
+  line-height: 116rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(204,204,204,1);
+  text-align: right;
+  flex: 1;
+}
+
+.container .txt_top .item_box>input.inputplace {
+  line-height: 116rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(204,204,204,1);
+  text-align: right;
+}
+
+.container .idCard_box {
+  margin-top: 42rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 12rpx;
+  box-sizing: border-box;
+}
+
+.container .idCard_box .cardImgbox {
+  width: 308rpx;
+  position: relative;
+  margin-bottom: 40rpx;
+}
+
+.container .idCard_box .cardImgbox .img_box {
+  width: 100%;
+  height: 194rpx;
+  position: relative;
+}
+
+.container .idCard_box .cardImgbox .img_box .card_bg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.container .idCard_box .cardImgbox .img_box .phonto_icon {
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: -38rpx;
+  width: 76rpx;
+  height: 76rpx;
+}
+
+.container .idCard_box .cardImgbox .intro_txt {
+  height: 24rpx;
+  line-height: 24rpx;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(102,102,102,1);
+  text-align: center;
+  margin-top: 16rpx;
+}
+
+.container .sumit_btn {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 120rpx;
+  padding: 20rpx 28rpx;
+  box-shadow:0px -12px 24px 0px rgba(0, 0, 0, 0.04);
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.container .sumit_btn>view {
+  background: #31CC90;
+  text-align: center;
+  height: 100%;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+  font-size:30rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+}

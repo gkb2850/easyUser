@@ -1,0 +1,45 @@
+<view class="container">
+  <view class="txt_top">
+    <view class="item_box">
+      <view class="txt">真实姓名</view>
+      <input type="text" placeholder="请输入真实姓名" placeholder-class="inputplace"></input>
+    </view>
+    <view class="item_box">
+      <view class="txt">身份证号</view>
+      <input type="num" placeholder="请输入身份证号" placeholder-class="inputplace"></input>
+    </view>
+  </view>
+  <view class="idCard_box">
+    <view class="cardImgbox">
+      <view class="img_box">
+        <image src="../../../assets/images/cardbgz_icon.png" class="card_bg"></image>
+        <image src="../../../assets/images/photo_icon.png" class="phonto_icon"></image>
+      </view>
+      <view class="intro_txt">上传身份证正面照片</view>
+    </view>
+    <view class="cardImgbox">
+      <view class="img_box">
+        <image src="../../../assets/images/cardbgf_icon.png" class="card_bg"></image>
+        <image src="../../../assets/images/photo_icon.png" class="phonto_icon"></image>
+      </view>
+      <view class="intro_txt">上传身份证反面照片</view>
+    </view>
+    <view class="cardImgbox">
+      <view class="img_box">
+        <image src="../../../assets/images/cardbgs_icon.png" class="card_bg"></image>
+        <image src="../../../assets/images/photo_icon.png" class="phonto_icon"></image>
+      </view>
+      <view class="intro_txt">手持身份证照片</view>
+    </view>
+    <view class="cardImgbox">
+      <view class="img_box">
+        <image src="../../../assets/images/cardvideo_icon.png" class="card_bg"></image>
+        <image src="../../../assets/images/photo_icon.png" class="phonto_icon"></image>
+      </view>
+      <view class="intro_txt">认证视频</view>
+    </view>
+  </view>
+  <view class="sumit_btn">
+    <view>提交</view>
+  </view>
+</view>

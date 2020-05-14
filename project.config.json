@@ -103,6 +103,27 @@
 					"pathName": "pages/indexPage/personalInfo/personalInfo",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": 8,
+					"name": "绑定身份证",
+					"pathName": "pages/indexPage/submitIDcard/submitIDcard",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "账号与安全",
+					"pathName": "pages/indexPage/userAccount/userAccount",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "更换手机",
+					"pathName": "pages/indexPage/changePhone/changePhone",
+					"query": "",
+					"scene": null
 				}
 			]
 		}

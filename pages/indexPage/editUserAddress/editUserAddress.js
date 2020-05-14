@@ -1,15 +1,11 @@
-// pages/indexPage/personalInfo/personalInfo.js
+// pages/indexPage/editUserAddress/editUserAddress.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    nameBoxShow: false,
-    years: [],
-    months: [],
-    days: [],
-    dateBoxShow: false
+    region:['请选择','请选择','请选择']
   },
 
   /**
@@ -30,37 +26,13 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    let date = new Date()
-    let years = []
-    let months = []
-    let days = []
 
-    for (let i = 1990; i<= date.getFullYear(); i++) {
-      years.push(i)
-    }
-
-    for(let i = 1; i <= 12; i++) {
-      if (i < 10) {
-        months.push('0' + i)
-      } else {
-        months.push(i)
-      }
-    }
-
-    for(let i = 1; i <= 31; i++) {
-      if (i < 10) {
-        days.push('0' + i)
-      } else {
-        days.push(i)
-      }
-    }
+  },
+  bindRegionChange (e) {
     this.setData({
-      years,
-      months,
-      days
+      region: e.detail.value
     })
   },
-  bindChangeDate () {},
   /**
    * 生命周期函数--监听页面隐藏
    */

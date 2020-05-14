@@ -96,13 +96,6 @@
 					"pathName": "pages/indexPage/myCode/myCode",
 					"query": "",
 					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "个人信息",
-					"pathName": "pages/indexPage/personalInfo/personalInfo",
-					"query": "",
-					"scene": null
 				}
 			]
 		}

@@ -1,2 +1,92 @@
-<!--pages/tokeout/tokeout.wxml-->
-<text>pages/tokeout/tokeout.wxml</text>
+<view class="container">
+  <view class="takeout_top">
+    <view class="title_box">
+      <view class="txt">澳门</view>
+      <view class="search_box">
+        <v-search></v-search>
+      </view>
+      <view class="txt">设为主页</view>
+    </view>
+    <view class="chart_box">
+      <image class="swiper_bg" src="../../assets/images/banner_bg.png"></image>
+      <view class="swiper_box">
+        <swiper class="swiper">
+          <swiper-item class="swiperItem">
+            <image src="../../assets/images/banner@2x.png"></image>
+          </swiper-item>
+        </swiper>
+      </view>
+    </view>
+  </view>
+  <view class="takeout_cont">
+    <view class="label_box">
+      <view class="item_box">
+        <image src="../../assets/images/takeout_hostal.png"></image>
+        <view>酒楼</view>
+      </view>
+      <view class="item_box">
+        <image src="../../assets/images/takeout_hostal.png"></image>
+        <view>自助餐</view>
+      </view>
+      <view class="item_box">
+        <image src="../../assets/images/takeout_hostal.png"></image>
+        <view>简餐</view>
+      </view>
+      <view class="item_box">
+        <image src="../../assets/images/takeout_hostal.png"></image>
+        <view>中餐</view>
+      </view>
+      <view class="item_box">
+        <image src="../../assets/images/takeout_hostal.png"></image>
+        <view>西餐</view>
+      </view>
+      <view class="item_box">
+        <image src="../../assets/images/takeout_hostal.png"></image>
+        <view>小吃</view>
+      </view>
+      <view class="item_box">
+        <image src="../../assets/images/takeout_hostal.png"></image>
+        <view>特色</view>
+      </view>
+    </view>
+    <view class="stop_box">
+      <view class="stop_item">
+        <image src="../../assets/images/banner@2x.png"></image>
+      </view>
+      <view class="stop_item">
+        <image src="../../assets/images/banner@2x.png"></image>
+      </view>
+      <view class="stop_item">
+        <image src="../../assets/images/banner@2x.png"></image>
+      </view>
+      <view class="stop_item">
+        <image src="../../assets/images/banner@2x.png"></image>
+      </view>
+      <view class="stop_item">
+        <image src="../../assets/images/banner@2x.png"></image>
+      </view>
+      <view class="stop_item">
+        <image src="../../assets/images/banner@2x.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="takeout_bot">
+    <view class="select_label">
+      <view class="items">
+        <v-label type="1" txtData="{{['有红包','无红包','全部']}}"></v-label>
+      </view>
+      <view class="items">
+        <v-label type="2" txtData="{{['配送快']}}"></v-label>
+      </view>
+      <view class="items">
+        <v-label type="2" txtData="{{['销量高']}}"></v-label>
+      </view>
+      <view class="items">
+        <v-label type="1" txtData="{{['智能排序','商家1','商家2', '好评']}}"></v-label>
+      </view>
+    </view>
+    <view class="stopbox">
+      <v-takeout></v-takeout>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,41 @@
+.container .search_top {
+  padding: 12rpx 28rpx;
+  background: #31CC90;
+  box-sizing: border-box;
+  display: flex;
+  height: 88rpx;
+}
+
+.container .search_top .txt {
+  height: 32rpx;
+  line-height: 32rpx;
+  font-size:32rpx;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:rgba(255,255,255,1);
+  margin-right: 30rpx;
+  margin-top: 16rpx;
+}
+
+.container .search_top .search_rbox {
+  height: 100%;
+  flex: 1;
+}
+
+.container .label_box_s {
+  padding: 0 28rpx;
+  display: flex;
+  height: 82rpx;
+  box-sizing: border-box;
+  align-items: center;
+  background: #EEEEEE;
+}
+
+.container .label_box_s .items {
+  margin-right: 30rpx;
+}
+
+.container .content {
+  padding: 28rpx 28rpx 0 28rpx;
+  box-sizing: border-box;
+}

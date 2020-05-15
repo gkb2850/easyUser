@@ -1,0 +1,55 @@
+<view class="container">
+  <view class="left">
+    <image class="l_img" src="../../assets/images/login_logo.png"></image>
+    <view class="identi_box">
+      <image src="../../assets/images/realname_icon.png"></image>
+      <image src="../../assets/images/redPacket_icon.png"></image>
+    </view>
+  </view>
+  <view class="right">
+    <view class="shop_title">
+      <view class="name">大坂屋(巴黎塔店)</view>
+      <view  class="img_box">
+        <image src="../../assets/images/share_icon.png"></image>
+        <image src="../../assets/images/takeouttxt_icon.png"></image>
+        <image src="../../assets/images/takeouttxt_icon.png"></image>
+      </view>
+    </view>
+    <view class="shop_info">
+      <view class="score_box">
+        <view class="scoreimg">
+          <image src="../../assets/images/indexsetandcoll_icon.png"></image>
+          <image src="../../assets/images/indexsetandcoll_icon.png"></image>
+          <image src="../../assets/images/indexsetandcoll_icon.png"></image>
+          <image src="../../assets/images/indexsetandcoll_icon.png"></image>
+          <image src="../../assets/images/indexsetandcoll_icon.png"></image>
+        </view>
+        <view class="txt">4.5分</view>
+        <view class="line"></view>
+        <view class="txt">推荐值100</view>
+        <view class="line"></view>
+        <view class="txt">￥60/人</view>
+      </view>
+      <view class="second_box">
+        <view class="time_box">
+          <image src="../../assets/images/indexsetandcoll_icon.png"></image>
+          <view class="txt">9:00-22:00</view>
+          <view class="line"></view>
+          <view class="txt">月售454单</view>
+        </view>
+        <view class="type_box">
+          <view class="txt">平台配送/自提</view>
+        </view>
+      </view>
+      <view class="address_box">
+        <view class="addresstxt">我的地址我的地址我的地址我的地址我的地址我的地址我的地址</view>
+        <view class="gaptxt">0.4km</view>
+      </view>
+      <view class="label_box">
+        <view class="txt_l">味道好</view>
+        <view class="txt_l">地铁口</view>
+        <view class="txt_l">新鲜</view>
+      </view>
+    </view>
+  </view>
+</view>

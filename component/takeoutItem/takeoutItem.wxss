@@ -1,0 +1,227 @@
+.container {
+  padding: 32rpx 20rpx;
+  box-sizing: border-box;
+  background: #fff;
+  display: flex;
+  box-shadow:0px 2rpx 8rpx 0px rgba(0, 0, 0, 0.1);
+  border-radius:10rpx;
+  margin-bottom: 28rpx;
+}
+
+.container .left {
+  height: 186rpx;
+  width: 180rpx;
+  margin-right: 12rpx;
+  position: relative;
+  border: 2rpx solid #CCCCCC;
+  box-sizing: border-box;
+  border-radius: 4rpx;
+  overflow: hidden;
+}
+
+.container .left .l_img {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.container .left .identi_box {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  height: 28rpx;
+  border-radius: 28rpx 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10rpx;
+}
+
+.container .left .identi_box>image {
+  height: 20rpx;
+  width: 20rpx;
+  margin-left: 6rpx;
+}
+
+.container .right {
+  flex: 1;
+  overflow: hidden;
+}
+
+.container .right .shop_title {
+  height: 32rpx;
+  display: flex;
+  margin-top: 8rpx;
+}
+
+.container .right .shop_title .name {
+  flex: 1;
+  height: 100%;
+  line-height: 32rpx;
+  font-size:32rpx;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:rgba(0,0,0,1);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.container .right .shop_title .img_box {
+  display: inline-flex;
+}
+
+.container .right .shop_title .img_box image {
+  height: 28rpx;
+  width: 28rpx;
+  border-right: 12rpx solid transparent;
+  border-left: 12rpx solid transparent;
+  border-top: 2rpx solid transparent;
+  border-bottom: 2rpx solid transparent;
+}
+
+.container .right .shop_info {
+  margin: 14rpx 0 0 0;
+}
+
+.container .right .shop_info .score_box {
+  height: 20rpx;
+  display: flex;
+  align-items: center;
+}
+
+.container .right .shop_info .score_box .scoreimg {
+  display: inline-flex;
+  height: 100%;
+  align-items: center;
+  margin-right: 18rpx;
+}
+
+.container .right .shop_info .score_box .scoreimg image {
+  height: 18rpx;
+  width: 18rpx;
+  margin-right: 8rpx;
+}
+
+.container .right .shop_info .score_box .txt {
+  height: 20rpx;
+  line-height: 20rpx;
+  font-size:20rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(102,102,102,1);
+}
+
+.container .right .shop_info .score_box .line {
+  width: 2rpx;
+  height: 12rpx;
+  background: #DDDDDD;
+  margin-right: 12rpx;
+  margin-left: 12rpx;
+}
+
+.container .right .second_box {
+  height: 20rpx;
+  display: flex;
+  margin-top: 14rpx;
+}
+
+.container .right .second_box .time_box {
+  display: inline-flex;
+  height: 100%;
+  align-items: center;
+}
+
+.container .right .second_box .time_box image {
+  height: 20rpx;
+  width: 20rpx;
+  margin-right: 8rpx;
+}
+
+.container .right .second_box .time_box .txt {
+  height: 20rpx;
+  line-height: 20rpx;
+  font-size:20rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(102,102,102,1);
+}
+
+.container .right .second_box .time_box .line {
+  width: 2rpx;
+  height: 12rpx;
+  background: #DDDDDD;
+  margin-right: 12rpx;
+  margin-left: 12rpx;
+}
+
+.container .right .second_box .type_box {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container .right .second_box .type_box .txt {
+  height: 20rpx;
+  line-height: 20rpx;
+  font-size:20rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(102,102,102,1);
+}
+
+.container .right .address_box {
+  height: 20rpx;
+  display: flex;
+  margin-top: 16rpx;
+}
+
+.container .right .address_box .addresstxt {
+  flex: 1;
+  height: 100%;
+  line-height: 20rpx;
+  font-size:20rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.container .right .address_box .gaptxt {
+  width: 80rpx;
+  height: 100%;
+  line-height: 20rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size:20rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(102,102,102,1);
+  text-align: right;
+}
+
+.container .right .label_box {
+  height: 28rpx;
+  display: flex;
+  margin-top: 14rpx;
+}
+
+.container .right .label_box .txt_l {
+  height: 100%;
+  line-height: 24rpx;
+  border: 2rpx solid #FF3333;
+  box-sizing: border-box;
+  border-radius: 4rpx;
+  font-size:18rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(255,51,51,1);
+  padding: 0 8rpx;
+  margin-right: 10rpx;
+}
+
+

@@ -1,0 +1,14 @@
+<view class="label_box" wx:if="{{type === '1'}}" bindtap="toShowLabelShow">
+  <view class="txt">{{txtData[labelIndex]}}</view>
+  <image src="../../assets/images/toboth_icon.png"></image>
+  <view class="label_mask" wx:if="{{labelBoxShow}}">
+    <view class="mask" catchtap="hideLabelBox"></view>
+    <view class="cont_mask">
+      <view class="la_item" wx:for="{{txtData}}" wx:key="index" catchtap="selectLabelItem" data-index="{{index}}">{{item}}</view>
+    </view>
+  </view>
+</view>
+
+<view class="labels_box" wx:else>
+  <view class="txt">{{txtData[0]}}</view>
+</view>

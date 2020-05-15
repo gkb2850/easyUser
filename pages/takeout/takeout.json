@@ -1,4 +1,8 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "v-search":"../../../component/searchItem/searchItem",
+    "v-label":"../../../component/labelItem/labelItem",
+    "v-takeout": "../../../component/takeoutItem/takeoutItem"
+  },
   "navigationBarTitleText": "外卖"
 }

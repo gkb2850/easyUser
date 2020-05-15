@@ -1,0 +1,45 @@
+.searchBox {
+  width: 100%;
+  height: 100%;
+  border-radius: 10rpx;
+  overflow: hidden;
+  display: flex;
+  padding:  0 32rpx 0 20rpx;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.searchBox .searchImg {
+  height: 28rpx;
+  width: 28rpx;
+  display: block;
+  margin: 18rpx 12rpx 18rpx 0;
+}
+
+.searchBox input {
+  height: 36rpx;
+  line-height: 36rpx;
+  font-size:26rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(153,153,153,1);
+  flex: 1;
+  margin: 14rpx 0;
+  min-height: 0;
+}
+
+.searchBox .inputplace {
+  height: 36rpx;
+  line-height: 36rpx;
+  font-size:26rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(153,153,153,1);
+  min-height: 0;
+}
+
+.searchBox .audioImg {
+  height: 32rpx;
+  width: 32rpx;
+  margin: 16rpx 0;
+}

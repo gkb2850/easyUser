@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="search_top">
+    <view class="txt">澳门</view>
+    <view class="search_rbox">
+      <v-search></v-search>
+    </view>
+  </view>
+  <view class="label_box_s">
+    <view class="items">
+      <v-label type="1" txtData="{{['有红包','优惠']}}" ></v-label>
+    </view>
+    <view class="items">
+      <v-label type="1" txtData="{{['外卖堂食','优惠']}}" ></v-label>
+    </view>
+    <view class="items">
+      <v-label type="1" txtData="{{['智能排序','优惠']}}" ></v-label>
+    </view>
+  </view>
+  <view class="content">
+    <v-takeout></v-takeout>
+  </view>
+</view>

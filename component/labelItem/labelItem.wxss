@@ -1,0 +1,81 @@
+.label_box {
+  height: 44rpx;
+  display: inline-flex;
+  padding:  0 14rpx;
+  box-sizing: border-box;
+  border-radius: 4rpx;
+  background: #cccccc;
+  position: relative;
+}
+
+.label_box .txt {
+  height: 100%;
+  line-height: 44rpx;
+  font-size:26rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+}
+
+.label_box>image {
+  height: 16rpx;
+  width: 16rpx;
+  display: block;
+  margin: 14rpx 0 14rpx 12rpx;
+}
+
+.label_box .label_mask {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 44rpx;
+}
+
+.label_box .label_mask .mask {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 20;
+}
+
+.label_box .label_mask .cont_mask {
+  background: #F6F6F6;
+  position: relative;
+  z-index: 30;
+}
+
+.label_box .label_mask .cont_mask .la_item {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size:26rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+  text-align: center;
+  border-bottom: 2rpx solid #D1D1D1;
+}
+
+.label_box .label_mask .cont_mask .la_item:last-child {
+  border: none;
+}
+
+.labels_box {
+  display: inline-flex;
+  height: 44rpx;
+  padding: 0 28rpx;
+  box-sizing: border-box;
+  background: #cccccc;
+  border-radius: 4rpx;
+  overflow: hidden;
+}
+
+.labels_box .txt {
+  height: 44rpx;
+  line-height: 44rpx;
+  font-size:26rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+}

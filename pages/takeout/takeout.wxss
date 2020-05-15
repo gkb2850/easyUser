@@ -1,1 +1,137 @@
-/* pages/tokeout/tokeout.wxss */
+.container .takeout_top {
+  
+}
+
+.container .takeout_top .title_box {
+  height: 88rpx;
+  display: flex;
+  padding:  0 28rpx;
+  box-sizing: border-box;
+  background: #31CC90;
+}
+
+.container .takeout_top .title_box .txt {
+  height: 32rpx;
+  line-height: 32rpx;
+  font-size:32rpx;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:rgba(255,255,255,1);
+  margin: 28rpx 0;
+}
+
+.container .takeout_top .title_box .search_box {
+  margin: 0  28rpx 0 30rpx;
+  padding:  12rpx 0;
+  height: 100%;
+  box-sizing: border-box;
+  flex: 1;
+  overflow: hidden;
+}
+
+.container .takeout_top .chart_box {
+  position: relative;
+  height: 296rpx;
+}
+
+.container .takeout_top .chart_box .swiper_bg {
+  width: 100%;
+  height: 284rpx;
+  display: block;
+}
+
+.container .takeout_top .chart_box .swiper_box {
+  width: 694rpx;
+  height: 272rpx;
+  position: absolute;
+  left: 50%;
+  top: 24rpx;
+  transform: translateX(-50%);
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+
+.container .takeout_top .chart_box .swiper_box .swiper {
+  height: 100%;
+  width: 100%;
+}
+
+.container .takeout_top .chart_box .swiper_box .swiper .swiperItem {
+  height: 100%;
+  width: 100%;
+}
+
+.container .takeout_top .chart_box .swiper_box .swiper .swiperItem image {
+  height: 100%;
+  width: 100%;
+  display: block;
+  border-radius: 10rpx;
+}
+
+.container .takeout_cont {
+  padding: 0 28rpx;
+  box-sizing: border-box;
+}
+
+.container .takeout_cont .label_box {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40rpx;
+}
+
+.container .takeout_cont .label_box .item_box {
+  width: 20%;
+  margin-bottom: 45rpx;
+}
+
+.container .takeout_cont .label_box .item_box image {
+  height: 92rpx;
+  width: 92rpx;
+  display: block;
+  margin: 0 auto;
+}
+
+.container .takeout_cont .label_box .item_box view {
+  height: 20rpx;
+  text-align: center;
+  line-height: 20rpx;
+  font-size:20rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(51,51,51,1);
+  margin-top: 15rpx;
+}
+
+.container .takeout_cont .stop_box {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 14rpx;
+  justify-content: space-between;
+}
+
+.container .takeout_cont .stop_box .stop_item {
+  margin-bottom: 24rpx;
+  width: 33.3%;
+}
+
+.container .takeout_cont .stop_box .stop_item image {
+  height: 160rpx;
+  width: 214rpx;
+  display: block;
+  border-radius: 10rpx;
+  margin: 0 auto;
+}
+
+.container .takeout_bot .select_label {
+  background: #EEEEEE;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 28rpx;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.container .takeout_bot .stopbox {
+  padding: 40rpx 28rpx 0 28rpx;
+} 

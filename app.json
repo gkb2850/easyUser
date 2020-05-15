@@ -19,7 +19,9 @@
     "pages/indexPage/submitIDcard/submitIDcard",
     "pages/indexPage/userAccount/userAccount",
     "pages/indexPage/changePhone/changePhone",
-    "pages/indexPage/changePassword/changePassword"
+    "pages/indexPage/changePassword/changePassword",
+    "pages/takeoutPage/takeoutSearch/takeoutSearch",
+    "pages/takeoutPage/takeoutShop/takeoutShop"
   ],
   "window": {
     "backgroundTextStyle": "light",

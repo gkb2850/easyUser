@@ -19,7 +19,7 @@
         <view class="txt_box">
           <view class="title_box">
             <view class="shopname">海底捞自助餐</view>
-            <view>
+            <view class="shop_r">
               <view>店铺介绍</view>
               <image src="../../../assets/images/rightbtn_iocn.png"></image>
             </view>
@@ -65,7 +65,9 @@
           <image src="../../../assets/images/yhj_icon.png"></image>
           <view>优惠卷</view>
         </view>
-        <view class="r_box">购买</view>
+        <view class="r_box">
+          <view>购买</view>
+        </view>
       </view>
       <view class="forward_box">
         <image src="../../../assets/images/love_icon.png"></image>
@@ -76,7 +78,7 @@
   <view class="shop_gf">
     <view class="title">特色推荐</view>
     <view class="food_box">
-      <scroll-view scroll-x>
+      <scroll-view scroll-x style="width: 100%;">
         <view class="foodItemBox">
           <image src="../../../assets/images/login_logo.png"></image>
           <image src="../../../assets/images/login_logo.png"></image>

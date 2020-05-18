@@ -1,3 +1,7 @@
+.container {
+  padding-bottom: 108rpx;
+}
+
 .container .shop_top {
   height: 708rpx;
   position: relative;
@@ -460,4 +464,303 @@
   color:rgba(0,0,0,1);
   margin-top: 8rpx;
 }
+
+.container .takeout_order .title_box {
+height: 80rpx;
+border-bottom:2rpx solid #EEEEEE;
+padding: 0 40rpx;
+display: flex;
+}
+
+.container .takeout_order .title_box .t_box {
+  position: relative;
+  height: 100%;
+  margin-right: 60rpx;
+}
+
+.container .takeout_order .title_box .t_box .txt {
+  height: 100%;
+  line-height: 80rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color: #666666;
+}
+
+.container .takeout_order .title_box .t_box .txt.active {
+  height: 100%;
+  line-height: 80rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:rgba(0,0,0,1);
+}
+
+.container .takeout_order .title_box .t_box .line {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4rpx;
+  background: #31CC90;
+}
+
+.container .takeout_order .order_box {
+  padding: 24rpx 18rpx 28rpx 28rpx;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.container .takeout_order .order_box .l_box {
+  width: 148rpx;
+  margin-right: 20rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+  background: #F0F2F4;
+}
+
+.container .takeout_order .order_box .l_box .l_itembox {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.container .takeout_order .order_box .l_box .l_itembox .labelbox{
+  border-bottom: 2rpx solid #DDD;
+  padding: 28rpx 26rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.container .takeout_order .order_box .l_box .l_itembox .labelbox:last-child {
+  border: none;
+}
+
+.container .takeout_order .order_box .l_box .l_itembox .labelbox .txt {
+  text-align: center;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+  line-height: 24rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.container .takeout_order .order_box .l_box .l_itembox .labelbox .txt.active {
+  font-weight:bold;
+  color:rgba(49,204,144,1);
+}
+
+.container .takeout_order .order_box .l_box .l_itembox .labelbox .line {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10rpx;
+  height: 44rpx;
+  background: #31CC90;
+}
+
+.container .takeout_order .order_box .r_box {
+  flex: 1;
+  overflow: hidden;
+  padding: 0 10rpx;
+  box-sizing: border-box;
+}
+
+.container .takeout_order .order_box .r_box .gooods_box {
+  margin: 0 10rpx;
+}
+
+.container .takeout_order .order_box .r_box .gooods_box .gooosItem {
+  display: flex;
+  padding: 20rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  overflow: hidden;
+  box-shadow:0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+  margin: 0 0 20rpx 0;
+}
+
+.container .takeout_order .order_box .r_box .gooods_box .gooosItem .goodsImgbox {
+  height: 152rpx;
+  width: 152rpx;
+  margin-right: 16rpx;
+  border-radius: 10rpx;
+}
+
+.container .takeout_order .order_box .r_box .gooods_box .gooosItem .goodsImgbox image {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.container .takeout_order .order_box .r_box .gooods_box .goods_r {
+  flex: 1;
+  overflow: hidden;
+}
+
+.container .takeout_order .order_box .r_box .gooods_box .goods_r .name {
+  height: 28rpx;
+  line-height: 28rpx;
+  margin-top: 6rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:rgba(0,0,0,1);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.container .takeout_order .order_box .r_box .gooods_box .goods_r .js_txt {
+  height: 20rpx;
+  display: flex;
+  margin-top: 16rpx;
+}
+
+.container .takeout_order .order_box .r_box .gooods_box .goods_r .js_txt .num_txt {
+  height: 100%;
+  line-height: 20rpx;
+  font-size:20rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(102,102,102,1);
+  margin-right: 30rpx;
+}
+
+.container .takeout_order .order_box .r_box .gooods_box .goods_r .momey_box {
+  margin-top: 32rpx;
+  display: flex;
+  height: 44rpx;
+}
+
+.container .takeout_order .order_box .r_box .gooods_box .goods_r .momey_box .momey_l {
+  flex: 1;
+  height: 100%;
+  display: flex;
+}
+
+.container .takeout_order .order_box .r_box .gooods_box .goods_r .momey_box .momey_l .new {
+  height: 26rpx;
+  line-height: 26rpx;
+  font-size:36rpx;
+  font-family:PingFang SC;
+  font-weight:800;
+  color:rgba(255,51,51,1);
+  margin-right: 10rpx;
+  margin-top: 8rpx;
+}
+
+.container .takeout_order .order_box .r_box .gooods_box .goods_r .momey_box .momey_l .old {
+  height: 16rpx;
+  line-height: 16rpx;
+  font-size:20rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  text-decoration:line-through;
+  color:rgba(153,153,153,1);
+  margin-top: 18rpx;
+}
+
+.container .takeout_order .order_box .r_box .gooods_box .goods_r .momey_box .size_type {
+  width: 100rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.container .takeout_order .order_box .r_box .gooods_box .goods_r .momey_box .size_type image{
+  height: 44rpx;
+  width: 44rpx;
+  border-left: 10rpx solid transparent;
+}
+
+.container .takeout_order .order_box .r_box .gooods_box .goods_r .momey_box .size_type .type_box {
+  width: 80rpx;
+  text-align: center;
+  height: 36rpx;
+  line-height: 36rpx;
+  background: #31CC90;
+  border-radius: 4rpx;
+  font-size:20rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+}
+
+.container .car_btn {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 108rpx;
+  display: flex;
+}
+
+.container .car_btn .c_box {
+  flex: 1;
+  display: flex;
+  background: #333;
+}
+
+.container .car_btn .c_box .car_img {
+  margin-left: 18rpx;
+  height: 134rpx;
+  width: 134rpx;
+  margin-top: -40rpx;
+}
+
+.container .car_btn .c_box .txt_box {
+  height: 100%;
+  flex: 1;
+  overflow: hidden;
+}
+
+.container .car_btn .c_box .txt_box .fs_txt {
+  height: 24rpx;
+  line-height: 24rpx;
+  margin-top: 26rpx;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(204,204,204,1);
+}
+
+.container .car_btn .c_box .txt_box .zq_txt {
+  height: 20rpx;
+  line-height: 20rpx;
+  margin-top: 12rpx;
+  font-size:20rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(204,204,204,1);
+}
+
+.container .car_btn .cr_box {
+  height: 100%;
+  width: 260rpx;
+  background: #ccc;
+}
+
+.container .car_btn .cr_box .qs_txt {
+  height: 100%;
+  line-height: 108rpx;
+  font-size:36rpx;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:rgba(102,102,102,1);
+  text-align: center;
+}
+
+
+
+
+
+
+
 

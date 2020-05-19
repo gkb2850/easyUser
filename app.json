@@ -21,7 +21,8 @@
     "pages/indexPage/changePhone/changePhone",
     "pages/indexPage/changePassword/changePassword",
     "pages/takeoutPage/takeoutSearch/takeoutSearch",
-    "pages/takeoutPage/takeoutShop/takeoutShop"
+    "pages/takeoutPage/takeoutShop/takeoutShop",
+    "pages/takeoutPage/takeoutGoodsDetail/takeoutGoodsDetail"
   ],
   "window": {
     "backgroundTextStyle": "light",

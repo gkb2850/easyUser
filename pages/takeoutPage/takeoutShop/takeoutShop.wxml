@@ -123,7 +123,7 @@
         <view class="line"></view>
       </view>
       <view class="t_box">
-        <view class="txt">外卖</view>
+        <view class="txt">堂食</view>
         <view class="line"></view>
       </view>
     </view>
@@ -196,7 +196,7 @@
                   </view>
                   <view class="size_type">
                     <image wx:if="{{false}}" class="add_icon" src="../../../assets/images/adds_icon.png"></image>
-                    <view wx:else class="type_box">选规格</view>
+                    <view wx:else class="type_box" bindtap="toSelectSpecsBox">选规格</view>
                   </view>
                 </view>
               </view>
@@ -208,14 +208,44 @@
   </view>
   <view class="car_btn">
     <view class="c_box">
-      <image src="../../../assets/images/takeoutCarno_iocn.png" class="car_img"></image>
+      <view class="car_imgbox">
+        <image src="../../../assets/images/takeoutCarno_iocn.png" class="car_img"></image>
+        <view>2</view>
+      </view>
       <view class="txt_box">
-        <view class="fs_txt">另需配送费￥5元</view>
+        <view class="fs_txt" wx:if="{{true}}">另需配送费￥5元</view>
+        <view class="money_box" wx:else>
+          <view>￥</view>
+          <view>12</view>
+        </view>
         <view class="zq_txt">支持自取</view>
       </view>
     </view>
     <view class="cr_box">
       <view class="qs_txt">15元起送</view>
+    </view>
+  </view>
+  <view class="specs_box" wx:if="{{specsBoxShow}}">
+    <view class="mask_box" bindtap="hideSpecsBox"></view>
+    <view class="specs_main">
+      <view class="title_box">
+        <view>海底捞自助餐</view>
+        <image src="../../../assets/images/error_icon.png" bindtap="hideSpecsBox"></image>
+      </view>
+      <view class="cont_box">
+        <view class="txt_t">规格</view>
+        <view class="itemAll_box">
+          <view class="i_txt">不辣</view>
+          <view class="i_txt">微辣</view>
+          <view class="i_txt">中辣</view>
+          <view class="i_txt">特辣</view>
+        </view>
+        <view class="select_box">已选规格：不辣</view>
+        <view class="goods_bot">
+          <view class="money">￥12</view>
+          <image src="../../../assets/images/adds_icon.png"></image>
+        </view>
+      </view>
     </view>
   </view>
 </view>

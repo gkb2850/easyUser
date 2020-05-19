@@ -1,0 +1,523 @@
+.container {
+  padding-bottom: 150rpx;
+}
+
+.container .header_box .img_box {
+  height: 340rpx;
+  position: relative;
+}
+
+.container .header_box .img_box .headerImg {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.container .header_box .img_box .btn_box {
+  position: absolute;
+  right: 16rpx;
+  bottom: -44rpx;
+  width: 180rpx;
+  display: flex;
+  height: 88rpx;
+  justify-content: space-between;
+}
+
+.container .header_box .img_box .btn_box image {
+  height: 88rpx;
+  width: 88rpx;
+}
+
+.container .header_box .header_txtbox {
+  display: flex;
+  height: 134rpx;
+  padding:  0 28rpx;
+  box-sizing: border-box;
+  box-shadow:0px 2px 26px 0px rgba(0, 0, 0, 0.1);
+}
+
+.container .header_box .header_txtbox .money_box {
+  flex: 1;
+}
+
+.container .header_box .header_txtbox .money_box .money_txt {
+  height: 36rpx;
+  margin-top: 30rpx;
+  display: flex;
+}
+
+.container .header_box .header_txtbox .money_box .money_txt>view:nth-child(1) {
+  height: 36rpx;
+  line-height: 36rpx;
+  font-size:48rpx;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:rgba(255,51,51,1);
+  margin-right: 20rpx;
+}
+
+.container .header_box .header_txtbox .money_box .money_txt>view:nth-child(2) {
+  height: 20rpx;
+  line-height: 20rpx;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:400;
+  text-decoration:line-through;
+  color:rgba(153,153,153,1);
+  margin-top: 16rpx;
+}
+
+.container .header_box .header_txtbox .money_box .num {
+  height: 20rpx;
+  line-height: 20rpx;
+  font-size:20rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(102,102,102,1);
+  margin-top: 16rpx;
+}
+
+.container .header_box .header_txtbox .add_box {
+  width: 80rpx;
+  height: 100%;
+}
+
+.container .header_box .header_txtbox .add_box image {
+  height: 44rpx;
+  width: 44rpx;
+  border-left:20rpx solid transparent; 
+  border-bottom:20rpx solid transparent; 
+  margin-top: 56rpx;
+}
+
+.container .main_box .product_info_txt {
+  padding-top: 40rpx;
+}
+
+.container .main_box .product_info_txt .pro_title{
+  padding: 0 28rpx;
+  box-sizing: border-box;
+  height: 26rpx;
+  line-height: 26rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:800;
+  color:rgba(0,0,0,1);
+}
+
+.container .main_box .product_info_txt .pro_cont{
+  line-height: 38rpx;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(51,51,51,1);
+  padding:  0 28rpx;
+  box-sizing: border-box;
+  margin: 28rpx 0 24rpx 0;
+}
+
+.container .main_box .product_info_txt .chart_box{
+  height: 340rpx;
+  width: 100%;
+}
+
+.container .main_box .product_info_txt .chart_box .swiperbox {
+  width: 100%;
+  height: 100%;
+}
+
+.container .main_box .product_info_txt .chart_box .swiperbox .swiperItem {
+  width: 100%;
+  height: 100%;
+}
+
+.container .main_box .product_info_txt .chart_box .swiperbox .swiperItem image {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.container .main_box .product_info_txt .messageShop {
+  border-bottom: 2rpx solid #EEEEEE;
+  padding: 32rpx 0;
+}
+
+.container .main_box .product_info_txt .messageShop .title {
+  height: 26rpx;
+  display: flex;
+  padding: 0 28rpx;
+  box-sizing: border-box;
+}
+
+.container .main_box .product_info_txt .messageShop .title .l_txt {
+  flex: 1;
+  height: 100%;
+  line-height: 26rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:rgba(0,0,0,1);
+}
+
+.container .main_box .product_info_txt .messageShop .title .r_txt {
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+}
+
+.container .main_box .product_info_txt .messageShop .title .r_txt view {
+  height: 23rpx;
+  line-height: 23rpx;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(102,102,102,1);
+}
+
+.container .main_box .product_info_txt .messageShop .title .r_txt image {
+  height: 26rpx;
+  width: 26rpx;
+}
+
+.container .main_box .product_info_txt .messageShop .ly_user {
+  display: flex;
+  margin-top: 28rpx;
+  padding:  0 28rpx;
+  box-sizing: border-box;
+}
+
+.container .main_box .product_info_txt .messageShop .ly_user .l_box {
+  margin-right: 16rpx;
+}
+
+.container .main_box .product_info_txt .messageShop .ly_user .l_box image {
+  height: 76rpx;
+  width: 76rpx;
+  border-radius: 38rpx;
+}
+
+.container .main_box .product_info_txt .messageShop .ly_user .r_box {
+  flex: 1;
+  overflow: hidden;
+}
+
+.container .main_box .product_info_txt .messageShop .ly_user .r_box .customer_info {
+  display: flex;
+  align-items: center;
+  height: 76rpx;
+}
+
+.container .main_box .product_info_txt .messageShop .ly_user .r_box .customer_info .cus_box {
+  flex: 1;
+}
+
+.container .main_box .product_info_txt .messageShop .ly_user .r_box .customer_info .cus_box .name {
+  height: 26rpx;
+  line-height: 26rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:rgba(0,0,0,1);
+  margin-top: 11rpx;
+}
+
+.container .main_box .product_info_txt .messageShop .ly_user .r_box .customer_info .cus_box .time {
+  height: 16rpx;
+  line-height: 16rpx;
+  font-size:20rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(153,153,153,1);
+  margin-top: 12rpx;
+}
+
+.container .main_box .product_info_txt .messageShop .ly_user .r_box .customer_info .fs {
+  height: 23rpx;
+  line-height: 23rpx;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+}
+
+.container .main_box .product_info_txt .messageShop .ly_user .r_box .ly_txt {
+  line-height: 24rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+  margin-top: 8rpx;
+}
+
+.container .main_box .product_info_txt .tj_box {
+  padding: 0 28rpx;
+  box-sizing: border-box;
+}
+
+.container .main_box .product_info_txt .tj_box .title_txt {
+  height: 26rpx;
+  line-height: 26rpx;
+  margin: 32rpx 0 28rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:rgba(0,0,0,1);
+}
+
+.container .main_box .product_info_txt .tj_box .pro_box {
+  padding: 32rpx 20rpx;
+  box-sizing: border-box;
+  display: flex;
+  box-shadow:0px 2px 26px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+
+.container .main_box .product_info_txt .tj_box .pro_box .l_img_box {
+  position: relative;
+  border-radius: 4rpx;
+  overflow: hidden;
+  margin-right: 12rpx;
+}
+
+.container .main_box .product_info_txt .tj_box .pro_box .l_img_box .l_img {
+  height: 186rpx;
+  width: 180rpx;
+  display: block;
+}
+
+.container .main_box .product_info_txt .tj_box .pro_box .l_img_box .icon_box {
+  padding: 0 8rpx;
+  height: 28rpx;
+  display: flex;
+  border-radius: 28rpx 0 0 0;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+}
+
+.container .main_box .product_info_txt .tj_box .pro_box .l_img_box .icon_box image {
+  height: 20rpx;
+  width: 20rpx;
+  margin-left: 8rpx;
+}
+
+.container .main_box .product_info_txt .tj_box .pro_box .r_box {
+  flex: 1;
+  overflow: hidden;
+}
+
+.container .main_box .product_info_txt .tj_box .pro_box .r_box .name {
+  margin-top: 8rpx;
+  height: 32rpx;
+  line-height: 32rpx;
+  font-size:32rpx;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:rgba(0,0,0,1);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.container .main_box .product_info_txt .tj_box .pro_box .r_box .num_txt {
+  height: 20rpx;
+  display: flex;
+  align-items: center;
+  margin-top: 14rpx;
+}
+
+.container .main_box .product_info_txt .tj_box .pro_box .r_box .num_txt .txt {
+  height: 20rpx;
+  line-height: 20rpx;
+  font-size:20rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(102,102,102,1);
+}
+
+.container .main_box .product_info_txt .tj_box .pro_box .r_box .num_txt .line {
+  height: 12rpx;
+  width: 2rpx;
+  background: #DDDDDD;
+  margin: 0 12rpx;
+}
+
+.container .main_box .product_info_txt .tj_box .pro_box .r_box .bot_btn {
+  height: 52rpx;
+  display: flex;
+  margin-top: 58rpx;
+}
+
+.container .main_box .product_info_txt .tj_box .pro_box .r_box .bot_btn .money_box {
+  flex: 1;
+  display: flex;
+  height: 26rpx;
+  margin-top: 13rpx;
+}
+
+.container .main_box .product_info_txt .tj_box .pro_box .r_box .bot_btn .money_box>view:nth-child(1) {
+  height: 26rpx;
+  line-height: 26rpx;
+  font-size:36rpx;
+  font-family:PingFang SC;
+  font-weight:800;
+  color:rgba(255,51,51,1);
+  margin-right: 12rpx;
+}
+
+.container .main_box .product_info_txt .tj_box .pro_box .r_box .bot_btn .money_box>view:nth-child(2) {
+  height: 16rpx;
+  line-height: 16rpx;
+  font-size:20rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  text-decoration:line-through;
+  color:rgba(102,102,102,1);
+  margin-top: 10rpx;
+}
+
+.container .main_box .product_info_txt .tj_box .pro_box .r_box .bot_btn .r_btn {
+  width: 124rpx;
+  height: 100%;
+}
+
+.container .main_box .product_info_txt .tj_box .pro_box .r_box .bot_btn .r_btn view {
+  height: 100%;
+  background: #31CC90;
+  border-radius: 6rpx;
+  text-align: center;
+  line-height: 52rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+}
+
+.container .car_btn {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 108rpx;
+  display: flex;
+  z-index: 10;
+}
+
+.container .car_btn .c_box {
+  flex: 1;
+  display: flex;
+  background: #333;
+}
+
+.container .car_btn .c_box .car_imgbox {
+  margin-left: 18rpx;
+  height: 134rpx;
+  width: 134rpx;
+  margin-top: -40rpx;
+  position: relative;
+}
+
+.container .car_btn .c_box .car_imgbox image {
+  height: 100%;
+  width: 100%;
+}
+
+.container .car_btn .c_box .car_imgbox view {
+  height: 28rpx;
+  line-height: 28rpx;
+  border-radius: 14rpx;
+  background: #FF0000;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+  text-align: center;
+  padding: 0 9rpx;
+  position: absolute;
+  right: 4rpx;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.container .car_btn .c_box .txt_box {
+  height: 100%;
+  flex: 1;
+  overflow: hidden;
+}
+
+.container .car_btn .c_box .txt_box .fs_txt {
+  height: 24rpx;
+  line-height: 24rpx;
+  margin-top: 26rpx;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(204,204,204,1);
+}
+
+.container .car_btn .c_box .txt_box .money_box {
+  margin-top: 22rpx;
+  display: flex;
+  height: 26rpx;
+}
+
+.container .car_btn .c_box .txt_box .money_box>view:nth-child(1) {
+  height: 20rpx;
+  line-height: 20rpx;
+  margin-top: 6rpx;
+  font-size:20rpx;
+  font-family:PingFang SC;
+  font-weight:400;
+  color:rgba(252,252,252,1);
+}
+
+.container .car_btn .c_box .txt_box .money_box>view:nth-child(2) {
+  height: 26rpx;
+  line-height: 26rpx;
+  font-size:26rpx;
+  font-family:PingFang SC;
+  font-weight:800;
+  color:rgba(252,252,252,1);
+}
+
+.container .car_btn .c_box .txt_box .zq_txt {
+  height: 20rpx;
+  line-height: 20rpx;
+  margin-top: 12rpx;
+  font-size:20rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(204,204,204,1);
+}
+
+.container .car_btn .cr_box {
+  height: 100%;
+  width: 260rpx;
+  background: #ccc;
+}
+
+.container .car_btn .cr_box .qs_txt {
+  height: 100%;
+  line-height: 108rpx;
+  font-size:34rpx;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:rgba(102,102,102,1);
+  text-align: center;
+}
+
+
+
+
+
+
+
+

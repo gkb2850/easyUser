@@ -120,8 +120,8 @@
 				},
 				{
 					"id": 10,
-					"name": "外卖商家主页",
-					"pathName": "pages/takeoutPage/takeoutShop/takeoutShop",
+					"name": "产品详情页",
+					"pathName": "pages/takeoutPage/takeoutGoodsDetail/takeoutGoodsDetail",
 					"query": "",
 					"scene": null
 				}

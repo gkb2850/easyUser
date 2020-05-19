@@ -1,11 +1,11 @@
-// pages/takeoutPage/takeoutShop/takeoutShop.js
+// pages/takeoutPage/takeoutGoodsDetail/takeoutGoodsDetail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    specsBoxShow: false
+
   },
 
   /**
@@ -28,16 +28,7 @@ Page({
   onShow: function () {
 
   },
-  toSelectSpecsBox () {
-    this.setData({
-      specsBoxShow: true
-    })
-  },
-  hideSpecsBox () {
-    this.setData({
-      specsBoxShow: false
-    })
-  },
+
   /**
    * 生命周期函数--监听页面隐藏
    */

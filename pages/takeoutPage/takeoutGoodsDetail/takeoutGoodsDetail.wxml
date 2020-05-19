@@ -1,0 +1,108 @@
+<view class="container">
+  <view class="header_box">
+    <view class="img_box">
+      <image src="../../../assets/images/banner@2x.png" class="headerImg"></image>
+      <view class="btn_box">
+        <image src="../../../assets/images/love_icon.png"></image>
+        <image src="../../../assets/images/shares_icon.png"></image>
+      </view>
+    </view>
+    <view class="header_txtbox">
+      <view class="money_box">
+        <view class="money_txt">
+          <view>￥ 130.00</view>
+          <view>￥ 180.00</view>
+        </view>
+        <view class="num">月售500</view>
+      </view>
+      <view class="add_box">
+        <image src="../../../assets/images/adds_icon.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="main_box">
+    <view class="product_info_txt">
+      <view class="pro_title">产品介绍</view>
+      <view class="pro_cont">海底捞是一间自助餐，主要是以服务为特色和实惠海底捞是一间自助餐，主要是以服务为特色和实惠海底捞是一间自助餐，主要是以服务为特色和实惠海底捞是一间自助餐，主要是以服务为特色和实惠海底捞是一间自助餐，主要是以服务为特色和实惠海底捞是一间自助餐，主要是以服务为特色和实惠海底捞是一间自助餐，主要是以服务为特色和实惠</view>
+      <view class="chart_box">
+        <swiper class="swiperbox">
+          <swiper-item class="swiperItem">
+            <image src="../../../assets/images/banner@2x.png"></image>
+          </swiper-item>
+        </swiper>
+      </view>
+      <view class="messageShop">
+        <view class="title">
+          <view class="l_txt">评价</view>
+          <view class="r_txt">
+            <view>更多</view>
+            <image src="../../../assets/images/rightbtn_iocn.png"></image>
+          </view>
+        </view>
+        <view class="ly_user">
+          <view class="l_box">
+            <image src="../../../assets/images/xiaotouxiang.png"></image>
+          </view>
+          <view class="r_box">
+            <view class="customer_info">
+              <view class="cus_box">
+                <view class="name">小行星划过的天空</view>
+                <view class="time">2020-05-15</view>
+              </view>
+              <view class="fs">4.5分</view>
+            </view>
+            <view class="ly_txt">这东西不错很值得</view>
+          </view>
+        </view>
+      </view>
+      <view class="tj_box">
+       <view class="title_txt">推荐</view>
+       <view class="pro_box">
+        <view class="l_img_box">
+          <image class="l_img" src="../../../assets/images/login_logo.png"></image>
+          <view class="icon_box">
+            <image src="../../../assets/images/realname_icon.png"></image>
+            <image src="../../../assets/images/redPacket_icon.png"></image>
+          </view>
+        </view>
+        <view class="r_box">
+          <view class="name">海底捞海底捞</view>
+          <view class="num_txt">
+            <view class="txt">月销30</view>
+            <view class="line"></view>
+            <view class="txt">推荐值100</view>
+          </view>
+          <view class="bot_btn">
+            <view class="money_box">
+              <view>￥18</view>
+              <view>￥20</view>
+            </view>
+            <view class="r_btn">
+              <view>去购买</view>
+            </view>
+          </view>
+        </view>
+       </view>
+      </view>
+    </view>
+  </view>
+  <view class="car_btn">
+    <view class="c_box">
+      <view class="car_imgbox">
+        <image src="../../../assets/images/takeoutCarno_iocn.png" class="car_img"></image>
+        <view>2</view>
+      </view>
+      <view class="txt_box">
+        <view class="fs_txt" wx:if="{{true}}">另需配送费￥5元</view>
+        <view class="money_box" wx:else>
+          <view>￥</view>
+          <view>12</view>
+        </view>
+        <view class="zq_txt">支持自取</view>
+      </view>
+    </view>
+    <view class="cr_box">
+      <view class="qs_txt">15元起送</view>
+    </view>
+  </view>
+</view>

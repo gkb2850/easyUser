@@ -116,4 +116,106 @@
       </view>
     </view>
   </view>
+  <view class="takeout_order">
+    <view class="title_box">
+      <view class="t_box">
+        <view class="txt">外卖</view>
+        <view class="line"></view>
+      </view>
+      <view class="t_box">
+        <view class="txt">外卖</view>
+        <view class="line"></view>
+      </view>
+    </view>
+    <view class="order_box">
+      <view class="l_box">
+        <scroll-view scroll-y style="height: 100%;">
+          <view class="l_itembox">
+            <view class="labelbox">
+              <view class="txt">主菜</view>
+              <view class="line"></view>
+            </view>
+            <view class="labelbox">
+              <view class="txt">主菜</view>
+              <view class="line"></view>
+            </view>
+            <view class="labelbox">
+              <view class="txt">主菜</view>
+              <view class="line"></view>
+            </view>
+            <view class="labelbox">
+              <view class="txt">主菜</view>
+              <view class="line"></view>
+            </view>
+            <view class="labelbox">
+              <view class="txt">主菜主菜主菜主菜主菜</view>
+              <view class="line"></view>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+      <view class="r_box">
+        <scroll-view scroll-y style="height：100%;">
+          <view class="gooods_box">
+            <view class="gooosItem">
+              <view class="goodsImgbox">
+                <image src="../../../assets/images/login_logo.png"></image>
+              </view>
+              <view class="goods_r">
+                <view class="name">益禾堂烧仙草（大杯）</view>
+                <view class="js_txt">
+                  <view class="num_txt">月售1278</view>
+                  <view class="num_txt">赞80</view>
+                </view>
+                <view class="momey_box">
+                  <view class="momey_l">
+                    <view class="new">￥ 20</view>
+                    <view class="old">￥ 12</view>
+                  </view>
+                  <view class="size_type">
+                    <image wx:if="{{true}}" class="add_icon" src="../../../assets/images/adds_icon.png"></image>
+                    <view wx:else class="type_box">选规格</view>
+                  </view>
+                </view>
+              </view>
+            </view>
+             <view class="gooosItem">
+              <view class="goodsImgbox">
+                <image src="../../../assets/images/login_logo.png"></image>
+              </view>
+              <view class="goods_r">
+                <view class="name">益禾堂烧仙草（大杯）</view>
+                <view class="js_txt">
+                  <view class="num_txt">月售1278</view>
+                  <view class="num_txt">赞80</view>
+                </view>
+                <view class="momey_box">
+                  <view class="momey_l">
+                    <view class="new">￥ 20</view>
+                    <view class="old">￥ 12</view>
+                  </view>
+                  <view class="size_type">
+                    <image wx:if="{{false}}" class="add_icon" src="../../../assets/images/adds_icon.png"></image>
+                    <view wx:else class="type_box">选规格</view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+  <view class="car_btn">
+    <view class="c_box">
+      <image src="../../../assets/images/takeoutCarno_iocn.png" class="car_img"></image>
+      <view class="txt_box">
+        <view class="fs_txt">另需配送费￥5元</view>
+        <view class="zq_txt">支持自取</view>
+      </view>
+    </view>
+    <view class="cr_box">
+      <view class="qs_txt">15元起送</view>
+    </view>
+  </view>
 </view>

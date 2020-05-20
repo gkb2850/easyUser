@@ -1,0 +1,70 @@
+<view class="container">
+  <view class="car_box">
+    <view class="item_box">
+      <view class="title_box">
+        <image src="../../../assets/images/selectno_icon.png"></image>
+        <view>海底捞自助餐店</view>
+      </view>
+      <view class="product_box">
+        <view class="goodsbox">
+          <view class="selectImg">
+            <image src="../../../assets/images/selectno_icon.png"></image>
+          </view>
+          <view class="cont_box">
+            <view class="l_img">
+              <image src="../../../assets/images/login_logo.png"></image>
+            </view>
+            <view class="r_box">
+              <view class="txt_box">
+                <view class="name">海底捞大餐（一天）</view>
+                <view class="num">x1</view>
+              </view>
+              <view class="money_box">
+                <view class="newMoney">￥12</view>
+                <view class="oldMoney">￥18</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="bot_box">
+        <view class="item_txt">
+          <view class="l_name">包装费：</view>
+          <view class="r_txt">
+            <view class="oldMoney">￥7</view>
+            <view class="newMoney">￥5</view>
+          </view>
+        </view>
+        <view class="item_txt">
+          <view class="l_name">配送费：</view>
+          <view class="r_txt">
+            <view class="oldMoney">￥8</view>
+            <view class="newMoney">￥4</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="footer_box">
+    <view class="l_box">
+      <view class="select_box">
+        <image src="../../../assets/images/selectallno_icon.png"></image>
+        <view>全选</view>
+      </view>
+      <view class="del_box">
+        <view>删除</view>
+      </view>
+    </view>
+    <view class="c_box">
+      <view class="first">
+        <view>合计：</view>
+        <view>￥20</view>
+      </view>
+      <view class="second">
+        <view>总优惠：</view>
+        <view>￥10</view>
+      </view>
+    </view>
+    <view class="r_box">去结算</view>
+  </view>
+</view>

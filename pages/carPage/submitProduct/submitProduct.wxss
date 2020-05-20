@@ -1,0 +1,358 @@
+.container .nav_box {
+  padding: 0 40rpx;
+  box-sizing: border-box;
+  height: 80rpx;
+  display: flex;
+  border-bottom: 2rpx solid #EEEEEE;
+}
+
+.container .nav_box .nav_item {
+  height: 100%;
+  position: relative;
+  display: inline-flex;
+  margin-right: 60rpx;
+}
+
+.container .nav_box .nav_item .txt {
+  height: 100%;
+  line-height: 78rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(102,102,102,1);
+}
+
+.container .nav_box .nav_item .txt.active {
+  font-weight:bold;
+  color:rgba(0,0,0,1);
+}
+
+.container .nav_box .nav_item .line {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 52rpx;
+  height: 4rpx;
+  background: #31CC90;
+}
+
+.container .select_addressbox {
+  padding: 32rpx;
+  margin: 28rpx;
+  box-sizing: border-box;
+  border-radius: 10rpx;
+  box-shadow:0px 2px 12px 0px rgba(0, 0, 0, 0.1);
+}
+
+.container .select_addressbox .address_box {
+  border-bottom: 2rpx solid #EEEEEE;
+}
+
+.container .select_addressbox .address_box .takeoutType .address_no {
+  margin-bottom: 32rpx;
+}
+
+.container .select_addressbox .address_box .takeoutType .address_no .title_txt {
+  text-align: center;
+  height: 24rpx;
+  line-height: 24rpx;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+}
+
+.container .select_addressbox .address_box .takeoutType .address_no .add_btn {
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 10rpx;
+  box-shadow:0px 4px 12px 0px rgba(49,204,144,0.6);
+  margin: 26rpx 0 0 0;
+  text-align: center;
+  font-size:30rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+  background: #31CC90;
+}
+
+.container .select_addressbox .address_box .takeoutType .address_yes {
+  display: flex;
+  margin-bottom: 32rpx;
+}
+
+.container .select_addressbox .address_box .takeoutType .address_yes .address_img {
+  height: 100%;
+  margin-right: 20rpx;
+  display: flex;
+  align-items: center;
+}
+
+.container .select_addressbox .address_box .takeoutType .address_yes .address_img image {
+  height: 28rpx;
+  width: 28rpx;
+}
+
+.container .select_addressbox .address_box .takeoutType .address_yes .address_cont {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.container .select_addressbox .address_box .takeoutType .address_yes .address_cont .txt_info {
+  flex: 1;
+  overflow: hidden;
+}
+
+.container .select_addressbox .address_box .takeoutType .address_yes .address_cont .txt_info .address_name {
+  line-height: 38rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size:30rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+}
+
+.container .select_addressbox .address_box .takeoutType .address_yes .address_cont .txt_info .people_box {
+  height: 26rpx;
+  display: flex;
+  margin-top: 22rpx;
+}
+
+.container .select_addressbox .address_box .takeoutType .address_yes .address_cont .txt_info .people_box>view {
+  height: 100%;
+  line-height: 26rpx;
+  font-size:26rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(102,102,102,1);
+}
+
+.container .select_addressbox .address_box .takeoutType .address_yes .address_cont .txt_info .people_box>view:first-child {
+  margin-right: 40rpx;
+}
+
+.container .select_addressbox .address_box .takeoutType .address_yes .address_cont .right_img {
+  height: 20rpx;
+  width: 20rpx;
+  margin-left: 20rpx;
+}
+
+.container .select_addressbox .time_box {
+  padding-top: 35rpx;
+  margin-bottom: 3rpx;
+  display: flex;
+  height: 28rpx;
+  align-items: center;
+}
+
+.container .select_addressbox .time_box .time_img {
+  margin-right: 20rpx;
+}
+
+.container .select_addressbox .time_box .time_img image {
+  height: 28rpx;
+  width: 28rpx;
+}
+
+.container .select_addressbox .time_box .time_right {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  height: 100%;
+}
+
+.container .select_addressbox .time_box .time_right .time_txt {
+  flex: 1;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+}
+
+.container .select_addressbox .time_box .time_right .time_txt>view:first-child {
+  height: 100%;
+  line-height: 28rpx;
+  font-size:30rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+  margin-right: 15rpx;
+}
+
+.container .select_addressbox .time_box .time_right .time_txt>view:nth-child(2) {
+  height: 24rpx;
+  line-height: 24rpx;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:400;
+  color:#31CC90;
+  margin-top: 4rpx;
+}
+
+.container .select_addressbox .time_box .time_right>image {
+  height: 20rpx;
+  width: 20rpx;
+}
+
+.container .main_box {
+  padding: 0 28rpx;
+  box-sizing: border-box;
+}
+
+.container .main_box .order_box {
+  border-radius: 10rpx;
+  box-shadow:0px 2px 12px 0px rgba(0, 0, 0, 0.1);
+  padding: 32rpx;
+  box-sizing: border-box;
+}
+
+.container .main_box .order_box .order_all {
+  padding-bottom: 25rpx;
+}
+
+.container .main_box .order_box .order_all .order_item {
+  display: flex;
+  height: 72rpx;
+  align-items: center;
+  margin-bottom: 32rpx;
+}
+
+.container .main_box .order_box .order_all .order_item:last-child {
+  margin: 0;
+}
+
+.container .main_box .order_box .order_all .order_item .left {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  height: 100%;
+}
+
+.container .main_box .order_box .order_all .order_item .left>image {
+  height: 72rpx;
+  width: 72rpx;
+  margin-right: 16rpx;
+  border-radius: 4rpx;
+}
+
+.container .main_box .order_box .order_all .order_item .left .info_txt {
+  height: 100%;
+  overflow: hidden;
+  flex: 1;
+}
+
+.container .main_box .order_box .order_all .order_item .left .info_txt .name {
+  height: 26rpx;
+  line-height: 26rpx;
+  margin-top: 8rpx;
+  font-size:26rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.container .main_box .order_box .order_all .order_item .left .info_txt .num {
+  height: 20rpx;
+  line-height: 20rpx;
+  margin-top: 12rpx;
+  font-size:26rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(102,102,102,1);
+}
+
+.container .main_box .order_box .order_all .order_item .money_box>view {
+  height: 22rpx;
+  line-height: 22rpx;
+  font-size:26rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+}
+
+.container .main_box .order_box .other_money {
+  border-top: 2rpx solid #EEEEEE;
+  border-bottom: 2rpx solid #EEEEEE;
+  padding: 28rpx 0; 
+}
+
+.container .main_box .order_box .other_money .item_txt {
+  height: 26rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .main_box .order_box .other_money .item_txt:first-child {
+  margin-bottom: 30rpx;
+}
+
+.container .main_box .order_box .other_money .item_txt>view:first-child {
+  height: 26rpx;
+  line-height: 26rpx;
+  font-size:26rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+}
+
+.container .main_box .order_box .other_money .item_txt>view:nth-child(2) {
+  height: 20rpx;
+  line-height: 20rpx;
+  font-size:26rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+}
+
+.container .main_box .order_box .deduc_box {
+  padding: 32rpx 0;
+}
+
+.container .main_box .order_box .deduc_box .d_txtbox {
+  height: 24rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .main_box .order_box .deduc_box .d_txtbox:first-child {
+    margin-bottom: 30rpx;
+}
+
+.container .main_box .order_box .deduc_box .d_txtbox .txt_t {
+  height: 24rpx;
+  line-height: 24rpx;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+}
+
+.container .main_box .order_box .deduc_box .d_txtbox .r_box {
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.container .main_box .order_box .deduc_box .d_txtbox .r_box image {
+  height: 20rpx;
+  width: 20rpx;
+}
+
+
+
+
+

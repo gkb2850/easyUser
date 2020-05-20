@@ -120,8 +120,8 @@
 				},
 				{
 					"id": 10,
-					"name": "产品详情页",
-					"pathName": "pages/takeoutPage/takeoutGoodsDetail/takeoutGoodsDetail",
+					"name": "提交订单",
+					"pathName": "pages/carPage/submitProduct/submitProduct",
 					"query": "",
 					"scene": null
 				}

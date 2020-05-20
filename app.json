@@ -22,7 +22,9 @@
     "pages/indexPage/changePassword/changePassword",
     "pages/takeoutPage/takeoutSearch/takeoutSearch",
     "pages/takeoutPage/takeoutShop/takeoutShop",
-    "pages/takeoutPage/takeoutGoodsDetail/takeoutGoodsDetail"
+    "pages/takeoutPage/takeoutGoodsDetail/takeoutGoodsDetail",
+    "pages/carPage/car/car",
+    "pages/carPage/submitProduct/submitProduct"
   ],
   "window": {
     "backgroundTextStyle": "light",

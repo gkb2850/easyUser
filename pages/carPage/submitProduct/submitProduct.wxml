@@ -1,0 +1,123 @@
+<view class="container">
+  <view class="nav_box">
+    <view class="nav_item">
+      <view class="txt">外卖配送</view>
+      <view class="line"></view>
+    </view>
+    <view class="nav_item">
+      <view class="txt">到店自提</view>
+      <view class="line"></view>
+    </view>
+    <view class="nav_item">
+      <view class="txt">店内送</view>
+      <view class="line"></view>
+    </view>
+  </view>
+  <view class="select_addressbox">
+    <view class="address_box">
+      <view class="takeoutType">
+        <view class="address_no" v-if="{{true}}">
+          <view class="title_txt">您还没有添加过收货地址</view>
+          <view class="add_btn">点击添加收货地址</view>
+        </view>
+        <view class="address_yes">
+          <view class="address_img">
+            <image src="../../../assets/images/address_icon.png"></image>
+          </view>
+          <view class="address_cont">
+            <view class="txt_info">
+              <view class="address_name">广州北京上海广州北京上海广州北京上海广州北京上海广州北京上海</view>
+              <view class="people_box">
+                <view>程先生</view>
+                <view>+853 6868555485</view>
+              </view>
+            </view>
+            <image class="right_img" src="../../../assets/images/torighth_icon.png"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="time_box">
+      <view class="time_img">
+        <image src="../../../assets/images/submit_time.png"></image>
+      </view>
+      <view class="time_right">
+        <view class="time_txt">
+          <view>立即派送</view>
+          <view>(预计13：45送达)</view>
+        </view>
+        <image src="../../../assets/images/torighth_icon.png" class="right_iconimg"></image>
+      </view>
+    </view>
+  </view>
+  <view class="main_box">
+    <view class="order_box">
+      <view class="order_all">
+        <view class="order_item">
+          <view class="left">
+            <image src="../../../assets/images/login_logo.png"></image>
+            <view class="info_txt">
+              <view class="name">海底捞</view>
+              <view class="num">x6</view>
+            </view>
+          </view>
+          <view class="money_box">
+            <view>￥12.00</view>
+          </view>
+        </view>
+      </view>
+      <view class="other_money">
+        <view class="item_txt">
+          <view>包装费</view>
+          <view>￥2.00</view>
+        </view>
+        <view class="item_txt">
+          <view>配送费</view>
+          <view>￥6.00</view>
+        </view>
+      </view>
+      <view class="deduc_box">
+        <view class="d_txtbox">
+          <view class="txt_t">抵用卷</view>
+          <view class="r_box">
+            <image src="../../../assets/images/torighth_icon.png"></image>
+          </view>
+        </view>
+        <view class="d_txtbox">
+          <view class="txt_t">消费红包</view>
+          <view class="r_box">
+            <image src="../../../assets/images/torighth_icon.png"></image>
+          </view>
+        </view>
+      </view>
+      <view class="count_box">
+        <view class="l_txt">总计￥26.00，优惠￥3.66</view>
+        <view class="r_txt">
+          <view class="txt">总付</view>
+          <view class="money_t">￥</view>
+          <view class="money_num">23.00</view>
+        </view>
+      </view>
+    </view>
+    <view class="remarks_box">
+      <view>备注</view>
+      <input placeholder="请输入备注" placeholder-class="inputplace"></input>
+    </view>
+  </view>
+  <view class="submit_bot">
+    <view class="notice_box">
+      <image src="../../../assets/images/warning_icon.png"></image>
+      <view>注意事项：滴滴滴滴滴滴滴滴滴滴</view>
+    </view>
+    <view class="btn_box">
+      <view class="txt_left">
+        <view class="f_txt">已优惠￥3.00元，待支付</view>
+        <view class="money_box">
+          <view class="money_t">￥</view>
+          <view class="money_num">23.00</view>
+        </view>
+      </view>
+      <view class="r_btn">提交订单</view>
+    </view>
+  </view>
+</view>

@@ -13,7 +13,7 @@
       <view class="line"></view>
     </view>
   </view>
-  <view class="select_addressbox">
+  <view class="select_addressbox" wx:if="{{false}}">
     <view class="address_box">
       <view class="takeoutType">
         <view class="address_no" v-if="{{true}}">
@@ -47,6 +47,34 @@
           <view>(预计13：45送达)</view>
         </view>
         <image src="../../../assets/images/torighth_icon.png" class="right_iconimg"></image>
+      </view>
+    </view>
+  </view>
+  <view class="select_addressbox">
+    <view class="stop_box">
+      <image src="../../../assets/images/address_icon.png" class="add_img_box"></image>
+      <view class="shop_address_txt">滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴</view>
+      <image src="" class="shop_img"></image>
+    </view>
+    <view class="toshop_time">
+      <view class="left_icon">
+        <image src="../../../assets/images/submit_time.png"></image>
+      </view>
+      <view class="right_box">
+        <view class="self_timebox">
+          <view class="title_txt">自取时间</view>
+          <view class="time_select">
+            <view>19:30</view>
+            <image src="../../../assets/images/torighth_icon.png"></image>
+          </view>
+        </view>
+        <view class="self_phonebox">
+          <view class="title_txt">预留电话</view>
+          <view class="time_select">
+            <v-phone></v-phone>
+            <input placeholder="输入你的电话"></input>
+          </view>
+        </view>
       </view>
     </view>
   </view>
@@ -117,7 +145,30 @@
           <view class="money_num">23.00</view>
         </view>
       </view>
-      <view class="r_btn">提交订单</view>
+      <view class="r_btn">
+        <view>提交订单</view>
+      </view>
+    </view>
+  </view>
+  <view class="ps_time_box" wx:if="{{false}}">
+    <view class="mask_bg"></view>
+    <view class="time_cont">
+      <view class="title">选择派送时间</view>
+      <view class="time_selectbox">
+        <view class="line_box"></view>
+        <scroll-view scroll-y style="height:100%;">
+          <view class="time_itemall">
+            <view class="item_time">立即送出</view>
+            <view class="item_time">17:55</view>
+            <view class="item_time">18:00</view>
+            <view class="item_time">18:05</view>
+            <view class="item_time">18:10</view>
+          </view>
+        </scroll-view>
+      </view>
+      <view class="time_btn">
+        <view>确定</view>
+      </view>
     </view>
   </view>
 </view>

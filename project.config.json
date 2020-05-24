@@ -98,9 +98,9 @@
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "个人信息",
-					"pathName": "pages/indexPage/personalInfo/personalInfo",
+					"id": 7,
+					"name": "pages/indexPage/changePhone/changePhone",
+					"pathName": "pages/indexPage/changePhone/changePhone",
 					"query": "",
 					"scene": null
 				},

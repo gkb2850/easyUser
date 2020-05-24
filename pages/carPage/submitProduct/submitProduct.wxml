@@ -71,7 +71,9 @@
         <view class="self_phonebox">
           <view class="title_txt">预留电话</view>
           <view class="time_select">
-            <v-phone></v-phone>
+            <view class="phone_box">
+              <v-phone class="v-phone"></v-phone>
+            </view>
             <input placeholder="输入你的电话"></input>
           </view>
         </view>

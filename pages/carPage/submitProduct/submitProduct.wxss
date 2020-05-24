@@ -226,6 +226,10 @@
   overflow: hidden;
   text-overflow: ellipsis;
   margin-right: 45rpx;
+  font-size:30rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
 }
 
 .container .select_addressbox .stop_box .shop_img {
@@ -234,6 +238,119 @@
   display: block;
   border-radius: 10rpx;
 }
+
+.container .select_addressbox .toshop_time {
+  display: flex;
+  align-items: center;
+}
+
+.container .select_addressbox .toshop_time .left_icon {
+  margin-right: 20rpx;
+}
+
+.container .select_addressbox .toshop_time .left_icon image {
+  height: 28rpx;
+  width: 28rpx;
+  display: block;
+}
+
+.container .select_addressbox .toshop_time .right_box {
+  height: 100%;
+  display: flex;
+  flex: 1;
+  padding-top: 32rpx;
+}
+
+.container .select_addressbox .toshop_time .right_box .self_timebox .title_txt {
+  height: 24rpx;
+  line-height: 24rpx;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(102,102,102,1);
+}
+
+.container .select_addressbox .toshop_time .right_box .self_timebox .time_select {
+  display: flex;
+  height: 24rpxx;
+  margin-top: 20rpx;
+  align-items: center;
+}
+
+.container .select_addressbox .toshop_time .right_box .self_timebox .time_select view {
+  height: 24rpx;
+  line-height: 24rpx;
+  font-size:30rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+}
+
+.container .select_addressbox .toshop_time .right_box .self_timebox .time_select image {
+  height: 18rpx;
+  width: 18rpx;
+  margin-left: 8rpx;
+}
+
+.container .select_addressbox .toshop_time .right_box .self_phonebox {
+  margin-left: 80rpx;
+  height: 100%;
+  flex: 1;
+}
+
+.container .select_addressbox .toshop_time .right_box .self_phonebox .title_txt {
+  height: 24rpx;
+  line-height: 24rpx;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(102,102,102,1);
+}
+
+.container .select_addressbox .toshop_time .right_box .self_phonebox .time_select {
+  display: flex;
+  height: 44rpx;
+  align-items: flex-end;
+}
+
+.container .select_addressbox .toshop_time .right_box .self_phonebox .time_select .phone_box {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.container .select_addressbox .toshop_time .right_box .self_phonebox .time_select .phone_box .v-phone {
+  height: 100%;
+}
+
+.container .select_addressbox .toshop_time .right_box .self_phonebox .time_select input {
+  margin-left: 32rpx;
+  height: 44rpx;
+  line-height: 44rpx;
+  font-size:30rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+  flex: 1;
+  overflow: hidden;
+  border-bottom: 2rpx solid #EEEEEE;
+  min-height: 0;
+  box-sizing: content-box;
+  padding-bottom: 8rpx;
+}
+
+.container .select_addressbox .toshop_time .right_box .self_phonebox .time_select .inputplace {
+  line-height: 44rpx;
+  font-size:30rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+  min-height: 0;
+}
+
+
+
+
+
 
 .container .toshop_time {
   display: flex;

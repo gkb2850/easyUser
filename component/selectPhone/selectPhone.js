@@ -20,6 +20,7 @@ Component({
    */
   methods: {
     selectPhone () {
+      console.log(222)
       this.setData({
         showPhoneBox: true
       })

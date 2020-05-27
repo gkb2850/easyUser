@@ -1,0 +1,123 @@
+<view class="container">
+  <view class="takeout_top">
+    <view class="chart_box">
+      <image class="swiper_bg" src="../../../assets/images/banner_bg.png"></image>
+      <view class="swiper_box">
+        <swiper class="swiper">
+          <swiper-item class="swiperItem">
+            <image src="../../../assets/images/banner@2x.png"></image>
+          </swiper-item>
+        </swiper>
+      </view>
+    </view>
+  </view>
+  <view class="takeout_cont">
+    <view class="label_box">
+      <view class="item_box">
+        <image src="../../../assets/images/takeout_hostal.png"></image>
+        <view>酒店</view>
+      </view>
+      <view class="item_box">
+        <image src="../../../assets/images/takeout_hostal.png"></image>
+        <view>宾馆</view>
+      </view>
+      <view class="item_box">
+        <image src="../../../assets/images/takeout_hostal.png"></image>
+        <view>民宿</view>
+      </view>
+      <view class="item_box">
+        <image src="../../../assets/images/takeout_hostal.png"></image>
+        <view>钟点房</view>
+      </view>
+      <view class="item_box">
+        <image src="../../../assets/images/takeout_hostal.png"></image>
+        <view>大酒店</view>
+      </view>
+      <view class="item_box">
+        <image src="../../../assets/images/takeout_hostal.png"></image>
+        <view>公寓</view>
+      </view>
+    </view>
+    <view class="date_box">
+      <view class="title_box">
+        <view class="l_txt">澳门</view>
+        <image src="../../../assets/images/torighth_icon.png"></image>
+      </view>
+      <view class="deta_time">
+        <view class="tiem_box">
+          <view class="t_txt">入住日期</view>
+          <view class="d_txt">3月20日</view>
+        </view>
+        <view class="tiem_box">
+          <view class="t_txt">退房日期</view>
+          <view class="d_txt">3月22日</view>
+        </view>
+        <view class="tiem_box tiem_boxs">
+          <view class="t_txt">数量</view>
+          <view class="d_box">
+            <view class="num">1</view>
+            <view class="unit">间</view>
+          </view>
+        </view>
+      </view>
+      <view class="search_box">
+        <input placeholder="请输入关键字" placeholder-class="inputplace"></input>
+        <view class="search_btn">搜索</view>
+      </view>
+      <view class="title_labelbox">
+        <v-label class="label_itemz" txtData="{{['有红包', '有优惠']}}"></v-label>
+        <v-label class="label_itemz" txtData="{{['单人间', '双人间']}}"></v-label>
+        <v-label class="label_itemz" txtData="{{['经济型', '实惠型']}}"></v-label>
+        <v-label class="label_itemz" txtData="{{['￥0-150', '￥150-250']}}"></v-label>
+        <v-label class="label_itemz" txtData="{{['宾馆', '公寓']}}"></v-label>
+        <view class="screen_btn" bindtap="toSelectScreen">筛选</view>
+      </view>
+    </view>
+    <view class="hotel_shop">
+      <v-hotel></v-hotel>
+    </view>
+  </view>
+  <view class="screen_maskbox" wx:if="{{screenBoxShow}}">
+    <view class="mask_bg" bindtap="hideScreenBox"></view>
+    <view class="screen_cont">
+      <view class="title_box">
+        <view>筛选</view>
+        <image src="../../../assets/images/error_icon.png" bindtap="hideScreenBox"></image>
+      </view>
+      <view class="main_cont">
+        <view class="trem_box">
+          <view class="t_txt">红包</view>
+          <view class="cont_txt_box">
+            <view class="item_txt">不限</view>
+            <view class="item_txt">有红包</view>
+            <view class="item_txt">无红包</view>
+          </view>
+        </view>
+        <view class="trem_box">
+          <view class="t_txt">人气</view>
+          <view class="cont_txt_box">
+            <view class="item_txt">不限</view>
+            <view class="item_txt">0-100</view>
+            <view class="item_txt">100-500</view>
+            <view class="item_txt">500以上</view>
+          </view>
+        </view>
+        <view class="trem_box">
+          <view class="t_txt">配套</view>
+          <view class="cont_txt_box">
+            <view class="item_txt">不限</view>
+            <view class="item_txt">WIFI</view>
+            <view class="item_txt">独立卫生间</view>
+            <view class="item_txt">有窗</view>
+            <view class="item_txt">空调</view>
+            <view class="item_txt">电视</view>
+          </view>
+        </view>
+      </view>
+      <view class="bot_btn_box">
+        <view>重置</view>
+        <view>确定</view>
+      </view>
+    </view>
+  </view>
+</view>

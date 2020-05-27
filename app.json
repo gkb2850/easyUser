@@ -24,7 +24,11 @@
     "pages/takeoutPage/takeoutShop/takeoutShop",
     "pages/takeoutPage/takeoutGoodsDetail/takeoutGoodsDetail",
     "pages/carPage/car/car",
-    "pages/carPage/submitProduct/submitProduct"
+    "pages/carPage/submitProduct/submitProduct",
+    "pages/hotelPage/index/index",
+    "pages/hotelPage/hotelDetail/hotelDetail",
+    "pages/hotelPage/hotelShopDetail/hotelShopDetail",
+    "pages/hotelPage/submitHotelShop/submitHotelShop"
   ],
   "window": {
     "backgroundTextStyle": "light",

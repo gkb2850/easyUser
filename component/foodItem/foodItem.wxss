@@ -3,7 +3,7 @@
   border-radius: 10rpx;
   overflow: hidden;
   width: 334rpx;
-  box-shadow:0px 2px 12px 0px rgba(153,153,153,0.6);
+  box-shadow:0px 2rpx 12rpx 0px rgba(153,153,153,0.6);
   margin-bottom: 28rpx;
 }
 

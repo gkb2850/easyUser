@@ -1,5 +1,5 @@
 .container {
-  padding-bottom: 150rpx;
+  padding-bottom: 120rpx;
 }
 
 .container .header_box .img_box {
@@ -30,8 +30,8 @@
 
 .container .header_box .header_txtbox {
   display: flex;
-  height: 134rpx;
-  padding:  0 28rpx;
+  height: auto;
+  padding:  0 28rpx 38rpx 28rpx;
   box-sizing: border-box;
   box-shadow:0px 2rpx 26rpx 0px rgba(0, 0, 0, 0.1);
 }
@@ -77,18 +77,105 @@
   margin-top: 16rpx;
 }
 
-.container .header_box .header_txtbox .add_box {
-  width: 80rpx;
-  height: 100%;
+.container .header_box .header_txtbox .score_box {
+  height: 20rpx;
+  display: flex;
+  margin-top: 16rpx;
 }
 
-.container .header_box .header_txtbox .add_box image {
-  height: 44rpx;
-  width: 44rpx;
-  border-left:20rpx solid transparent; 
-  border-bottom:20rpx solid transparent; 
-  margin-top: 56rpx;
+.container .header_box .header_txtbox .score_box .l_box {
+  display: inline-flex;
+  height: 100%;
+  align-items: center;
 }
+
+.container .header_box .header_txtbox .score_box .l_box image {
+  height: 18rpx;
+  width: 18rpx;
+  margin-right: 8rpx;
+}
+
+.container .header_box .header_txtbox .score_box .l_box view {
+  height: 20rpx;
+  line-height: 20rpx;
+  margin-left: 10rpx;
+  font-size:20rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(102,102,102,1);
+}
+
+.container .header_box .header_txtbox .score_box .c_box {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  text-align: center;
+  height: 100%;
+  line-height: 20rpx;
+  font-size:20rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(102,102,102,1);
+}
+
+.container .header_box .header_txtbox .score_box .r_box {
+  display: inline-flex;
+  height: 100%;
+  line-height: 20rpx;
+  font-size:20rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(102,102,102,1);
+}
+
+.container .header_box .header_txtbox .shop_txt {
+  height: 20rpx;
+  display: flex;
+  align-items: center;
+  margin-top: 16rpx;
+}
+
+.container .header_box .header_txtbox .shop_txt .txt {
+  height: 20rpx;
+  line-height: 20rpx;
+  font-size:20rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(102,102,102,1);
+}
+
+.container .header_box .header_txtbox .shop_txt .line {
+  width: 2rpx;
+  height: 12rpx;
+  background: #DDDDDD;
+  margin: 0 10rpx;
+}
+
+.container .header_box .header_txtbox .label_box {
+  height: 28rpx;
+  display: flex;
+  margin-top: 16rpx;
+}
+
+.container .header_box .header_txtbox .label_box .l_box {
+  padding: 0 10rpx;
+  border: 2rpx solid #FF3333;
+  height: 28rpx;
+  box-sizing: border-box;
+  line-height: 24rpx;
+  font-size:20rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(255,51,51,1);
+  border-radius: 4rpx;
+  margin-right: 10rpx;
+}
+
+
+
 
 .container .main_box .product_info_txt {
   padding-top: 40rpx;
@@ -401,117 +488,29 @@
   color:rgba(255,255,255,1);
 }
 
-.container .car_btn {
+.container .shop_bot_btn {
+  height: 120rpx;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 108rpx;
-  display: flex;
-  z-index: 10;
+  padding: 20rpx 28rpx;
+  box-sizing: border-box;
+  box-shadow:0px -12rpx 24rpx 0px rgba(0, 0, 0, 0.04);
+  background: #fff;
 }
 
-.container .car_btn .c_box {
-  flex: 1;
-  display: flex;
-  background: #333;
-}
-
-.container .car_btn .c_box .car_imgbox {
-  margin-left: 18rpx;
-  height: 134rpx;
-  width: 134rpx;
-  margin-top: -40rpx;
-  position: relative;
-}
-
-.container .car_btn .c_box .car_imgbox image {
-  height: 100%;
+.container .shop_bot_btn view {
   width: 100%;
-}
-
-.container .car_btn .c_box .car_imgbox view {
-  height: 28rpx;
-  line-height: 28rpx;
-  border-radius: 14rpx;
-  background: #FF0000;
-  font-size:24rpx;
+  height: 100%;
+  border-radius: 40rpx;
+  background: #31CC90;
+  text-align: center;
+  line-height: 80rpx;
+  font-size:30rpx;
   font-family:PingFang SC;
   font-weight:500;
   color:rgba(255,255,255,1);
-  text-align: center;
-  padding: 0 9rpx;
-  position: absolute;
-  right: 4rpx;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.container .car_btn .c_box .txt_box {
-  height: 100%;
-  flex: 1;
-  overflow: hidden;
-}
-
-.container .car_btn .c_box .txt_box .fs_txt {
-  height: 24rpx;
-  line-height: 24rpx;
-  margin-top: 26rpx;
-  font-size:24rpx;
-  font-family:PingFang SC;
-  font-weight:500;
-  color:rgba(204,204,204,1);
-}
-
-.container .car_btn .c_box .txt_box .money_box {
-  margin-top: 22rpx;
-  display: flex;
-  height: 26rpx;
-}
-
-.container .car_btn .c_box .txt_box .money_box>view:nth-child(1) {
-  height: 20rpx;
-  line-height: 20rpx;
-  margin-top: 6rpx;
-  font-size:20rpx;
-  font-family:PingFang SC;
-  font-weight:400;
-  color:rgba(252,252,252,1);
-}
-
-.container .car_btn .c_box .txt_box .money_box>view:nth-child(2) {
-  height: 26rpx;
-  line-height: 26rpx;
-  font-size:26rpx;
-  font-family:PingFang SC;
-  font-weight:800;
-  color:rgba(252,252,252,1);
-}
-
-.container .car_btn .c_box .txt_box .zq_txt {
-  height: 20rpx;
-  line-height: 20rpx;
-  margin-top: 12rpx;
-  font-size:20rpx;
-  font-family:PingFang SC;
-  font-weight:500;
-  color:rgba(204,204,204,1);
-}
-
-.container .car_btn .cr_box {
-  height: 100%;
-  width: 260rpx;
-  background: #ccc;
-}
-
-.container .car_btn .cr_box .qs_txt {
-  height: 100%;
-  line-height: 108rpx;
-  font-size:34rpx;
-  font-family:PingFang SC;
-  font-weight:bold;
-  color:rgba(102,102,102,1);
-  text-align: center;
 }
 
 

@@ -69,7 +69,7 @@
 
 .container .header_box .ordericon_box .addIcon_box .mask_box .txt_box {
   background: #fff;
-  box-shadow:0px 6px 16px 0px rgba(0, 0, 0, 0.4);
+  box-shadow:0px 6rpx 16rpx 0px rgba(0, 0, 0, 0.4);
   border-radius:10rpx;
   position: absolute;
   right: 0;

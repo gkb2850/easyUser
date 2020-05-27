@@ -1,0 +1,84 @@
+<view class="container">
+  <view class="slect_date">
+    <view class="l_box">
+      <image src="../../../assets/images/date_f_iocn.png"></image>
+      <picker class="pickerBox" mode="date" value="{{date}}" start="2015-09-01" end="2020-09-01" bindchange="bindDateChange">
+        <view class="picker">请选择入住日期</view>
+      </picker>
+    </view>
+    <view class="l_box">
+      <image src="../../../assets/images/date_s_iocn.png"></image>
+      <picker class="pickerBox" mode="date" value="{{date}}" start="2015-09-01" end="2020-09-01" bindchange="bindDateChange">
+        <view class="picker">请选择退房日期</view>
+      </picker>
+    </view>
+  </view>
+  <view class="trem_box">
+    <view class="item_box">
+      <view class="l_txt">房间数量</view>
+      <view class="r_box">
+        <input type="number" placeholder="请输入房间数" placeholder-class="inputPlace"></input>
+        <view class="txts">间</view>
+      </view>
+    </view>
+    <view class="item_box">
+      <view class="l_txt">住客姓名</view>
+      <view class="r_box">
+        <input type="number" placeholder="请输入住客姓名" placeholder-class="inputPlace"></input>
+      </view>
+    </view>
+    <view class="item_box">
+      <view class="l_txt">联系手机</view>
+      <view class="r_box">
+        <v-phone></v-phone>
+        <input type="number" placeholder="请输入手机号" placeholder-class="inputPlace"></input>
+      </view>
+    </view>
+    <view class="item_box">
+      <view class="l_txt">身份证</view>
+      <view class="r_box">
+        <input type="number" placeholder="请输入证件号" placeholder-class="inputPlace"></input>
+      </view>
+    </view>
+    <view class="item_box">
+      <view class="l_txt">预计到店</view>
+      <view class="r_box">
+        <view class="time">请选择</view>
+        <image src="../../../assets/images/torighth_icon.png"></image>
+      </view>
+    </view>
+    <view class="item_sec_box">
+      <view class="dy_box">
+        <view class="l_txt">抵用券</view>
+        <image src="../../../assets/images/torighth_icon.png"></image>
+      </view>
+      <view class="dy_box">
+        <view class="l_txt">消费红包</view>
+        <image src="../../../assets/images/torighth_icon.png"></image>
+      </view>
+    </view>
+    <view class="item_box">
+      <view class="l_txt">备注</view>
+      <view class="r_box">
+        <input placeholder="请输入备注" placeholder-class="inputPlace"></input>
+      </view>
+    </view>
+  </view>
+
+  <view class="sumbit_bot_btn">
+    <view class="title_box">
+      <image src="../../../assets/images/warning_icon.png"></image>
+      <view>注意事项：有的请填写有的请填写有的请填写</view>
+    </view>
+    <view class="btn_box">
+      <view class="l_box">
+        <view class="l_txt">已优惠￥3.00元，待支付</view>
+        <view class="money_box">
+          <view class="money_t">￥</view>
+          <view class="money_num">23.00</view>
+        </view>
+      </view>
+      <view class="r_btn">提交订单</view>
+    </view>
+  </view>
+</view>

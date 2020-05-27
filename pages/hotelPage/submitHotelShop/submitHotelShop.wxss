@@ -1,0 +1,238 @@
+.container .slect_date {
+  height: 88rpx;
+  border-bottom: 2rpx solid #EEEEEE;
+  display: flex;
+  padding: 0 28rpx;
+  box-sizing: border-box;
+}
+
+.container .slect_date .l_box {
+  flex: 1;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.container .slect_date .l_box image {
+  height: 28rpx;
+  width: 28rpx;
+  margin-right: 16rpx;
+}
+
+.container .slect_date .l_box .pickerBox {
+  flex: 1;
+  height: 100%;
+}
+
+.container .slect_date .l_box .pickerBox .picker {
+  height: 100%;
+  width: 100%;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(204,204,204,1);
+  line-height: 88rpx;
+}
+
+.container .trem_box {
+ border-bottom: 2rpx solid #EEEEEE;
+ padding:  0 28rpx;
+ box-sizing: border-box;
+}
+
+.container .trem_box .item_box {
+  height: 88rpx;
+  display: flex;
+  border-bottom: 2rpx solid #EEEEEE;
+}
+
+.container .trem_box .item_box .l_txt {
+  height: 100%;
+  line-height: 88rpx;
+  width: 170rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+}
+
+.container .trem_box .item_box .r_box {
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.container .trem_box .item_box .r_box input {
+  flex: 1;
+  height: 100%;
+  line-height: 88rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(204,204,204,1);
+}
+
+.container .trem_box .item_box .r_box .inputPlace {
+  line-height: 88rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(204,204,204,1);
+}
+
+.container .trem_box .item_box .r_box .txts {
+  margin-left: 12rpx;
+  width: 360rpx;
+  height: 100%;
+  line-height: 88rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+}
+
+.container .trem_box .item_box .r_box .time {
+  flex: 1;
+  height: 100%;
+  line-height: 88rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+}
+
+.container .trem_box .item_box .r_box image {
+  height: 20rpx;
+  width: 20rpx;
+}
+
+.container .trem_box .item_box:last-child {
+  border-bottom: none;
+  border-top: 2rpx solid #EEEEEE;
+}
+
+.container .trem_box .item_sec_box .dy_box {
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+}
+
+.container .trem_box .item_sec_box .dy_box .l_txt {
+  height: 100%;
+  line-height: 80rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+  flex: 1;
+}
+
+.container .trem_box .item_sec_box .dy_box image {
+  height: 20rpx;
+  width: 20rpx;
+}
+
+
+.container .sumbit_bot_btn {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.container .sumbit_bot_btn .title_box {
+  height: 60rpx;
+  display: flex;
+  padding: 0 28rpx;
+  box-sizing: border-box;
+  background: #FFF8E3;
+  align-items: center;
+}
+
+.container .sumbit_bot_btn .title_box image {
+  height: 28rpx;
+  width: 28rpx;
+  margin-right: 12rpx;
+}
+
+.container .sumbit_bot_btn .title_box view {
+  height: 28rpx;
+  line-height: 28rpx;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+}
+
+.container .sumbit_bot_btn .btn_box {
+  display: flex;
+  height: 108rpx;
+  align-items: center;
+  padding-left: 28rpx;
+  box-sizing: border-box;
+}
+
+.container .sumbit_bot_btn .btn_box .l_box {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+.container .sumbit_bot_btn .btn_box .l_box .l_txt {
+  height: 20rpx;
+  line-height: 20rpx;
+  font-size:20rpx;
+  font-family:PingFang SC;
+  font-weight:400;
+  color:rgba(0,0,0,1);
+}
+
+.container .sumbit_bot_btn .btn_box .l_box .money_box {
+  height: 34rpx;
+  display: inline-flex;
+}
+
+.container .sumbit_bot_btn .btn_box .l_box .money_box .money_t {
+  height: 20rpx;
+  line-height: 20rpx;
+  margin-top: 14rpx;
+  font-size:20rpx;
+  font-family:PingFang SC;
+  font-weight:400;
+  color:#FF3333;
+}
+
+.container .sumbit_bot_btn .btn_box .l_box .money_box .money_num {
+  height: 34rpx;
+  line-height: 34rpx;
+  font-size:34rpx;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:#FF3333;
+}
+
+.container .sumbit_bot_btn .btn_box .r_btn {
+  width: 260rpx;
+  text-align: center;
+  height: 100%;
+  line-height: 108rpx;
+  background: #31CC90;
+  font-size:36rpx;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:rgba(255,255,255,1);
+}
+
+
+
+
+
+

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "v-label": "../../../component/labelItem/labelItem",
+    "v-hotelDetail": "../../../component/hotelDetail/hotelDetail",
+    "v-hotel": "../../../component/hotelItem/hotelItem"
+  }
+}

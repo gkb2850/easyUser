@@ -1,0 +1,88 @@
+<view class="container">
+  <view class="header_box">
+    <view class="img_box">
+      <image src="../../../assets/images/banner@2x.png" class="headerImg"></image>
+      <view class="btn_box">
+        <image src="../../../assets/images/love_icon.png"></image>
+        <image src="../../../assets/images/shares_icon.png"></image>
+      </view>
+    </view>
+    <view class="header_txtbox">
+      <view class="money_box">
+        <view class="money_txt">
+          <view>￥ 130.00</view>
+          <view>￥ 180.00</view>
+        </view>
+        <view class="score_box">
+          <view class="l_box">
+            <image src="../../../assets/images/stars_iocn.png"></image>
+            <image src="../../../assets/images/stars_iocn.png"></image>
+            <image src="../../../assets/images/stars_iocn.png"></image>
+            <image src="../../../assets/images/stars_iocn.png"></image>
+            <image src="../../../assets/images/stars_iocn.png"></image>
+            <view>4.5分</view>
+          </view>
+          <view class="c_box">房间数量50</view>
+          <view class="r_box">推荐值100</view>
+        </view>
+        <view class="shop_txt">
+          <view class="txt">10-12m</view>
+          <view class="line"></view>
+          <view class="txt">有窗</view>
+          <view class="line"></view>
+          <view class="txt">WIFI</view>
+          <view class="line"></view>
+          <view class="txt">独立卫生间</view>
+        </view>
+        <view class="label_box">
+          <view class="l_box">采光好</view>
+          <view class="l_box">舒适</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="main_box">
+    <view class="product_info_txt">
+      <view class="pro_title">产品介绍</view>
+      <view class="pro_cont">海底捞是一间自助餐，主要是以服务为特色和实惠海底捞是一间自助餐，主要是以服务为特色和实惠海底捞是一间自助餐，主要是以服务为特色和实惠海底捞是一间自助餐，主要是以服务为特色和实惠海底捞是一间自助餐，主要是以服务为特色和实惠海底捞是一间自助餐，主要是以服务为特色和实惠海底捞是一间自助餐，主要是以服务为特色和实惠</view>
+      <view class="chart_box">
+        <swiper class="swiperbox">
+          <swiper-item class="swiperItem">
+            <image src="../../../assets/images/banner@2x.png"></image>
+          </swiper-item>
+        </swiper>
+      </view>
+      <view class="messageShop">
+        <view class="title">
+          <view class="l_txt">评价</view>
+          <view class="r_txt">
+            <view>更多</view>
+            <image src="../../../assets/images/rightbtn_iocn.png"></image>
+          </view>
+        </view>
+        <view class="ly_user">
+          <view class="l_box">
+            <image src="../../../assets/images/xiaotouxiang.png"></image>
+          </view>
+          <view class="r_box">
+            <view class="customer_info">
+              <view class="cus_box">
+                <view class="name">小行星划过的天空</view>
+                <view class="time">2020-05-15</view>
+              </view>
+              <view class="fs">4.5分</view>
+            </view>
+            <view class="ly_txt">这东西不错很值得</view>
+          </view>
+        </view>
+      </view>
+      <view class="tj_box">
+       <view class="title_txt">推荐</view>
+       <v-hotelDetail></v-hotelDetail>
+      </view>
+    </view>
+  </view>
+  <view class="shop_bot_btn">
+    <view>预定</view>
+  </view>
+</view>

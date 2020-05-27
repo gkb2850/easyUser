@@ -1,0 +1,117 @@
+<view class="container">
+  <view class="shop_top">
+    <view class="chart_box">
+      <swiper class="swiper">
+        <swiper-item class="swiperItem">
+          <image src="../../../assets/images/banner@2x.png"></image>
+        </swiper-item>
+      </swiper>
+    </view>
+    <view class="shop_box">
+      <view class="top">
+        <view class="shopImgbox">
+          <image src="../../../assets/images/login_logo.png" class="shopImg"></image>
+          <view class="smallimg">
+            <image src="../../../assets/images/realname_icon.png"></image>
+            <image src="../../../assets/images/redPacket_icon.png"></image>
+          </view>
+        </view>
+        <view class="txt_box">
+          <view class="title_box">
+            <view class="shopname">海底捞自助餐</view>
+            <view class="shop_r">
+              <view>店铺介绍</view>
+              <image src="../../../assets/images/rightbtn_iocn.png"></image>
+            </view>
+          </view>
+          <view class="ad_txt">店铺介绍内容店铺介绍内容店铺介绍内容店铺介绍内容</view>
+          <view class="score_box">
+            <view class="score_img">
+              <image src="../../../assets/images/stars_iocn.png"></image>
+              <image src="../../../assets/images/stars_iocn.png"></image>
+              <image src="../../../assets/images/stars_iocn.png"></image>
+              <image src="../../../assets/images/stars_iocn.png"></image>
+              <image src="../../../assets/images/stars_iocn.png"></image>
+            </view>
+            <view class="score_txt">
+              <view>4.5分</view>
+              <view>0.4km</view>
+            </view>
+          </view>
+          <view class="word_box">
+            <view class="address_txt">北京光明路北京光明路北京光明路北京光明路北京光明路北京光明路</view>
+            <view class="label_box">
+              <view>味道好</view>
+              <view>地铁口</view>
+              <view>干净</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="other_box">
+        <view class="icon_box">
+          <image src="../../../assets/images/naviga_icon.png"></image>
+          <image src="../../../assets/images/tel_icon.png"></image>
+          <image src="../../../assets/images/message_icon.png"></image>
+        </view>
+        <view class="coupon_box">
+          <view class="l_box">
+            <image src="../../../assets/images/yhj_icon.png"></image>
+            <view>优惠卷</view>
+          </view>
+          <view class="r_box">
+            <view>购买</view>
+          </view>
+        </view>
+      </view>
+      <view class="forward_box">
+        <image src="../../../assets/images/love_icon.png"></image>
+        <image src="../../../assets/images/shares_icon.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="main_cont">
+      <view class="date_box">
+        <view class="deta_time">
+          <view class="tiem_box">
+            <view class="t_txt">入住日期</view>
+            <view class="d_txt">3月20日</view>
+          </view>
+          <view class="tiem_box">
+            <view class="t_txt">退房日期</view>
+            <view class="d_txt">3月22日</view>
+          </view>
+          <view class="tiem_box tiem_boxs">
+            <view class="t_txt">数量</view>
+            <view class="d_box">
+              <view class="num">1</view>
+              <view class="unit">间</view>
+            </view>
+          </view>
+        </view>
+        <view class="search_box">
+          <input placeholder="请输入关键字" placeholder-class="inputplace"></input>
+          <view class="search_btn">搜索</view>
+        </view>
+        <view class="title_labelbox">
+          <v-label class="label_itemz" txtData="{{['有红包', '有优惠']}}"></v-label>
+          <v-label class="label_itemz" txtData="{{['单人间', '双人间']}}"></v-label>
+          <v-label class="label_itemz" txtData="{{['经济型', '实惠型']}}"></v-label>
+          <v-label class="label_itemz" txtData="{{['￥0-150', '￥150-250']}}"></v-label>
+          <v-label class="label_itemz" txtData="{{['宾馆', '公寓']}}"></v-label>
+          <view class="screen_btn" bindtap="toSelectScreen">筛选</view>
+        </view>
+        <view class="hotel_shop">
+          <v-hotelDetail></v-hotelDetail>
+        </view>
+      </view>
+      <view class="order_box">
+        <view class="order_title">
+          <view class="line"></view>
+          <view class="txt">为你推荐</view>
+          <view class="line"></view>
+        </view>
+        <v-hotel></v-hotel>
+      </view>
+    </view>
+</view>

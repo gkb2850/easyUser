@@ -101,7 +101,7 @@ page {
   height: 120rpx;
   padding: 20rpx 28rpx;
   box-sizing: border-box;
-  box-shadow:0px -12px 24px 0px rgba(0, 0, 0, 0.04);
+  box-shadow:0px -12rpx 24rpx 0px rgba(0, 0, 0, 0.04);
 }
 
 .container .bot_box>view {

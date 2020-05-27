@@ -99,8 +99,8 @@
 				},
 				{
 					"id": 7,
-					"name": "pages/indexPage/changePhone/changePhone",
-					"pathName": "pages/indexPage/changePhone/changePhone",
+					"name": "酒店提交",
+					"pathName": "pages/hotelPage/submitHotelShop/submitHotelShop",
 					"query": "",
 					"scene": null
 				},

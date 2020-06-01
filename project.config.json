@@ -99,8 +99,8 @@
 				},
 				{
 					"id": 7,
-					"name": "酒店提交",
-					"pathName": "pages/hotelPage/submitHotelShop/submitHotelShop",
+					"name": "跑腿",
+					"pathName": "pages/runningPage/index/index",
 					"query": "",
 					"scene": null
 				},

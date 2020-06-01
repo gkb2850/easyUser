@@ -1,0 +1,32 @@
+<view class="container">
+  <view class="coupon_itembox">
+    <view class="top_box">
+      <view class="l_txt">100元优惠卷</view>
+      <view class="r_box">
+        <view class="money_h">￥</view>
+        <view class="money_num">90</view>
+      </view>
+    </view>
+    <view class="line_box">
+      <view class="radios"></view>
+      <view class="line"></view>
+      <view class="radios"></view>
+    </view>
+    <view class="bot_btn">
+      <view>立即购买</view>
+    </view>
+  </view>
+  <view class="coupon_mask_num" wx:if="{{couponBoxShow}}">
+    <view class="mask_bg"></view>
+    <view class="main_cont">
+      <view class="t_txt">购买优惠卷</view>
+      <view class="cont_box">
+        <input placeholder="请输入购买张数" placeholder-class="inputPlace"></input>
+        <view class="btn_box">
+          <view>取消</view>
+          <view>确定</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

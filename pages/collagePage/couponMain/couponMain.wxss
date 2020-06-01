@@ -1,0 +1,194 @@
+.container {
+  padding: 32rpx 28rpx 0;
+  box-sizing: border-box;
+}
+
+.container .coupon_itembox {
+  box-shadow:0px 2rpx 26rpx 0px rgba(0, 0, 0, 0.1);
+  border-radius:10px;
+  margin-bottom: 32rpx;
+  overflow: hidden;
+}
+
+.container .coupon_itembox .top_box {
+  height: 110rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40rpx;
+  box-sizing: border-box;
+}
+
+.container .coupon_itembox .top_box .l_txt {
+  height: 32rpx;
+  line-height: 32rpx;
+  font-size:32rpx;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:rgba(51,51,51,1);
+}
+
+.container .coupon_itembox .top_box .r_box {
+  display: inline-flex;
+}
+
+.container .coupon_itembox .top_box .r_box .money_h {
+  height: 20rpx;
+  line-height: 20rpx;
+  margin-top: 20rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:rgba(49,204,144,1);
+}
+
+.container .coupon_itembox .top_box .r_box .money_num {
+  height: 40rpx;
+  line-height: 40rpx;
+  margin-left: 10rpx;
+  font-size:56rpx;
+  font-family:DIN;
+  font-weight:bold;
+  color:rgba(49,204,144,1);
+}
+
+.container .coupon_itembox .line_box {
+  height: 30rpx;
+  display: flex;
+  align-items: center;
+}
+
+.container .coupon_itembox .line_box .radios {
+  height: 30rpx;
+  width: 30rpx;
+  background: #EEEEEE;
+  border-radius: 15rpx;
+}
+
+.container .coupon_itembox .line_box .radios:nth-child(1) {
+  transform: translateX(-50%);
+}
+
+.container .coupon_itembox .line_box .radios:nth-child(3) {
+  transform: translateX(50%);
+}
+
+.container .coupon_itembox .line_box .line {
+  flex: 1;
+  border-bottom: 4rpx dashed #EEEEEE;
+}
+
+.container .coupon_itembox .bot_btn {
+  height: 80rpx;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 40rpx;
+  box-sizing: border-box;
+}
+
+.container .coupon_itembox .bot_btn>view {
+  width: 172rpx;
+  text-align: center;
+  height: 52rpx;
+  line-height: 52rpx;
+  background: #31CC90;
+  border-radius: 26rpx;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+}
+
+.container .coupon_mask_num {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 30;
+}
+
+.container .coupon_mask_num .mask_bg {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.container .coupon_mask_num .main_cont {
+  background: #fff;
+  border-radius: 20rpx;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 560rpx;
+  transform: translate(-50%, -50%);
+}
+
+.container .coupon_mask_num .main_cont .t_txt {
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  background: #31CC90;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+}
+
+.container .coupon_mask_num .main_cont .cont_box {
+  padding: 48rpx 32rpx;
+  box-sizing: border-box;
+}
+
+.container .coupon_mask_num .main_cont .cont_box input {
+  height: 68rpx;
+  box-sizing: border-box;
+  border: 2rpx solid #CCCCCC;
+  line-height: 64rpx;
+  font-size:26rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(204,204,204,1);
+  text-align: center;
+  border-radius: 34rpx;
+}
+
+.container .coupon_mask_num .main_cont .cont_box .inputPlace {
+  line-height: 64rpx;
+  font-size:26rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(204,204,204,1);
+}
+
+.container .coupon_mask_num .main_cont .cont_box .btn_box {
+  margin-top: 28rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .coupon_mask_num .main_cont .cont_box .btn_box>view {
+  height: 68rpx;
+  line-height: 64rpx;
+  border: 2rpx solid #31CC90;
+  width: 200rpx;
+  text-align: center;
+  border-radius: 34rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+}
+
+.container .coupon_mask_num .main_cont .cont_box .btn_box>view:nth-child(1) {
+  color: #000;
+}
+
+.container .coupon_mask_num .main_cont .cont_box .btn_box>view:nth-child(2) {
+  background: #31CC90;
+}
+

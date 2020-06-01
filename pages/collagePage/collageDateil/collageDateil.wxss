@@ -1,0 +1,479 @@
+.container {
+  padding-bottom: 120rpx;
+}
+
+.container .header_box .img_box {
+  height: 340rpx;
+  position: relative;
+}
+
+.container .header_box .img_box .headerImg {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.container .header_box .img_box .btn_box {
+  position: absolute;
+  right: 16rpx;
+  bottom: -67rpx;
+  width: 180rpx;
+}
+
+.container .header_box .img_box .btn_box .imgicon_box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .header_box .img_box .btn_box .imgicon_box image {
+  height: 88rpx;
+  width: 88rpx;
+}
+
+.container .header_box .img_box .btn_box .txt {
+  height: 20rpx;
+  line-height: 20rpx;
+  margin-top: 6rpx;
+  padding-right: 12rpx;
+  text-align: right;
+  font-size:20rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+}
+
+.container .header_box .header_txtbox {
+  box-shadow:0px 2rpx 26rpx 0px rgba(0, 0, 0, 0.1);
+}
+
+.container .header_box .header_txtbox .money_box {
+  padding:  0 28rpx 32rpx 28rpx;
+  box-sizing: border-box;
+  border-bottom: 2rpx solid #EEEEEE;
+  overflow: hidden;
+}
+
+.container .header_box .header_txtbox .money_box .money_txt {
+  height: 36rpx;
+  margin-top: 30rpx;
+  display: flex;
+}
+
+.container .header_box .header_txtbox .money_box .money_txt>view:nth-child(1) {
+  height: 36rpx;
+  line-height: 36rpx;
+  font-size:48rpx;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:rgba(255,51,51,1);
+  margin-right: 20rpx;
+}
+
+.container .header_box .header_txtbox .money_box .label_box {
+  margin-top: 16rpx;
+  display: flex;
+}
+
+.container .header_box .header_txtbox .money_box .label_box view {
+  height: 28rpx;
+  line-height: 24rpx;
+  border:2rpx solid #FF9999;
+  border-radius: 4rpx;
+  box-sizing: border-box;
+  padding: 0 8rpx;
+  font-size:18rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(255,51,51,1);
+  margin-right: 10rpx;
+}
+
+.container .header_box .header_txtbox .collage_box {
+  padding: 0 28rpx 32rpx 28rpx;
+  box-sizing: border-box;
+}
+
+.container .header_box .header_txtbox .collage_box .title_txt {
+  height: 24rpx;
+  display: flex;
+  padding-top: 28rpx;
+  justify-content: space-between;
+}
+
+.container .header_box .header_txtbox .collage_box .title_txt .l_txt {
+  height: 24rpx;
+  line-height: 24rpx;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+}
+
+.container .header_box .header_txtbox .collage_box .title_txt .r_box {
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+}
+
+.container .header_box .header_txtbox .collage_box .title_txt .r_box view {
+  height: 100%;
+  line-height: 24rpx;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(102,102,102,1);
+}
+
+.container .header_box .header_txtbox .collage_box .title_txt .r_box image {
+  height: 20rpx;
+  width: 20rpx;
+  margin-left: 10rpx;
+}
+
+.container .header_box .header_txtbox .collage_box .cont_box .item_box {
+  height: 48rpx;
+  display: flex;
+  margin-top: 24rpx;
+  align-items: center;
+}
+
+.container .header_box .header_txtbox .collage_box .cont_box .item_box .l_img {
+  display: inline-flex;
+  height: 100%;
+  align-items: center;
+}
+
+.container .header_box .header_txtbox .collage_box .cont_box .item_box .l_img image {
+  height: 48rpx;
+  width: 48rpx;
+  border-radius: 24rpx;
+  margin-right: 18rpx;
+}
+
+.container .header_box .header_txtbox .collage_box .cont_box .item_box .l_img view {
+  height: 28rpx;
+  line-height: 28rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+}
+
+.container .header_box .header_txtbox .collage_box .cont_box .item_box .c_txt {
+  height: 24rpx;
+  line-height: 24rpx;
+  flex: 1;
+  overflow: hidden;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+  text-align: center;
+}
+
+
+.container .header_box .header_txtbox .collage_box .cont_box .item_box .r_btn {
+  width: 66rpx;
+  height: 38rpx;
+  line-height: 38rpx;
+  border-radius: 4rpx;
+  background: #31CC90;
+  text-align: center;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+}
+
+
+
+
+
+.container .main_box .product_info_txt {
+  padding-top: 40rpx;
+}
+
+.container .main_box .product_info_txt .pro_title{
+  padding: 0 28rpx;
+  box-sizing: border-box;
+  height: 26rpx;
+  line-height: 26rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:800;
+  color:rgba(0,0,0,1);
+}
+
+.container .main_box .product_info_txt .pro_cont{
+  line-height: 38rpx;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(51,51,51,1);
+  padding:  0 28rpx;
+  box-sizing: border-box;
+  margin: 28rpx 0 24rpx 0;
+}
+
+.container .main_box .product_info_txt .chart_box{
+  height: 340rpx;
+  width: 100%;
+}
+
+.container .main_box .product_info_txt .chart_box .swiperbox {
+  width: 100%;
+  height: 100%;
+}
+
+.container .main_box .product_info_txt .chart_box .swiperbox .swiperItem {
+  width: 100%;
+  height: 100%;
+}
+
+.container .main_box .product_info_txt .chart_box .swiperbox .swiperItem image {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.container .main_box .product_info_txt .messageShop {
+  border-bottom: 2rpx solid #EEEEEE;
+  padding: 32rpx 0;
+}
+
+.container .main_box .product_info_txt .messageShop .title {
+  height: 26rpx;
+  display: flex;
+  padding: 0 28rpx;
+  box-sizing: border-box;
+}
+
+.container .main_box .product_info_txt .messageShop .title .l_txt {
+  flex: 1;
+  height: 100%;
+  line-height: 26rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:rgba(0,0,0,1);
+}
+
+.container .main_box .product_info_txt .messageShop .title .r_txt {
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+}
+
+.container .main_box .product_info_txt .messageShop .title .r_txt view {
+  height: 23rpx;
+  line-height: 23rpx;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(102,102,102,1);
+}
+
+.container .main_box .product_info_txt .messageShop .title .r_txt image {
+  height: 26rpx;
+  width: 26rpx;
+}
+
+.container .main_box .product_info_txt .messageShop .ly_user {
+  display: flex;
+  margin-top: 28rpx;
+  padding:  0 28rpx;
+  box-sizing: border-box;
+}
+
+.container .main_box .product_info_txt .messageShop .ly_user .l_box {
+  margin-right: 16rpx;
+}
+
+.container .main_box .product_info_txt .messageShop .ly_user .l_box image {
+  height: 76rpx;
+  width: 76rpx;
+  border-radius: 38rpx;
+}
+
+.container .main_box .product_info_txt .messageShop .ly_user .r_box {
+  flex: 1;
+  overflow: hidden;
+}
+
+.container .main_box .product_info_txt .messageShop .ly_user .r_box .customer_info {
+  display: flex;
+  align-items: center;
+  height: 76rpx;
+}
+
+.container .main_box .product_info_txt .messageShop .ly_user .r_box .customer_info .cus_box {
+  flex: 1;
+}
+
+.container .main_box .product_info_txt .messageShop .ly_user .r_box .customer_info .cus_box .name {
+  height: 26rpx;
+  line-height: 26rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:rgba(0,0,0,1);
+  margin-top: 11rpx;
+}
+
+.container .main_box .product_info_txt .messageShop .ly_user .r_box .customer_info .cus_box .time {
+  height: 16rpx;
+  line-height: 16rpx;
+  font-size:20rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(153,153,153,1);
+  margin-top: 12rpx;
+}
+
+.container .main_box .product_info_txt .messageShop .ly_user .r_box .customer_info .fs {
+  height: 23rpx;
+  line-height: 23rpx;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+}
+
+.container .main_box .product_info_txt .messageShop .ly_user .r_box .ly_txt {
+  line-height: 24rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+  margin-top: 8rpx;
+}
+
+.container .set_collage_btn {
+  padding: 20rpx 28rpx;
+  box-sizing: border-box;
+  height: 120rpx;
+  box-shadow:0px -12rpx 24rpx 0px rgba(0, 0, 0, 0.04);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 20;
+}
+
+.container .set_collage_btn view {
+  height: 100%;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+  background: #31CC90;
+  text-align: center;
+  font-size:30rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+}
+
+
+.container .collage_mask_num {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 30;
+}
+
+.container .collage_mask_num .mask_bg {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.container .collage_mask_num .main_cont {
+  background: #fff;
+  border-radius: 20rpx;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 560rpx;
+  transform: translate(-50%, -50%);
+}
+
+.container .collage_mask_num .main_cont .t_txt {
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  background: #31CC90;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+}
+
+.container .collage_mask_num .main_cont .cont_box {
+  padding: 48rpx 32rpx;
+  box-sizing: border-box;
+}
+
+.container .collage_mask_num .main_cont .cont_box input {
+  height: 68rpx;
+  box-sizing: border-box;
+  border: 2rpx solid #CCCCCC;
+  line-height: 64rpx;
+  font-size:26rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(204,204,204,1);
+  text-align: center;
+  border-radius: 34rpx;
+}
+
+.container .collage_mask_num .main_cont .cont_box .inputPlace {
+  line-height: 64rpx;
+  font-size:26rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(204,204,204,1);
+}
+
+.container .collage_mask_num .main_cont .cont_box .btn_box {
+  margin-top: 28rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .collage_mask_num .main_cont .cont_box .btn_box>view {
+  height: 68rpx;
+  line-height: 64rpx;
+  border: 2rpx solid #31CC90;
+  width: 200rpx;
+  text-align: center;
+  border-radius: 34rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+}
+
+.container .collage_mask_num .main_cont .cont_box .btn_box>view:nth-child(1) {
+  color: #000;
+}
+
+.container .collage_mask_num .main_cont .cont_box .btn_box>view:nth-child(2) {
+  background: #31CC90;
+}
+
+
+
+
+
+
+

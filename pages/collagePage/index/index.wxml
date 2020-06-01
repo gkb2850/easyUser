@@ -1,0 +1,70 @@
+<view class="container">
+  <view class="search_box">
+    <view class="txt_box">澳门</view>
+    <view class="searchinset_box">
+      <image class="search_img" src="../../../assets/images/search_iocn.png"></image>
+      <input placeholder="搜你喜欢" placeholder-class="inputplace"></input>
+      <image class="voice_icon" src="../../../assets/images/vioce_icon.png"></image>
+    </view>
+    <view class="txt_box">设为主页</view>
+  </view>
+  <view class="chartImg_box">
+    <image class="bg_img" src="../../../assets/images/banner_bg.png"></image>
+    <view class="chartPic_box">
+      <swiper class="swiperbox">
+        <swiper-item class="swiperItem">
+          <image src="../../../assets/images/banner@2x.png"></image>
+        </swiper-item>
+      </swiper>
+    </view>
+  </view>
+  <view class="select_box">
+    <view class="title_box">
+      <view class="first_txt">推荐</view>
+    </view>
+    <view class="order_box">
+      <scroll-view scroll-x style="width: 100%;">
+        <view class="orderall">
+          <view class="order_itme">
+            <image src="../../../assets/images/banner@2x.png"></image>
+            <view>进口饼干好吃进口饼干好吃进口饼干</view>
+          </view>
+          <view class="order_itme">
+            <image src="../../../assets/images/banner@2x.png"></image>
+            <view>进口饼干好吃进口饼干好吃进口饼干好吃进口饼干好吃进口饼干好吃</view>
+          </view>
+          <view class="order_itme">
+            <image src="../../../assets/images/banner@2x.png"></image>
+            <view>进口饼干好吃进口饼干好吃进口饼干好吃进口饼干好吃进口饼干好吃</view>
+          </view>
+          <view class="order_itme">
+            <image src="../../../assets/images/banner@2x.png"></image>
+            <view>进口饼干好吃进口饼干好吃进口饼干好吃进口饼干好吃进口饼干好吃</view>
+          </view>
+          <view class="order_itme">
+            <image src="../../../assets/images/banner@2x.png"></image>
+            <view>进口饼干好吃进口饼干好吃进口饼干好吃进口饼干好吃进口饼干好吃</view>
+          </view>
+          <view class="order_itme">
+            <image src="../../../assets/images/banner@2x.png"></image>
+            <view>进口饼干好吃进口饼干好吃进口饼干好吃进口饼干好吃进口饼干好吃</view>
+          </view>
+          <view class="order_itme">
+            <image src="../../../assets/images/banner@2x.png"></image>
+            <view>进口饼干好吃进口饼干好吃进口饼干好吃进口饼干好吃进口饼干好吃</view>
+          </view>
+          <view class="order_itme">
+            <image src="../../../assets/images/banner@2x.png"></image>
+            <view>进口饼干好吃进口饼干好吃进口饼干好吃进口饼干好吃进口饼干好吃</view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+    <view class="noticeImg_box">
+      <v-collageItem></v-collageItem>
+    </view>
+  </view>
+  <view class="assembly_box">
+    <v-foodItem></v-foodItem>
+  </view>
+</view>

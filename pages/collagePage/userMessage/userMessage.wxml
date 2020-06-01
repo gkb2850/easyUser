@@ -1,0 +1,30 @@
+<view class="container">
+  <view class="message_box">
+    <view class="top_box">
+      <image class="user_img" src="../../../assets/images/xiaotouxiang.png"></image>
+      <view class="user_info">
+        <view class="name">星辰大海</view>
+        <view class="time">2019-03-23</view>
+      </view>
+      <view class="num_f">4.5分</view>
+    </view>
+    <view class="cont_box">
+      <view class="ly_message">这家店十分不错，加油这家店十分不错，加油这家店十分不错，加油这家店十分不错，加油这家店十分不错这家店十分不错，加油这家店十分不错，加油这家店十分不错，加油333</view>
+      <view class="ly_imgbox">
+        <view class="img_box">
+          <image src="../../../assets/images/banner@2x.png"></image>
+        </view>
+        <view class="img_box">
+          <image src="../../../assets/images/banner@2x.png"></image>
+        </view>
+        <view class="img_box">
+          <image src="../../../assets/images/banner@2x.png"></image>
+        </view>
+      </view>
+      <view class="bot_txtbox">
+        <view class="l_txt">如家酒店：</view>
+        <view class="r_txt">非常不错非常不错非常不错非常不错非常不错非常不错非常不错非常不错非常不错非常不错非常不错非常不错</view>
+      </view>
+    </view>
+  </view>
+</view>

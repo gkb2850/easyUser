@@ -1,0 +1,97 @@
+<view class="container">
+  <view class="header_box">
+    <view class="img_box">
+      <image src="../../../assets/images/banner@2x.png" class="headerImg"></image>
+      <view class="btn_box">
+        <view class="imgicon_box">
+          <image src="../../../assets/images/love_icon.png"></image>
+          <image src="../../../assets/images/shares_icon.png"></image>
+        </view>
+        <view class="txt">已拼1.9万件</view>
+      </view>
+    </view>
+    <view class="header_txtbox">
+      <view class="money_box">
+        <view class="money_txt">
+          <view>￥130.00</view>
+        </view>
+        <view class="label_box">
+          <view>味道好</view>
+          <view>地铁口</view>
+        </view>
+      </view>
+      <view class="collage_box">
+        <view class="title_txt">
+          <view class="l_txt">15人正在拼团</view>
+          <view class="r_box">
+            <view>更多</view>
+            <image src="../../../assets/images/torighth_icon.png"></image>
+          </view>
+        </view>
+        <view class="cont_box">
+          <view class="item_box">
+            <view class="l_img">
+              <image src="../../../assets/images/xiaotouxiang.png"></image>
+              <view>张三</view>
+            </view>
+            <view class="c_txt">还差2人拼成</view>
+            <view class="r_btn">去拼</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="main_box">
+    <view class="product_info_txt">
+      <view class="pro_title">产品介绍</view>
+      <view class="pro_cont">海底捞是一间自助餐，主要是以服务为特色和实惠海底捞是一间自助餐，主要是以服务为特色和实惠海底捞是一间自助餐，主要是以服务为特色和实惠海底捞是一间自助餐，主要是以服务为特色和实惠海底捞是一间自助餐，主要是以服务为特色和实惠海底捞是一间自助餐，主要是以服务为特色和实惠海底捞是一间自助餐，主要是以服务为特色和实惠</view>
+      <view class="chart_box">
+        <swiper class="swiperbox">
+          <swiper-item class="swiperItem">
+            <image src="../../../assets/images/banner@2x.png"></image>
+          </swiper-item>
+        </swiper>
+      </view>
+      <view class="messageShop">
+        <view class="title">
+          <view class="l_txt">评价</view>
+          <view class="r_txt">
+            <view>更多</view>
+            <image src="../../../assets/images/rightbtn_iocn.png"></image>
+          </view>
+        </view>
+        <view class="ly_user">
+          <view class="l_box">
+            <image src="../../../assets/images/xiaotouxiang.png"></image>
+          </view>
+          <view class="r_box">
+            <view class="customer_info">
+              <view class="cus_box">
+                <view class="name">小行星划过的天空</view>
+                <view class="time">2020-05-15</view>
+              </view>
+              <view class="fs">4.5分</view>
+            </view>
+            <view class="ly_txt">这东西不错很值得</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="set_collage_btn">
+    <view>发起拼团</view>
+  </view>
+  <view class="collage_mask_num" wx:if="{{collageBoxShow}}">
+    <view class="mask_bg"></view>
+    <view class="main_cont">
+      <view class="t_txt">确认拼团吗？</view>
+      <view class="cont_box">
+        <input placeholder="请输入购买数量" placeholder-class="inputPlace"></input>
+        <view class="btn_box">
+          <view>取消</view>
+          <view>确定</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -28,7 +28,12 @@
     "pages/hotelPage/index/index",
     "pages/hotelPage/hotelDetail/hotelDetail",
     "pages/hotelPage/hotelShopDetail/hotelShopDetail",
-    "pages/hotelPage/submitHotelShop/submitHotelShop"
+    "pages/hotelPage/submitHotelShop/submitHotelShop",
+    "pages/collagePage/index/index",
+    "pages/collagePage/collageDateil/collageDateil",
+    "pages/collagePage/userMessage/userMessage",
+    "pages/collagePage/couponMain/couponMain",
+    "pages/runningPage/index/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

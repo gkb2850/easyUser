@@ -1,0 +1,55 @@
+<view class="container">
+  <view class="chartImg_box">
+    <image class="bg_img" src="../../../assets/images/banner_bg.png"></image>
+    <view class="chartPic_box">
+      <swiper class="swiperbox">
+        <swiper-item class="swiperItem">
+          <image src="../../../assets/images/banner@2x.png"></image>
+        </swiper-item>
+      </swiper>
+    </view>
+  </view>
+  <view class="main_box">
+    <view class="running_info_box">
+      <view class="title_txt">帮我送</view>
+      <view class="main_cont">
+        <view class="term_box">
+          <view class="tt_txt">从哪里发货？</view>
+          <view class="bot_box">
+            <image src="../../../assets/images/running_address_iocn.png" class="address_icon"></image>
+            <view class="c_txt">请选择发货地址</view>
+            <image src="../../../assets/images/torighth_icon.png" class="right_iocn"></image>
+          </view>
+        </view>
+        <view class="term_box">
+          <view class="tt_txt">要送到哪里？</view>
+          <view class="bot_box bots_box">
+            <view class="first_box">
+              <image src="../../../assets/images/running_address_iocn.png" class="address_icon"></image>
+              <view class="c_txt">请选择发货地址</view>
+              <image src="../../../assets/images/torighth_icon.png" class="right_iocn"></image>
+            </view>
+            <view class="second_box">
+              <image src="../../../assets/images/running_address_iocn.png" class="time_icon"></image>
+              <view class="c_txt">请选择取件时间</view>
+              <view class="or_txt">至</view>
+              <view class="c_txt">请选择收件时间</view>
+            </view>
+          </view>
+        </view>
+        <view class="term_box terms_box">
+          <view class="tt_txt">备注</view>
+          <view class="bot_box">
+            <view class="c_txt">请输入备注</view>
+          </view>
+        </view>
+        <view class="term_box">
+          <image src="../../../assets/images/travel_icon.png" class="pic_add"></image>
+        </view>
+      </view>
+    </view>
+    <view class="run_bot_btn">
+      <view>确定</view>
+    </view>
+  </view>
+</view>

@@ -33,7 +33,10 @@
     "pages/collagePage/collageDateil/collageDateil",
     "pages/collagePage/userMessage/userMessage",
     "pages/collagePage/couponMain/couponMain",
-    "pages/runningPage/index/index"
+    "pages/runningPage/index/index",
+    "pages/runningPage/sendGoodsAddress/sendGoodsAddress",
+    "pages/orderPage/orderListPage/orderListPage",
+    "pages/orderPage/orderDateil/orderDateil"
   ],
   "window": {
     "backgroundTextStyle": "light",

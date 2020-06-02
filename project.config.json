@@ -99,8 +99,8 @@
 				},
 				{
 					"id": 7,
-					"name": "跑腿",
-					"pathName": "pages/runningPage/index/index",
+					"name": "订单详情",
+					"pathName": "pages/orderPage/orderDateil/orderDateil",
 					"query": "",
 					"scene": null
 				},

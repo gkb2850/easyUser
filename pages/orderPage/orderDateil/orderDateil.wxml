@@ -1,0 +1,209 @@
+<view class="container">
+  <view class="order_top">
+    <view class="order_top_bg"></view>
+    <view class="order_top_shop" wx:if="{{false}}">
+      <view class="title_type">
+        <view>订单状态</view>
+        <view>已完成</view>
+      </view>
+      <view class="cont_shop">
+        <view class="shop_name_box">
+          <view class="l_box">
+            <view>海底捞自助餐</view>
+            <image src="../../../assets/images/righthh_icon.png"></image>
+          </view>
+          <view class="r_box">
+            <view>台号：#3</view>
+          </view>
+        </view>
+        <view class="buy_goods">
+          <view class="item_goods">
+            <image class="goods_img" src="../../../assets/images/login_logo.png"></image>
+            <view class="c_goods">
+              <view class="goods_name">自助餐吃吃吃</view>
+              <view class="goods_num">x1</view>
+            </view>
+            <view class="goods_money">
+              <view>￥12.00</view>
+            </view>
+          </view>
+        </view>
+        <view class="other_goods_sm">
+          <view class="item_txt">
+            <view class="l_txt">包装费</view>
+            <view class="r_txt">￥2.00</view>
+          </view>
+          <view class="item_txt">
+            <view class="l_txt">配送费</view>
+            <view class="r_txt">￥6.00</view>
+          </view>
+        </view>
+        <view class="order_count_box">
+          <view class="l_num">总计￥26.00，优惠￥3.00</view>
+          <view class="r_money">
+            <view class="txt">实付</view>
+            <view class="money_box">
+              <view class="money_h">￥</view>
+              <view class="money_c">23.00</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="bot_shop">
+        <view class="item_btn">
+          <image src="../../../assets/images/phone_icon_minni.png"></image>
+          <view>致电商家</view>
+        </view>
+        <view class="item_btn">
+          <image src="../../../assets/images/message_icon_mini.png"></image>
+          <view>联系商家</view>
+        </view>
+      </view>
+    </view>
+    <view class="order_top_pt" wx:if="{{false}}">
+      <view class="title_box">
+        <view class="l_txt">订单状态</view>
+        <view class="r_txt">待支付</view>
+      </view>
+      <view class="title_txt">标题标题标题</view>
+      <view class="main_cont">
+        <view class="address_goods">
+          <view class="t_txt">取件信息</view>
+          <view class="address_message">滴滴滴滴滴滴滴</view>
+          <view class="people_box">
+            <view class="name">张三</view>
+            <view class="phone">+853 36639655</view>
+          </view>
+        </view>
+        <view class="address_goods">
+          <view class="t_txt">送货地址</view>
+          <view class="address_message">滴滴滴滴滴滴滴</view>
+          <view class="people_box">
+            <view class="name">李四</view>
+            <view class="phone">+853 36639655</view>
+          </view>
+        </view>
+        <view class="goods_img_box">
+          <view class="img_box">
+            <image src="../../../assets/images/login_logo.png"></image>
+          </view>
+          <view class="img_box">
+            <image src="../../../assets/images/login_logo.png"></image>
+          </view>
+          <view class="img_box">
+            <image src="../../../assets/images/login_logo.png"></image>
+          </view>
+          <view class="img_box">
+            <image src="../../../assets/images/login_logo.png"></image>
+          </view>
+          <view class="img_box">
+            <image src="../../../assets/images/login_logo.png"></image>
+          </view>
+        </view>
+        <view class="ps_item_box">
+          <view class="l_txt">配送服务</view>
+          <view class="r_txt">外卖配送</view>
+        </view>
+        <view class="money_box">
+          <view class="txt">实付</view>
+          <view class="money_box">
+            <view class="money_h">￥</view>
+            <view class="money_c">23.00</view>
+          </view>
+        </view>
+      </view>
+      <view class="bot_item">
+        <image src="../../../assets/images/phone_icon_minni.png"></image>
+        <view>致电骑手</view>
+      </view>
+    </view>
+    <view class="order_top_jd">
+      <view class="title_box">
+        <view class="l_txt">订单状态</view>
+        <view class="r_txt">待支付</view>
+      </view>
+      <view class="cont_box">
+        <view class="name_box">
+          <view>世界大酒店</view>
+          <image src="../../../assets/images/righthh_icon.png"></image>
+        </view>
+        <view class="address_txt">滴滴滴滴滴滴滴</view>
+        <view class="hotel_info">
+          <image src="../../../assets/images/login_logo.png" class="hotel_img"></image>
+          <view class="c_box">
+            <view class="h_type">商务标准间</view>
+            <view class="h_num">x1</view>
+          </view>
+          <view class="r_mony">￥160.00</view>
+        </view>
+        <view class="counts_box">
+          <view class="l_num">总计￥26.00，优惠￥3.00</view>
+          <view class="money_box">
+            <view class="sf_txt">实付</view>
+            <view class="money">
+              <view class="money_h">￥</view>
+              <view class="money_c">23.00</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="bot_btn_jd">
+        <view class="item_btn">
+          <image src="../../../assets/images/phone_icon_minni.png"></image>
+          <view>致电商家</view>
+        </view>
+        <view class="item_btn">
+          <image src="../../../assets/images/message_icon_mini.png"></image>
+          <view>联系商家</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="order_main">
+    <view class="distr_box">
+      <view class="title_txt">配送信息</view>
+      <view class="other_sm">
+        <view class="item_txt">
+          <view class="l_txt">配送地址</view>
+          <view class="r_txt">滴滴滴滴滴滴滴</view>
+        </view>
+        <view class="item_txt">
+          <view class="l_txt">配送服务</view>
+          <view class="r_txt">外卖配送</view>
+        </view>
+      </view>
+      <view class="bot_btn">
+        <view class="item_btn">
+          <image src="../../../assets/images/phone_icon_minni.png"></image>
+          <view>致电商家</view>
+        </view>
+        <view class="item_btn">
+          <image src="../../../assets/images/message_icon_mini.png"></image>
+          <view>联系商家</view>
+        </view>
+      </view>
+    </view>
+    <view class="order_jy_box">
+      <view class="title_txt">订单信息</view>
+      <view class="other_sm">
+        <view class="item_txt">
+          <view class="l_txt">订单编号</view>
+          <view class="r_txt">666363556225</view>
+        </view>
+        <view class="item_txt">
+          <view class="l_txt">下单时间</view>
+          <view class="r_txt">2020-02-26 18:02</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="order_bot_box">
+    <view class="evaluate_box" wx:if="{{false}}">
+      <view>去评价</view>
+    </view>
+    <view class="pay_box">
+      <view class="cance_btn">取消订单</view>
+      <view class="pay_btn">去支付</view>
+    </view>
+  </view> 
+</view>

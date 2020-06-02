@@ -1,0 +1,84 @@
+<view class="container">
+  <view class="takeout_top">
+    <view class="title_box">
+      <view class="txt">澳门</view>
+      <view class="search_box">
+        <v-search></v-search>
+      </view>
+      <view class="txt">搜索</view>
+    </view>
+    <view class="nav_box">
+      <view class="item_box">
+        <view class="txt">全部</view>
+        <view class="line"></view>
+      </view>
+      <view class="item_box">
+        <view class="txt">待付款</view>
+        <view class="line"></view>
+      </view>
+      <view class="item_box">
+        <view class="txt">配送中</view>
+        <view class="line"></view>
+      </view>
+      <view class="item_box">
+        <view class="txt">待使用</view>
+        <view class="line"></view>
+      </view>
+      <view class="item_box">
+        <view class="txt">待评价</view>
+        <view class="line"></view>
+      </view>
+      <view class="item_box">
+        <view class="txt">退款售后</view>
+        <view class="line"></view>
+      </view>
+    </view>
+  </view>
+  <view class="main_cont_box">
+    <view class="order_item">
+      <view class="title_box">
+        <view class="l_box">
+          <image src="../../../assets/images/xiaotouxiang.png"></image>
+          <view>海底捞</view>
+        </view>
+        <view class="r_txt">待支付</view>
+      </view>
+      <view class="cont_info">
+        <view class="img_l">
+          <image src="../../../assets/images/login_logo.png"></image>
+        </view>
+        <view class="txt_message">
+          <view class="name">鸡肉饭，大份</view>
+          <view class="address_txt" wx:if="{{false}}">取货地址：顶顶顶顶顶</view>
+          <view class="address_txt" wx:if="{{false}}">收货地址：滴滴滴滴滴滴滴</view>
+          <view class="time">下单时间：2020-06-06 16:20</view>
+          <view class="money_box">
+            <view class="new">￥20.00</view>
+            <view class="old">￥30.00</view>
+          </view>
+        </view>
+      </view>
+      <view class="remarks_box">
+        <view class="bl_txt">备注：</view>
+        <view class="br_txt">微辣</view>
+      </view>
+      <view class="bot_btn">
+        <view class="cance_btn">取消订单</view>
+        <view class="pay_btn">立即支付</view>
+      </view>
+    </view>
+  </view>
+  <view class="cance_mask_box" wx:if="{{false}}">
+    <view class="mask_bg"></view>
+    <view class="main_cont">
+      <view class="t_txt">确认取消吗？</view>
+      <view class="cont_box">
+        <textarea placeholder="请输入购买数量" placeholder-class="textareaPlace"></textarea>
+        <view class="btn_box">
+          <view>取消</view>
+          <view>确定</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,34 @@
+<view class="container">
+  <view class="top_box">
+    <view class="title_box">
+      <view class="l_txt">商品评分</view>
+      <view class="pf_img">
+        <image src="../../../assets/images/stars_iocn.png"></image>
+        <image src="../../../assets/images/stars_iocn.png"></image>
+        <image src="../../../assets/images/stars_iocn.png"></image>
+        <image src="../../../assets/images/stars_iocn.png"></image>
+        <image src="../../../assets/images/stars_iocn.png"></image>
+      </view>
+    </view>
+    <view class="user_message">
+      <textarea placeholder="请输入你的评语..."></textarea>
+    </view>
+  </view>
+  <view class="other_box">
+    <view class="pj_box">
+      <view class="l_txt">评价成功自动分享</view>
+      <view class="switch_btn">
+          <switch color="#31CC90" />
+      </view>
+    </view>
+    <view class="upload_img">
+      <view class="t_txt">图片</view>
+      <view class="img_box">
+        <view class="item_img">
+          <image src="../../../assets/images/travel_icon.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="bot_btn">提交</view>
+</view>

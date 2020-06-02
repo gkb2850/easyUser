@@ -36,7 +36,8 @@
     "pages/runningPage/index/index",
     "pages/runningPage/sendGoodsAddress/sendGoodsAddress",
     "pages/orderPage/orderListPage/orderListPage",
-    "pages/orderPage/orderDateil/orderDateil"
+    "pages/orderPage/orderDateil/orderDateil",
+    "pages/orderPage/orderEvaluate/orderEvaluate"
   ],
   "window": {
     "backgroundTextStyle": "light",

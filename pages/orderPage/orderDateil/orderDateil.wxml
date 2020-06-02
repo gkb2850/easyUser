@@ -60,7 +60,7 @@
         </view>
       </view>
     </view>
-    <view class="order_top_pt" wx:if="{{false}}">
+    <view class="order_top_pt" wx:if="{{true}}">
       <view class="title_box">
         <view class="l_txt">订单状态</view>
         <view class="r_txt">待支付</view>
@@ -180,6 +180,27 @@
         <view class="item_btn">
           <image src="../../../assets/images/message_icon_mini.png"></image>
           <view>联系商家</view>
+        </view>
+      </view>
+    </view>
+    <view class="order_jy_box">
+      <view class="title_txt">入住信息</view>
+      <view class="other_sm">
+        <view class="item_txt">
+          <view class="l_txt">入住人</view>
+          <view class="r_txt">林女士</view>
+        </view>
+        <view class="item_txt">
+          <view class="l_txt">联系手机</view>
+          <view class="r_txt">+853 696369636663</view>
+        </view>
+        <view class="item_txt">
+          <view class="l_txt">身份证</view>
+          <view class="r_txt">856396652966</view>
+        </view>
+        <view class="item_txt">
+          <view class="l_txt">预计到店</view>
+          <view class="r_txt">19:00</view>
         </view>
       </view>
     </view>

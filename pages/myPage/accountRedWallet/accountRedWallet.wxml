@@ -1,0 +1,30 @@
+<view class="container">
+  <view class="top_box">
+    <view class="dz_box">
+      <view class="t_txt">我的红包(元)</view>
+      <view class="money_txt">100.00</view>
+    </view>
+    <view class="sz_box">
+      <image src="../../../assets/images/my_hbbig_bg.png" class="hb_bg"></image>
+      <view class="cont_box">
+        <view class="item_box">
+          <view class="money_box">
+            <view class="money_h">￥</view>
+            <view class="money_n">50.00</view>
+          </view>
+          <view class="txt">可用现金红包</view>
+        </view>
+        <view class="item_box">
+          <view class="money_box">
+            <view class="money_h">￥</view>
+            <view class="money_n">50.00</view>
+          </view>
+          <view class="txt">可用消费红包卷</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="main_cont">
+    <view class="to_btn">转至余额</view>
+  </view>
+</view>

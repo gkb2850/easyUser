@@ -37,7 +37,14 @@
     "pages/runningPage/sendGoodsAddress/sendGoodsAddress",
     "pages/orderPage/orderListPage/orderListPage",
     "pages/orderPage/orderDateil/orderDateil",
-    "pages/orderPage/orderEvaluate/orderEvaluate"
+    "pages/orderPage/orderEvaluate/orderEvaluate",
+    "pages/myPage/messagePage/messagePage",
+    "pages/myPage/myRedWallet/myRedWallet",
+    "pages/myPage/messagePageUser/messagePageUser",
+    "pages/myPage/sendMessage/sendMessage",
+    "pages/myPage/selectRedWallet/selectRedWallet",
+    "pages/myPage/accountRedWallet/accountRedWallet",
+    "pages/myPage/myInvitaition/myInvitaition"
   ],
   "window": {
     "backgroundTextStyle": "light",

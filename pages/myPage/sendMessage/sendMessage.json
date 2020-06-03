@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "v-messageItem":"../../../component/messageItem/messageItem"
+  }
+}

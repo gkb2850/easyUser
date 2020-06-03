@@ -1,0 +1,32 @@
+<view class="container">
+  <view class="top_box">
+    <view class="title_box">
+      <view>日期</view>
+      <view>已领/未领</view>
+      <view>现金红包额</view>
+      <view>消费红包卷</view>
+    </view>
+    <view class="cont_box">
+      <view class="item_box">
+        <image class="select_icon" src="../../../assets/images/selectallno_icon.png"></image>
+        <view class="time">03-01</view>
+        <view class="red_type">未领取</view>
+        <view class="money">￥10</view>
+        <view class="moneys">￥20</view>
+      </view>      
+    </view>
+  </view>
+  <view class="turntable_box">
+    <view class="title_box">
+      <view class="line"></view>
+      <view class="txt">2020-03-01</view>
+      <view class="line"></view>
+    </view>
+    <view class="cont_zp">
+      <view class="img_box">
+        <image src="../../../assets/images/xiaotouxiang.png" class="img" animation="{{animationData}}"></image>
+        <view class="btn" bindtap="getLottery">开始</view>
+      </view>
+    </view>
+  </view>
+</view>

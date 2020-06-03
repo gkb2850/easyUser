@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="message_btn">
+    <view class="mask_box" wx:if="{{messageShow}}" catchtap="selectMessage">
+      <view class="mask_cont_box">
+        <view class="item_txt">
+          <view class="l_txt">你好</view>
+          <image src="../../assets/images/selectallno_icon.png"></image>
+        </view>
+        <view class="item_txt">
+          <view class="l_txt">到哪了？</view>
+          <image src="../../assets/images/selectallno_icon.png"></image>
+        </view>
+        <view class="bot_btn">
+          <view>设置</view>
+          <view>发送</view>
+        </view>
+      </view>
+    </view>
+    <view class="mask_bg" catchtap="hideMessageBox" wx:if="{{messageShow}}"></view>
+  </view>
+</view>

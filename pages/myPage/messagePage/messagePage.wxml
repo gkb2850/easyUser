@@ -1,0 +1,38 @@
+<view class="container">
+  <view class="nav_top">
+    <view class="item_box" bindtap="navChangeIndex" data-index="1">
+      <view class="txt {{navIndex === '1' ? 'active' : ''}}">公告</view>
+      <view class="line" wx:if="{{navIndex === '1'}}"></view>
+    </view>
+    <view class="item_box" bindtap="navChangeIndex" data-index="2">
+      <view class="txt {{navIndex === '2' ? 'active' : ''}}">信息</view>
+      <view class="line" wx:if="{{navIndex === '2'}}"></view>
+    </view>
+  </view>
+  <view class="main_box">
+    <view class="gg_box" wx:if="{{navIndex === '1'}}">
+      <view class="trem_box">
+        <view class="title_txt">信息标题</view>
+        <view class="message_info">
+          <view class="people">发布人：张三</view>
+          <view class="time">2020-02-20</view>
+          <view class="yd_num">阅读人数：10</view>
+        </view>
+        <view class="c_message">滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴</view>
+      </view>
+    </view>
+    <view class="xx_box" wx:else>
+      <view class="item_box">
+        <image src="../../../assets/images/banner@2x.png" class="l_img"></image>
+        <view class="r_box">
+          <view class="title_txt">信息标题</view>
+          <view class="message_box">
+            <view class="time">2020-02-20</view>
+            <view class="yd">阅读人数：10</view>
+          </view>
+          <view class="c_txt">滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

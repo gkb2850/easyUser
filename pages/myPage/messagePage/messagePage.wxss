@@ -1,0 +1,154 @@
+.container .nav_top {
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2rpx solid #EEEEEE;
+}
+
+.container .nav_top .item_box {
+  height: 100%;
+  width: 200rpx;
+  position: relative;
+}
+
+.container .nav_top .item_box .txt {
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(102,102,102,1);
+}
+
+.container .nav_top .item_box .txt.active {
+  font-weight:bold;
+  color:rgba(49,204,144,1);
+}
+
+.container .nav_top .item_box .line {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: 4rpx;
+  width: 60rpx;
+  background: #31CC90;
+  transform: translateX(-50%);
+}
+
+.container .main_box {
+  padding: 0 28rpx;
+  box-sizing: border-box;
+}
+
+.container .main_box .gg_box .trem_box{
+  padding: 32rpx 0;
+  border-bottom: 2rpx solid #EEEEEE;
+}
+
+.container .main_box .gg_box .trem_box .title_txt {
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size:32rpx;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:rgba(0,0,0,1);
+}
+
+.container .main_box .gg_box .trem_box .message_info {
+  margin-top: 12rpx;
+  height: 24rpx;
+  display: flex;
+}
+
+.container .main_box .gg_box .trem_box .message_info>view {
+  flex: 1;
+  height: 100%;
+  line-height: 24rpx;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(102,102,102,1);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.container .main_box .gg_box .trem_box .message_info .time {
+  text-align: center;
+}
+
+.container .main_box .gg_box .trem_box .message_info .yd_num {
+  text-align: right;
+}
+
+.container .main_box .gg_box .trem_box .c_message {
+  line-height: 26rpx;
+  margin-top: 24rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+  height: 26rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.container .main_box .xx_box .item_box {
+  display: flex;
+  padding: 32rpx 0;
+  border-bottom: 2rpx solid #EEEEEE;
+}
+
+.container .main_box .xx_box .item_box .l_img {
+  width: 168rpx;
+  height: 116rpx;
+  border-radius: 10rpx;
+  margin-right: 20rpx;
+}
+
+.container .main_box .xx_box .item_box .r_box {
+  flex: 1;
+  overflow: hidden;
+}
+
+.container .main_box .xx_box .item_box .r_box .title_txt {
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size:32rpx;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:rgba(0,0,0,1);
+}
+
+.container .main_box .xx_box .item_box .r_box .message_box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12rpx;
+  height: 24rpx;
+}
+
+.container .main_box .xx_box .item_box .r_box .message_box>view {
+  height: 24rpx;
+  line-height: 24rpx;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(102,102,102,1);
+}
+
+.container .main_box .xx_box .item_box .r_box .c_txt {
+  height: 26rpx;
+  line-height: 26rpx;
+  margin-top: 24rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+}
+
+
+
+
+

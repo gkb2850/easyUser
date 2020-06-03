@@ -1,0 +1,66 @@
+<view class="container">
+  <view class="bg_box">
+    <view class="f_box">
+      <image src="../../../assets/images/my_inv_icon.png"></image>
+      <view class="inv_box">
+        <view class="t_txt">我的邀请码</view>
+        <view class="num">HDD636</view>
+      </view>
+    </view>
+    <view class="s_box"></view>
+  </view>
+  <view class="main_box">
+    <view class="people_box">
+      <view class="title_box">
+        <view class="l_txt">邀请人员</view>
+        <view class="r_box">
+          <view>更多</view>
+          <image src="../../../assets/images/rightbtn_iocn.png"></image>
+        </view>
+      </view>
+      <view class="c_box">
+        <view class="item_box">
+          <view class="id_txt">id</view>
+          <view class="name_txt">张三</view>
+        </view>
+        <view class="item_box">
+          <view class="id_txt">id</view>
+          <view class="name_txt">张三</view>
+        </view>
+      </view>
+    </view>
+    <view class="money_box">
+      <view class="title_box">
+        <view class="l_txt">邀请返回红包</view>
+        <view class="r_box">
+          <view>更多</view>
+          <image src="../../../assets/images/rightbtn_iocn.png"></image>
+        </view>
+      </view>
+      <view class="cont_box">
+        <view class="t_box">
+          <view>ID</view>
+          <view>消费金额</view>
+          <view>获得红包值</view>
+        </view>
+        <view class="c_box">
+          <view class="item_box">
+            <view>Y123</view>
+            <view>￥10</view>
+            <view>￥0.1</view>
+          </view>
+          <view class="item_box">
+            <view>Y123</view>
+            <view>￥10</view>
+            <view>￥0.1</view>
+          </view>
+          <view class="item_box">
+            <view>Y123</view>
+            <view>￥10</view>
+            <view>￥0.1</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,114 @@
+.container .top_box .dz_box {
+  height: 328rpx;
+  background: #31CC90;
+  overflow: hidden;
+}
+
+.container .top_box .dz_box .t_txt {
+  margin-top: 60rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+  text-align: center;
+}
+
+.container .top_box .dz_box .money_txt {
+  height: 52rpx;
+  line-height: 52rpx;
+  margin-top: 32rpx;
+  font-size:72rpx;
+  font-family:DIN;
+  font-weight:bold;
+  color:rgba(255,255,255,1);
+  text-align: center;
+}
+
+.container .top_box .sz_box {
+  margin: -98rpx 28rpx 0;
+  box-shadow:0px 2rpx 26rpx 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.container .top_box .sz_box .hb_bg {
+  height: 296rpx;
+  width: 278rpx;
+  position: absolute;
+  right: -28rpx;
+  top: -198rpx;
+}
+
+.container .top_box .sz_box .cont_box {
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  border-radius: 10rpx;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+.container .top_box .sz_box .cont_box .item_box {
+  width: 50%;
+  padding: 36rpx 0;
+}
+
+.container .top_box .sz_box .cont_box .item_box .money_box {
+  height: 34rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.container .top_box .sz_box .cont_box .item_box .money_box .money_h {
+  height: 24rpx;
+  line-height: 24rpx;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:400;
+  color:rgba(0,0,0,1);
+  margin-top: 6rpx;
+}
+
+.container .top_box .sz_box .cont_box .item_box .money_box .money_n {
+  height: 34rpx;
+  line-height: 34rpx;
+  font-size:34rpx;
+  font-family:PingFang SC;
+  font-weight:400;
+  color:rgba(0,0,0,1);
+}
+
+.container .top_box .sz_box .cont_box .item_box .txt {
+  height: 24rpx;
+  line-height: 24rpx;
+  margin-top: 18rpx;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(102,102,102,1);
+  text-align: center;
+}
+
+.container .main_cont {
+  overflow: hidden;
+  padding: 0 28rpx;
+  box-sizing: border-box;
+}
+
+.container .main_cont .to_btn {
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-top: 160rpx;
+  text-align: center;
+  background: #31CC90;
+  font-size:30rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+  border-radius: 40rpx;
+  width: 100%;
+}
+
+

@@ -1,0 +1,208 @@
+page {
+  background: #F2F4F8;
+}
+
+.container {
+  padding: 28rpx 28rpx 126rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .message_box_l {
+  border: 2rpx solid rgba(221,221,221,1);
+  border-radius:10rpx;
+  background: #fff;
+  margin-bottom: 28rpx;
+  width: 580rpx;
+  padding: 24rpx 20rpx;
+  box-sizing: border-box;
+}
+
+.container .message_box_l .user_top {
+  height: 88rpx;
+  display: flex;
+}
+
+.container .message_box_l .user_top .user_img {
+  height: 88rpx;
+  width: 88rpx;
+  border-radius: 50%;
+  margin-right: 16rpx;
+}
+
+.container .message_box_l .user_top .r_box {
+  flex: 1;
+  overflow: hidden;
+}
+
+.container .message_box_l .user_top .r_box .name {
+  height: 26rpx;
+  line-height: 26rpx;
+  margin-top: 14rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:rgba(0,0,0,1);
+}
+
+.container .message_box_l .user_top .r_box .time {
+  height: 20rpx;
+  line-height: 20rpx;
+  margin-top: 14rpx;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(153,153,153,1);
+}
+
+.container .message_box_l .message_txt {
+  line-height: 28rpx;
+  margin-top: 10rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+  padding-left: 104rpx;
+}
+
+
+.container .message_box_r {
+  border: 2rpx solid rgba(221,221,221,1);
+  border-radius:10rpx;
+  background: #fff;
+  margin-bottom: 28rpx;
+  width: 580rpx;
+  padding: 24rpx 20rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  align-self: flex-end;
+}
+
+.container .message_box_r .user_top {
+  height: 88rpx;
+  display: flex;
+}
+
+.container .message_box_r .user_top .user_img {
+  height: 88rpx;
+  width: 88rpx;
+  border-radius: 50%;
+  margin-left: 16rpx;
+}
+
+.container .message_box_r .user_top .r_box {
+  flex: 1;
+  overflow: hidden;
+}
+
+.container .message_box_r .user_top .r_box .name {
+  height: 26rpx;
+  line-height: 26rpx;
+  margin-top: 14rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:rgba(0,0,0,1);
+  text-align: right;
+}
+
+.container .message_box_r .user_top .r_box .time {
+  height: 20rpx;
+  line-height: 20rpx;
+  margin-top: 14rpx;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(153,153,153,1);
+  text-align: right;
+}
+
+.container .message_box_r .message_txt {
+  line-height: 28rpx;
+  margin-top: 10rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+  padding-right: 104rpx;
+}
+
+.container .bot_message_btn {
+  background: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 20;
+  width: 100%;
+  padding: 20rpx 28rpx;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.container .bot_message_btn input {
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 30rpx;
+  background: #F2F4F8;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:#999999;
+  flex: 1;
+  padding-left: 10rpx;
+}
+
+.container .bot_message_btn .inputPlace {
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:#999999;
+  line-height: 60rpx;
+}
+
+.container .bot_message_btn .ts_box {
+  width: 110rpx;
+  margin-left: 20rpx;
+  height: 60rpx;
+  border: 2rpx solid #31CC90;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 30rpx;
+}
+
+.container .bot_message_btn .ts_box .messa_txt {
+  text-align: center;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(49,204,144,1);
+  line-height: 60rpx;
+  height: 100%;
+}
+
+.container .bot_message_btn .ts_box .btn {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.container .bot_message_btn .submit_btn {
+  margin-left: 20rpx;
+  background: #31CC90;
+  text-align: center;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+  border-radius: 30rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  width: 110rpx;
+}
+

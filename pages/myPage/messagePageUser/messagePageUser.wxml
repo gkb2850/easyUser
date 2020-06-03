@@ -1,0 +1,26 @@
+<view class="container">
+  <view class="nav_top">
+    <view class="item_box" bindtap="navChangeIndex" data-index="1">
+      <view class="txt {{navIndex === '1' ? 'active' : ''}}">商家</view>
+      <view class="line" wx:if="{{navIndex === '1'}}"></view>
+    </view>
+    <view class="item_box" bindtap="navChangeIndex" data-index="2">
+      <view class="txt {{navIndex === '2' ? 'active' : ''}}">骑手</view>
+      <view class="line" wx:if="{{navIndex === '2'}}"></view>
+    </view>
+  </view>
+  <view class="main_cont">
+    <view class="shop_box">
+      <view class="item_shopMessage">
+        <image src="../../../assets/images/xiaotouxiang.png" class="l_img"></image>
+        <view class="r_box">
+          <view class="top_txt">
+            <view class="name">王思彤</view>
+            <view class="time">03-30 20:15</view>
+          </view>
+          <view class="last_message">下来了</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

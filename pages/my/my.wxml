@@ -1,2 +1,134 @@
-<!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+<view class="container">
+  <view class="user_top">
+    <view class="top_bg"></view>
+    <view class="top_floor_cont">
+      <view class="user_header">
+        <view class="l_box">
+          <image src="../../assets/images/xiaotouxiang.png" class="user_img"></image>
+          <image src="../../assets/images/realname_icon.png" class="user_dj"></image>
+        </view>
+        <view class="c_box">
+          <view class="name">羞答答</view>
+          <view class="dj_box">
+            <view>v1</view>
+            <view>经验值600</view>
+          </view>
+        </view>
+        <view class="r_box">
+          <view>邀请码：</view>
+          <view>112x4d</view>
+        </view>
+      </view>
+      <view class="chart_box">
+        <swiper class="swiper_box">
+          <swiper-item class="swiper_item">
+            <image src="../../assets/images/banner@2x.png"></image>
+          </swiper-item>
+        </swiper>
+      </view>
+      <view class="trem_box">
+        <image src="../../assets/images/my_tz_icon.png" class="l_img"></image>
+        <view>查看站内通知及信息</view>
+        <image class="right_icon" src="../../assets/images/rightbtn_iocn.png"></image>
+      </view>
+      <view class="trem_box">
+        <image src="../../assets/images/my_message_icon.png" class="l_img"></image>
+        <view>信息</view>
+        <image class="right_icon" src="../../assets/images/rightbtn_iocn.png"></image>
+      </view>
+      <view class="repenvelop_box">
+        <image src="../../assets/images/my_hb_bg.png"></image>
+        <view class="hb_box">
+          <view>我的红包</view>
+          <view>待领红包</view>
+          <view>到账红包</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="main_box">
+    <view class="my_yq_box">
+      <view class="title_txt">我的邀请</view>
+      <view class="cont_box">
+        <view class="item_box">
+          <view class="num">10</view>
+          <view class="txt">邀请人数</view>
+        </view>
+        <view class="line"></view>
+        <view class="item_box">
+          <view class="num">100</view>
+          <view class="txt">邀请红包</view>
+        </view>
+      </view>
+    </view>
+    <view class="my_order_box">
+      <view class="title_box">
+        <view class="l_txt">我的订单</view>
+        <view class="r_box">
+          <view>全部订单</view>
+          <image src="../../assets/images/rightbtn_iocn.png"></image>
+        </view>
+      </view>
+      <view class="box_icon">
+        <view class="item_icon">
+          <image src="../../assets/images/my_topay_icon.png"></image>
+          <view>待付款</view>
+        </view>
+        <view class="item_icon">
+          <image src="../../assets/images/my_tops_icon.png"></image>
+          <view>配送中</view>
+        </view>
+        <view class="item_icon">
+          <image src="../../assets/images/my_topj_icon.png"></image>
+          <view>待评价</view>
+        </view>
+        <view class="item_icon">
+          <image src="../../assets/images/my_totz_icon.png"></image>
+          <view>退款/售后</view>
+        </view>
+      </view>
+    </view>
+    <view class="my_wallet_box">
+      <view class="titile_txt">我的钱包</view>
+      <view class="cont_box">
+        <view class="item_txtbox">
+          <view class="num">6000</view>
+          <view class="txt">余额</view>
+        </view>
+        <view class="item_txtbox">
+          <view class="num">6000</view>
+          <view class="txt">消费红包</view>
+        </view>
+        <view class="item_txtbox">
+          <view class="num">6000</view>
+          <view class="txt">现金红包</view>
+        </view>
+        <view class="item_txtbox">
+          <view class="num">6000</view>
+          <view class="txt">积分</view>
+        </view>
+        <view class="item_txtbox">
+          <view class="num">6000</view>
+          <view class="txt">礼品卷</view>
+        </view>
+        <view class="item_txtbox">
+          <view class="num">6000</view>
+          <view class="txt">团购卷</view>
+        </view>
+      </view>
+    </view>
+    <view class="my_fw_box">
+      <view class="title_txt">服务</view>
+      <view class="cont_boxs">
+        <view class="term_box">
+          <image src="../../assets/images/my_tophone_icon.png"></image>
+          <view>客服电话</view>
+        </view>
+        <view class="term_box">
+          <image src="../../assets/images/my_torz_icon.png"></image>
+          <view>入驻商家</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

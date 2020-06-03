@@ -1,0 +1,40 @@
+<view class="container">
+  <view class="message_box_l">
+    <view class="user_top">
+      <image src="../../../assets/images/xiaotouxiang.png" class="user_img"></image>
+      <view class="r_box">
+        <view class="name">王同学</view>
+        <view class="time">11-10 14:26</view>
+      </view>
+    </view>
+    <view class="message_txt">还有几分钟就到</view>
+  </view>
+  <view class="message_box_l">
+    <view class="user_top">
+      <image src="../../../assets/images/xiaotouxiang.png" class="user_img"></image>
+      <view class="r_box">
+        <view class="name">王同学</view>
+        <view class="time">11-10 14:26</view>
+      </view>
+    </view>
+    <view class="message_txt">马上</view>
+  </view>
+  <view class="message_box_r">
+    <view class="user_top">
+      <view class="r_box">
+        <view class="name">你</view>
+        <view class="time">11-10 14:26</view>
+      </view>
+      <image src="../../../assets/images/xiaotouxiang.png" class="user_img"></image>
+    </view>
+    <view class="message_txt">拿到了</view>
+  </view>
+  <view class="bot_message_btn">
+    <input placeholder="请输入" placeholder-class="inputPlace"></input>
+    <view class="ts_box" bindtap="toShowMessageBox">
+      <view class="messa_txt">提示语</view>
+      <v-messageItem class="btn" messageShow="{{messageShow}}" bind:messageBtnClick="messageBtnClick"></v-messageItem>
+    </view>
+    <view class="submit_btn">发送</view>
+  </view>
+</view>

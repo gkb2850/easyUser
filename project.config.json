@@ -99,8 +99,8 @@
 				},
 				{
 					"id": 7,
-					"name": "订单详情",
-					"pathName": "pages/orderPage/orderDateil/orderDateil",
+					"name": "我的",
+					"pathName": "pages/my/my",
 					"query": "",
 					"scene": null
 				},
@@ -112,16 +112,16 @@
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "账号与安全",
-					"pathName": "pages/indexPage/userAccount/userAccount",
+					"id": 9,
+					"name": "提交",
+					"pathName": "pages/hotelPage/submitHotelShop/submitHotelShop",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": 10,
-					"name": "订单评价",
-					"pathName": "pages/orderPage/orderEvaluate/orderEvaluate",
+					"name": "我的邀请",
+					"pathName": "pages/myPage/myInvitaition/myInvitaition",
 					"query": "",
 					"scene": null
 				}

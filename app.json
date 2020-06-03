@@ -44,7 +44,8 @@
     "pages/myPage/sendMessage/sendMessage",
     "pages/myPage/selectRedWallet/selectRedWallet",
     "pages/myPage/accountRedWallet/accountRedWallet",
-    "pages/myPage/myInvitaition/myInvitaition"
+    "pages/myPage/myInvitaition/myInvitaition",
+    "pages/myPage/myWallet/myWallet"
   ],
   "window": {
     "backgroundTextStyle": "light",

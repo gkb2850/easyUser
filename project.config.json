@@ -120,8 +120,8 @@
 				},
 				{
 					"id": 10,
-					"name": "我的邀请",
-					"pathName": "pages/myPage/myInvitaition/myInvitaition",
+					"name": "我的钱包",
+					"pathName": "pages/myPage/myWallet/myWallet",
 					"query": "",
 					"scene": null
 				}

@@ -1,1 +1,234 @@
-/* pages/myPage/myInvitaition/myInvitaition.wxss */
+page {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  position: relative;
+}
+
+.container .bg_box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.container .bg_box .f_box {
+  height: 894rpx;
+  width: 100%;
+  position: relative;
+}
+
+.container .bg_box .f_box>image {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.container .bg_box .f_box .inv_box {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  width: 300rpx;
+}
+
+.container .bg_box .f_box .inv_box .t_txt {
+  height: 28rpx;
+  line-height: 28rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:rgba(248,38,51,1);
+  text-align: center;
+}
+
+.container .bg_box .f_box .inv_box .num {
+  height: 54rpx;
+  line-height: 54rpx;
+  font-size:70rpx;
+  font-family:Source Han Sans CN;
+  font-weight:500;
+  color:rgba(248,38,51,1);
+  text-align: center;
+  margin-top: 32rpx;
+}
+
+.container .bg_box .s_box {
+  flex: 1;
+  background: #FBE3B9;
+}
+
+.container .main_box {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+}
+
+.container .main_box .people_box {
+  margin: 0 28rpx;
+  box-shadow:0px 9rpx 18rpx 0px rgba(250,160,3,0.26);
+  border-radius:10rpx;
+  background: #fff;
+  padding: 35rpx 32rpx;
+  box-sizing: border-box;
+}
+
+.container .main_box .people_box .title_box {
+  height: 32rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .main_box .people_box .title_box .l_txt {
+  height: 32rpx;
+  line-height: 32rpx;
+  font-size:32rpx;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:rgba(0,0,0,1);
+}
+
+.container .main_box .people_box .title_box .r_box {
+  display: inline-flex;
+  height: 32rpx;
+  align-items: center;
+}
+
+.container .main_box .people_box .title_box .r_box>view {
+  height: 24rpx;
+  line-height: 24rpx;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(102,102,102,1);
+}
+
+.container .main_box .people_box .title_box .r_box>image {
+  height: 20rpx;
+  width: 20rpx;
+  margin-left: 10rpx;
+}
+
+.container .main_box .people_box .c_box {
+  margin-top: 34rpx;
+  padding-left: 10rpx;
+}
+
+.container .main_box .people_box .c_box .item_box {
+  height: 26rpx;
+  display: flex;
+  align-items: center;
+  margin-bottom: 32rpx;
+}
+
+.container .main_box .people_box .c_box .item_box:last-child {
+  margin-bottom: 0;
+}
+
+.container .main_box .people_box .c_box .item_box .id_txt {
+  height: 20rpx;
+  line-height: 20rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+  width: 128rpx;
+}
+
+.container .main_box .people_box .c_box .item_box .name_txt {
+  flex: 1;
+  height: 26rpx;
+  line-height: 26rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+}
+
+.container .main_box .money_box {
+  margin: 40rpx 28rpx 76rpx;
+  background: #fff;
+  padding: 35rpx 32rpx;
+  box-sizing: border-box;
+  box-shadow:0px 9rpx 18rpx 0px rgba(250,160,3,0.26);
+  border-radius:10rpx;
+}
+
+.container .main_box .money_box .title_box {
+  height: 32rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .main_box .money_box .title_box .l_txt {
+  height: 32rpx;
+  line-height: 32rpx;
+  font-size:32rpx;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:rgba(0,0,0,1);
+}
+
+.container .main_box .money_box .title_box .r_box {
+  display: inline-flex;
+  height: 32rpx;
+  align-items: center;
+}
+
+.container .main_box .money_box .title_box .r_box>view {
+  height: 24rpx;
+  line-height: 24rpx;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(102,102,102,1);
+}
+
+.container .main_box .money_box .title_box .r_box>image {
+  height: 20rpx;
+  width: 20rpx;
+  margin-left: 10rpx;
+}
+
+.container .main_box .money_box .cont_box {
+  margin-top: 30rpx;
+  padding-left: 10rpx;
+}
+
+.container .main_box .money_box .cont_box .t_box {
+  height: 26rpx;
+  display: flex;
+}
+
+.container .main_box .money_box .cont_box .t_box>view {
+  width: 25%;
+  height: 26rpx;
+  line-height: 26rpx;
+  font-size:26rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(102,102,102,1);
+}
+
+.container .main_box .money_box .cont_box .c_box .item_box {
+  margin-top: 30rpx;
+  display: flex;
+}
+
+.container .main_box .money_box .cont_box .c_box .item_box>view {
+  height: 28rpx;
+  line-height: 28rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+  width: 25%;
+}
+
+
+
+

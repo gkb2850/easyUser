@@ -1,2 +1,56 @@
-<!--pages/myPage/myWallet/myWallet.wxml-->
-<text>pages/myPage/myWallet/myWallet.wxml</text>
+<view class="container">
+  <view class="top_box">
+    <view class="dz_box">
+      <view class="t_txt">钱包余额</view>
+      <view class="money_txt">100.00</view>
+    </view>
+    <view class="sz_box">
+      <image src="../../../assets/images/my_wallet.png" class="hb_bg"></image>
+      <view class="cont_box">
+        <view class="item_box">
+          <view class="txt">转账</view>
+        </view>
+        <view class="item_box">
+          <view class="txt">提现</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="main_cont">
+    <view class="wallet_box">
+      <image class="img_bg" src="../../../assets/images/my_wallet_hb.png"></image>
+      <view class="txt_box">
+        <view class="title_txt">我的红包</view>
+        <view class="c_txt">红包总值：100.00</view>
+      </view>
+    </view>
+    <view class="jf_box">
+      <view class="title_txt">积分</view>
+      <view class="cont_box">
+        <view class="item_txt">
+          <view class="num">10</view>
+          <view class="txt">总积分</view>
+        </view>
+        <view class="item_txt">
+          <view class="num">100</view>
+          <view class="txt">商店消费积分</view>
+        </view>
+        <view class="item_txt">
+          <view class="num">100</view>
+          <view class="txt">地产类积分</view>
+        </view>
+      </view>
+      <view class="bot_btn">参加抽奖</view>
+    </view>
+    <view class="lpj_box">
+      <view class="item_box">
+        <image src="../../../assets/images/my_lpj_icon.png"></image>
+        <view>礼品卷</view>
+      </view>
+      <view class="item_box">
+        <image src="../../../assets/images/my_tgj_icon.png"></image>
+        <view>团购卷</view>
+      </view>
+    </view>
+  </view>
+</view>

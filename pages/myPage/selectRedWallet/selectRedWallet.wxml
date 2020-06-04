@@ -24,8 +24,8 @@
     </view>
     <view class="cont_zp">
       <view class="img_box">
-        <image src="../../../assets/images/xiaotouxiang.png" class="img" animation="{{animationData}}"></image>
-        <view class="btn" bindtap="getLottery">开始</view>
+        <image src="../../../assets/images/zp_icon.png" class="img" animation="{{animationData}}"></image>
+        <image src="../../../assets/images/start_icon.png" class="btn" bindtap="getLottery"></image>
       </view>
     </view>
   </view>

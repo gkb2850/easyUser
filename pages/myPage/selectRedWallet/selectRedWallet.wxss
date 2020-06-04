@@ -105,17 +105,10 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  height: 60rpx;
-  width: 200rpx;
+  height: 266rpx;
+  width: 234rpx;
   text-align: center;
   transform: translate(-50%, -50%);
-  background: #31CC90;
-  font-size:28rpx;
-  font-family:PingFang SC;
-  font-weight:500;
-  color: #fff;
-  line-height: 60rpx;
-  border-radius: 10rpx;
 }
 
 

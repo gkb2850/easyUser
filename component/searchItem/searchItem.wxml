@@ -1,5 +1,5 @@
 <view class="searchBox">
  <image class="searchImg" src="../../assets/images/search_iocn.png"></image>
  <input type="text" placeholder="搜你喜欢" placeholder-class="inputplace"></input>
- <image class="audioImg" src="../../assets/images/vioce_icon.png"></image>
+ <image class="audioImg" src="../../assets/images/vioce_icon.png" catch:touchstart="handleTouchStart" catch:touchend="handleTouchEnd"  catchtap="yuyinClick"></image>
 </view>

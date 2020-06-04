@@ -1,17 +1,18 @@
 const requestUrl = (url, data= {}, method) => {
   return new Promise((resolve, reject) => {
+    let htype = url.indexOf('vop.baidu.com/server_api') > -1 ? 1 : 0
     wx.request({
       url: url,
       header: {
-        'content-type': 'application/x-www-form-urlencoded'
+        'content-type': htype === 1 ? 'application/json' : 'application/x-www-form-urlencoded'
       },
       data: data,
       method: method,
       success: res => {
-        resolve(res.data)
+        resolve(res)
       },
       fail: err => {
-        reject(err.data)
+        reject(err)
       }
     })
   })

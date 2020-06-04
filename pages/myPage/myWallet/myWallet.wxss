@@ -1,1 +1,212 @@
-/* pages/myPage/myWallet/myWallet.wxss */
+.container .top_box .dz_box {
+  height: 328rpx;
+  background: #31CC90;
+  overflow: hidden;
+}
+
+.container .top_box .dz_box .t_txt {
+  margin-top: 60rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+  text-align: center;
+}
+
+.container .top_box .dz_box .money_txt {
+  height: 52rpx;
+  line-height: 52rpx;
+  margin-top: 32rpx;
+  font-size:72rpx;
+  font-family:DIN;
+  font-weight:bold;
+  color:rgba(255,255,255,1);
+  text-align: center;
+}
+
+.container .top_box .sz_box {
+  margin: -98rpx 28rpx 0;
+  box-shadow:0px 2rpx 26rpx 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.container .top_box .sz_box .hb_bg {
+  height: 226rpx;
+  width: 183rpx;
+  position: absolute;
+  right: -28rpx;
+  top: -149rpx;
+}
+
+.container .top_box .sz_box .cont_box {
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  border-radius: 10rpx;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+.container .top_box .sz_box .cont_box .item_box {
+  flex: 1;
+  padding: 38rpx 0;
+  box-sizing: border-box;
+}
+
+.container .top_box .sz_box .cont_box .item_box .txt {
+  height: 32rpx;
+  line-height: 32rpx;
+  font-size:32rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+  text-align: center;
+}
+
+.container .main_cont {
+  margin-top: 16rpx;
+}
+
+.container .main_cont .wallet_box {
+  position: relative;
+  height: 212rpx;
+}
+
+.container .main_cont .wallet_box .img_bg {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.container .main_cont .wallet_box .txt_box {
+  position: absolute;
+  left: 28rpx;
+  top: 20rpx;
+  padding: 36rpx 32rpx;
+  box-sizing: border-box;
+}
+
+.container .main_cont .wallet_box .txt_box .title_txt {
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size:32rpx;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:rgba(255,255,255,1);
+}
+
+.container .main_cont .wallet_box .txt_box .c_txt {
+  margin-top: 32rpx;
+  height: 26rpx;
+  line-height: 26rpx;
+  padding-left: 23rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+}
+
+.container .main_cont .jf_box {
+  margin: 12rpx 28rpx 40rpx;
+  margin-top: 12rpx;
+  box-shadow:0px 2rpx 26rpx 0px rgba(0, 0, 0, 0.1);
+  border-radius:10rpx;
+  overflow: hidden;
+}
+
+.container .main_cont .jf_box .title_txt {
+  height: 66rpx;
+  line-height: 30rpx;
+  font-size:32rpx;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:rgba(0,0,0,1);
+  padding: 36rpx 32rpx 0;
+  box-sizing: border-box;
+}
+
+.container .main_cont .jf_box .cont_box {
+ display: flex;
+ padding: 32rpx;
+ box-sizing: border-box;
+}
+
+.container .main_cont .jf_box .cont_box .item_txt {
+  flex: 1;
+}
+
+.container .main_cont .jf_box .cont_box .item_txt:first-child {
+  flex: none;
+  padding: 0 60rpx 0 28rpx;
+}
+
+.container .main_cont .jf_box .cont_box .item_txt .num {
+  height: 26rpx;
+  line-height: 26rpx;
+  font-size:36rpx;
+  font-family:DIN;
+  font-weight:bold;
+  color:rgba(0,0,0,1);
+  text-align: center;
+}
+
+.container .main_cont .jf_box .cont_box .item_txt .txt {
+  height: 20rpx;
+  line-height: 20rpx;
+  font-size:20rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(102,102,102,1);
+  margin-top: 16rpx;
+  text-align: center;
+}
+
+.container .main_cont .jf_box .bot_btn {
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  background: #31CC90;
+  font-size:30rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+}
+
+.container .main_cont .lpj_box {
+  display: flex;
+  padding: 0 28rpx;
+  box-sizing: border-box;
+}
+
+.container .main_cont .lpj_box .item_box {
+  flex: 1;
+  display: flex;
+  padding: 24rpx;
+  box-sizing: border-box;
+  border: 2rpx solid #CCCCCC;
+  border-radius: 10rpx;
+  align-items: center;
+}
+
+.container .main_cont .lpj_box .item_box:first-child {
+  margin-right: 26rpx;
+}
+
+.container .main_cont .lpj_box .item_box image {
+  height: 84rpx;
+  width: 84rpx;
+  margin-right: 22rpx;
+}
+
+.container .main_cont .lpj_box .item_box view {
+  height: 28rpx;
+  line-height: 28rpx;
+  font-size:30rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+}
+

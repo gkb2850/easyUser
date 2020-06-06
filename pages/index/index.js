@@ -14,4 +14,22 @@ Page({
       headerIconShow: !this.data.headerIconShow
     })
   },
+  toSeeUserShare () {
+    wx.navigateTo({
+      url: '/pages/indexPage/userShare/userShare',
+    })
+  },
+  toSetIndexType () {
+    this.setData({
+      headerIconShow: false
+    })
+    wx.navigateTo({
+      url: '/pages/indexPage/indexSetandcoll/indexSetandcoll',
+    })
+  },
+  toSeeUserInfo () {
+    wx.navigateTo({
+      url: '/pages/indexPage/userInfo/userInfo',
+    })
+  },
 })

@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    navIndex: '1'
   },
 
   /**
@@ -28,7 +28,12 @@ Page({
   onShow: function () {
 
   },
-
+  navClickItem (e) {
+    let index = e.currentTarget.dataset.index
+    this.setData({
+      navIndex: index
+    })
+  },
   /**
    * 生命周期函数--监听页面隐藏
    */

@@ -1,6 +1,7 @@
 // component/searchItem/searchItem.js
 const app = getApp();
-const recorderManager = wx.getRecorderManager();
+var plugin = requirePlugin("WechatSI")
+let manager = plugin.getRecordRecognitionManager()
 Component({
   /**
    * 组件的属性列表
@@ -13,98 +14,133 @@ Component({
    * 组件的初始数据
    */
   data: {
-    speechType: false,
-    intervalTime: ''
+    search: '',
+    setVioceBoxShow: false,
+    voiceStartType: false
   },
 
   /**
    * 组件的方法列表
    */
   attached: function () {
-    
+    this.recordInit()
   },
   methods: {
     yuyinClick () {
-
+      console.log('click')
+    },
+    recordInit () {
+      let that = this
+      manager.onRecognize = function (res) {
+        console.log("current result", res.result)
+      }
+      manager.onStop = function (res) {
+        console.log("record file path", res.tempFilePath)
+        console.log("result", res.result.slice(0, res.result.length))
+        app.alert.closeLoading()
+        if (res.duration < 500) {
+          app.alert.error('录音时间太短，请重试!')
+        } else {
+          if (res.result === '') {
+            app.alert.error('没听清楚，请重试!')
+          } else {
+            that.setData({
+              search: res.result.slice(0, res.result.length - 1)
+            })
+          }
+        }
+      }
+      manager.onStart = function (res) {
+        console.log("成功开始录音识别", res)
+        console.log(that.data.voiceStartType)
+        if (!that.data.voiceStartType) {
+          manager.stop()
+          app.alert.error('暂停录音')
+        }
+      }
+      manager.onError = function (res) {
+        console.error("error msg", res.msg)
+      }
     },
     handleTouchStart (e) {
-      let date = new Date()
-      let timef = date.getTime()
-      let intervalTime = setInterval(() => {
-        let dates = new Date()
-        let times = dates.getTime()
-        if ((times - timef) < 500 ) {
-          this.setData({
-            speechType: false
-          })
-          return
-        } else {
-          clearInterval(intervalTime)
-          this.setData({
-            speechType: true
-          })
-          this.startSpeech()
-        }
-      }, 100)
-      this.setData({
-        intervalTime
+      console.log( 'tostart')
+      let that = this
+      let voiceQX = wx.getStorageSync('voiceNumType') || 0;
+      wx.getSetting({
+        success (res) {
+          console.log(res)
+          if (res.authSetting['scope.record']) {
+            app.alert.error('请长按识别语音')
+          } else {
+            wx.authorize({
+              scope: 'scope.record',
+              success() {
+                app.alert.error('请长按识别语音')
+              },
+              fail () {
+                if (voiceQX === 0) {
+                  app.alert.error('您取消了授权，请稍后再试')
+                  wx.setStorageSync('voiceNumType', 1)
+                } else {
+                  that.setData({
+                    setVioceBoxShow: true
+                  })
+                }
+              }
+            })
+          }
+        } 
       })
     },
-    startSpeech () {
+    handleLongTap () {
+      this.startVoice()
+    },
+    startVoice () {
+      console.log('bigin')
+      this.setData({
+        voiceStartType: true
+      })
       //录音参数
       const options = {
-        sampleRate: 16000,
-        numberOfChannels: 1,
-        encodeBitRate: 48000,
-        format: 'PCM'
+        lang: "zh_CN"
       }
       //开启录音
-      recorderManager.start(options);
-      app.alert.loading('正在识别中...')
+      manager.start(options);
+      // app.alert.loading('录音中...')
     },
     handleTouchEnd: function (e) {
-      clearInterval(this.data.intervalTime)
-      if (this.data.speechType) {
-        recorderManager.stop();
-        this.bindRecorderStopEvent()
-      } else {
-        app.alert.error('未识别到语音信息0')
+      console.log(e.timeStamp + 'touchend')
+      if (this.data.voiceStartType) {
+        // app.alert.closeLoading()
+        // app.alert.loading('正在识别中...')
+        manager.stop();
       }
-    },
-    bindRecorderStopEvent () {
-      recorderManager.onStop((res) => {
-        let baiduBccessToken = wx.getStorageSync("baidu_yuyin_access_token");
-        let tempFilePath = res.tempFilePath;//音频文件地址
-        const fs = wx.getFileSystemManager();
-        fs.readFile({
-          filePath: tempFilePath,
-          success (res) {
-            const base64 = wx.arrayBufferToBase64(res.data);
-            let fileSize = res.data.byteLength;
-            let data = {
-              format: 'pcm',
-              rate: 16000,
-              channel: 1,
-              cuid: 'sdfdfdfsfs',
-              token: baiduBccessToken,
-              speech: base64,
-              len: fileSize
-            }
-            console.log(app.ajax)
-            app.ajax.speechUrl(data).then(res => {
-              app.alert.closeLoading();
-              let result = res.data.result;
-              if (result.length === 0) {
-                app.alert.error('未识别到语音信息1')
-                return
-              }
-              app.alert.error(result[0])
-            }).catch(err => {
-              app.alert.error('未识别到语音信息2')
-            })
-          },
+      setTimeout(() => {
+        this.setData({
+          voiceStartType: false
         })
+      },200)
+    },
+    toCancelVioceSet () {
+      this.setData({
+        setVioceBoxShow: false
       })
-    }
+    },
+    toSureVioceSet () {
+      let that = this
+      this.setData({
+        setVioceBoxShow: false
+      })
+      wx.openSetting({
+        success(res) {
+          console.log(res.authSetting)
+          if (res.authSetting['scope.record']) {
+            app.alert.error('已允许录音权限，可以长按录音体验了')
+          } else {
+            app.alert.error('检测还没打开录音权限，请重试')
+          }
+        }
+      })
+    },
   }
 })

@@ -67,3 +67,16 @@
   margin-bottom:24rpx;
   text-align: center;
 }
+
+.container .bot_submit {
+  margin: 120rpx 0;
+  background: #31CC90;
+  height: 88rpx;
+  line-height: 88rpx;
+  border-radius: 44rpx;
+  text-align: center;
+  font-size:30rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+}

@@ -17,7 +17,7 @@
           </view>
         </view>
         <view class="txt_box">
-          <view class="title_box">
+          <view class="title_box" bindtap="toSeeShopDetail">
             <view class="shopname">海底捞自助餐</view>
             <view class="shop_r">
               <view>店铺介绍</view>
@@ -207,7 +207,7 @@
     </view>
   </view>
   <view class="car_btn">
-    <view class="c_box">
+    <view class="c_box" bindtap="toCarPage">
       <view class="car_imgbox">
         <image src="../../../assets/images/takeoutCarno_iocn.png" class="car_img"></image>
         <view>2</view>

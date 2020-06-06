@@ -1,6 +1,6 @@
 <view class="container">
   <view class="header_box">
-    <view class="userbox">
+    <view class="userbox" bindtap="toSeeUserInfo">
       <image src="../../assets/images/icon-user-img.png"></image>
     </view>
     <view class="ordericon_box">
@@ -18,7 +18,7 @@
               <image src="../../assets/images/erweima_icon.png"></image>
               <view>付款码</view>
             </view>
-            <view class="txt_item">
+            <view class="txt_item" bindtap="toSetIndexType">
               <image src="../../assets/images/set_icon.png"></image>
               <view>设定及收藏</view>
             </view>
@@ -28,11 +28,7 @@
     </view>
   </view>
   <view class="search_box">
-    <view class="searchinset_box">
-      <image class="search_img" src="../../assets/images/search_iocn.png"></image>
-      <input placeholder="搜你喜欢" placeholder-class="inputplace"></input>
-      <image class="voice_icon" src="../../assets/images/vioce_icon.png"></image>
-    </view>
+    <v-search></v-search>
   </view>
   <view class="chartImg_box">
     <image class="bg_img" src="../../assets/images/banner_bg.png"></image>
@@ -100,7 +96,7 @@
     <view class="article_box">
       <swiper class="article_swiper">
         <swiper-item class="article_swiperItem">
-          <view class="article_swiperItem_box">
+          <view class="article_swiperItem_box" bindtap="toSeeUserShare">
             <view class="left">
                 <image src="../../assets/images/banner@2x.png"></image>
                 <view>本地萝卜</view>

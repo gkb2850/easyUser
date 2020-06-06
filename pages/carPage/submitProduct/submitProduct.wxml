@@ -1,19 +1,19 @@
 <view class="container">
   <view class="nav_box">
-    <view class="nav_item">
-      <view class="txt">外卖配送</view>
-      <view class="line"></view>
+    <view class="nav_item" bindtap="navClickItem" data-index="1">
+      <view class="txt {{navIndex === '1' ? 'active' : ''}}">外卖配送</view>
+      <view class="line" wx:if="{{navIndex === '1'}}"></view>
     </view>
-    <view class="nav_item">
-      <view class="txt">到店自提</view>
-      <view class="line"></view>
+    <view class="nav_item" bindtap="navClickItem" data-index="2">
+      <view class="txt {{navIndex === '2' ? 'active' : ''}}">到店自提</view>
+      <view class="line" wx:if="{{navIndex === '2'}}"></view>
     </view>
-    <view class="nav_item">
-      <view class="txt">店内送</view>
-      <view class="line"></view>
+    <view class="nav_item" bindtap="navClickItem" data-index="3">
+      <view class="txt {{navIndex === '3' ? 'active' : ''}}">店内送</view>
+      <view class="line" wx:if="{{navIndex === '3'}}"></view>
     </view>
   </view>
-  <view class="select_addressbox" wx:if="{{false}}">
+  <view class="select_addressbox" wx:if="{{navIndex !== '2'}}">
     <view class="address_box">
       <view class="takeoutType">
         <view class="address_no" v-if="{{true}}">
@@ -50,7 +50,7 @@
       </view>
     </view>
   </view>
-  <view class="select_addressbox">
+  <view class="select_addressbox" wx:if="{{navIndex === '2'}}">
     <view class="stop_box">
       <image src="../../../assets/images/address_icon.png" class="add_img_box"></image>
       <view class="shop_address_txt">滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴</view>

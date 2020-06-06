@@ -8,34 +8,34 @@
       <view class="txt">搜索</view>
     </view>
     <view class="nav_box">
-      <view class="item_box">
-        <view class="txt">全部</view>
-        <view class="line"></view>
+      <view class="item_box" bindtap="navClickItem" data-index="0">
+        <view class="txt {{navIndex === '0' ? 'active' : ''}}">全部</view>
+        <view class="line" wx:if="{{navIndex === '0'}}"></view>
       </view>
-      <view class="item_box">
-        <view class="txt">待付款</view>
-        <view class="line"></view>
+      <view class="item_box" bindtap="navClickItem" data-index="1">
+        <view class="txt {{navIndex === '1' ? 'active' : ''}}">待付款</view>
+        <view class="line" wx:if="{{navIndex === '1'}}"></view>
       </view>
-      <view class="item_box">
-        <view class="txt">配送中</view>
-        <view class="line"></view>
+      <view class="item_box" bindtap="navClickItem" data-index="2">
+        <view class="txt {{navIndex === '2' ? 'active' : ''}}">配送中</view>
+        <view class="line" wx:if="{{navIndex === '2'}}"></view>
       </view>
-      <view class="item_box">
-        <view class="txt">待使用</view>
-        <view class="line"></view>
+      <view class="item_box" bindtap="navClickItem" data-index="3">
+        <view class="txt {{navIndex === '3' ? 'active' : ''}}">待使用</view>
+        <view class="line" wx:if="{{navIndex === '3'}}"></view>
       </view>
-      <view class="item_box">
-        <view class="txt">待评价</view>
-        <view class="line"></view>
+      <view class="item_box" bindtap="navClickItem" data-index="4">
+        <view class="txt {{navIndex === '4' ? 'active' : ''}}">待评价</view>
+        <view class="line" wx:if="{{navIndex === '4'}}"></view>
       </view>
-      <view class="item_box">
-        <view class="txt">退款售后</view>
-        <view class="line"></view>
+      <view class="item_box" bindtap="navClickItem" data-index="5">
+        <view class="txt {{navIndex === '5' ? 'active' : ''}}">退款售后</view>
+        <view class="line" wx:if="{{navIndex === '5'}}"></view>
       </view>
     </view>
   </view>
   <view class="main_cont_box">
-    <view class="order_item">
+    <view class="order_item" bindtap="toSeeOrderDetail">
       <view class="title_box">
         <view class="l_box">
           <image src="../../../assets/images/xiaotouxiang.png"></image>

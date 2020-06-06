@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "v-phone": "../../component/selectPhone/selectPhone"
+  },
   "navigationBarTitleText": "注册"
 }

@@ -30,7 +30,7 @@
       <view class="left">
         <view>收货地址</view>
       </view>
-      <view class="right">
+      <view class="right" bindtap="toSelectAddress">
         <view>添加修改</view>
         <image src="../../../assets/images/rightbtn_iocn.png"></image>
       </view>

@@ -142,8 +142,8 @@ page {
 }
 
 .container .input_box .item_box .padd_view .prefix_box {
-  display: inline-flex;
-  height: 100%;
+  display: flex;
+  align-items: center;
   padding-right: 10rpx;
 }
 
@@ -160,38 +160,6 @@ page {
   width: 16rpx;
   height: 10rpx;
   margin: 39rpx 0;
-}
-
-.container .input_box .item_box .padd_view .eject_box {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  width: 130rpx;
-}
-
-.container .input_box .item_box .padd_view .eject_box>image {
-  height: 30rpx;
-  width: 30rpx;
-  display: block;
-  margin-left: 100rpx;
-}
-
-.container .input_box .item_box .padd_view .eject_box .item_txt {
-  height: 60rpx;
-  line-height: 60rpx;
-  font-size: 26rpx;
-  color: #000;
-  text-align: center;
-  background: #EEEEEE;
-}
-
-.container .input_box .item_box .padd_view .eject_box .item_txt:nth-child(2) {
-  border-radius: 8rpx 8rpx 0 0;
-  border-bottom: 2rpx solid #D3D3D3;
-}
-
-.container .input_box .item_box .padd_view .eject_box .item_txt:last-child {
-  border-radius: 0 0 8rpx 8rpx;
 }
 
 

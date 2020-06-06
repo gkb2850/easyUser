@@ -38,6 +38,16 @@ Page({
       specsBoxShow: false
     })
   },
+  toSeeShopDetail () {
+    wx.navigateTo({
+      url: '/pages/takeoutPage/takeoutGoodsDetail/takeoutGoodsDetail',
+    })
+  },
+  toCarPage () {
+    wx.navigateTo({
+      url: '/pages/carPage/car/car',
+    })
+  },
   /**
    * 生命周期函数--监听页面隐藏
    */

@@ -28,7 +28,16 @@ Page({
   onShow: function () {
 
   },
-
+  toUserMessageInfo () {
+    wx.navigateBack({
+      delta: 1
+    })
+  },
+  toAddressAdd () {
+    wx.navigateTo({
+      url: '/pages/indexPage/editUserAddress/editUserAddress',
+    })
+  },
   /**
    * 生命周期函数--监听页面隐藏
    */

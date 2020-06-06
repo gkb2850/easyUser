@@ -7,6 +7,7 @@
   padding:  0 0 0 20rpx;
   background: #fff;
   box-sizing: border-box;
+  align-items: center;
 }
 
 .searchBox .searchImg {
@@ -41,8 +42,73 @@
 .searchBox .audioImg {
   height: 32rpx;
   width: 32rpx;
-  border-top: 16rpx solid transparent;
-  border-bottom: 16rpx solid transparent;
+  border-top: 30rpx solid transparent;
+  border-bottom: 30rpx solid transparent;
   border-right: 20rpx solid transparent;
-  border-left: 20rpx solid transparent;
+  border-left: 30rpx solid transparent;
+}
+
+
+ .setBox {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 32;
+}
+
+ .setBox .seting_mask_bg{
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+ .setBox .set_cont {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 80%;
+  margin-left: -40%;
+  transform: translateY(-50%);
+  background: #fff;
+  border-radius: 12rpx;
+  overflow: hidden;
+}
+
+ .setBox .set_cont .txt {
+  padding: 40rpx;
+  box-sizing: border-box;
+  line-height: 40rpx;
+  font-size:28rpx;
+  font-family:PingFangSC-Regular,PingFang SC;
+  font-weight:400;
+  color:rgba(50,57,67,1);
+  border-bottom: 2rpx solid #EEEEEE;
+  
+}
+
+ .setBox .set_cont .bot_btn {
+  height: 80rpx;
+  display: flex;
+}
+
+ .setBox .set_cont .bot_btn>view {
+  height: 100%;
+  line-height: 80rpx;
+  font-size:28rpx;
+  font-family:PingFangSC-Regular,PingFang SC;
+  font-weight:400;
+  color:rgba(152,158,167,1);
+  text-align: center;
+  flex: 1;
+}
+
+ .setBox .set_cont .bot_btn>view:first-child {
+  border-right: 2rpx solid #EEEEEE;
+  box-sizing: border-box;
+}
+
+ .setBox .set_cont .bot_btn>view:nth-child(2) {
+  color: #2D82FF;
 }

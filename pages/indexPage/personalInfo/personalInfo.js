@@ -61,6 +61,11 @@ Page({
     })
   },
   bindChangeDate () {},
+  toSelectAddress () {
+    wx.navigateTo({
+      url: '/pages/indexPage/useraddress/useraddress',
+    })
+  },
   /**
    * 生命周期函数--监听页面隐藏
    */

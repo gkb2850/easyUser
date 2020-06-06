@@ -28,7 +28,66 @@ Page({
   onShow: function () {
 
   },
-
+  toSeeMessageorGg () {
+    wx.navigateTo({
+      url: '/pages/myPage/messagePage/messagePage',
+    })
+  },
+  toSeeMessge () {
+    wx.navigateTo({
+      url: '/pages/myPage/messagePageUser/messagePageUser',
+    })
+  },
+  toSeeRedWallet (e) {
+    let index = e.currentTarget.dataset.index
+    if (index === '1') {
+      wx.navigateTo({
+        url: '/pages/myPage/myRedWallent/myRedWallent',
+      })
+    } else if (index === '2') {
+      wx.navigateTo({
+        url: '/pages/myPage/selectRedWallet/selectRedWallet',
+      })
+    } else if (index === '3') {
+      wx.navigateTo({
+        url: '/pages/myPage/accountRedWallet/accountRedWallet',
+      })
+    }
+  },
+  toSeeMyInvit () {
+    wx.navigateTo({
+      url: '/pages/myPage/myInvitaition/myInvitaition',
+    })
+  },
+  toSeeMyWallet () {
+    wx.navigateTo({
+      url: '/pages/myPage/myWallet/myWallet',
+    })
+  },
+  toSeeOrder (e) {
+    let index = e.currentTarget.dataset.index
+    if (index === '1') {
+      wx.navigateTo({
+        url: '/pages/orderPage/orderListPage/orderListPage',
+      })
+    } else if (index === '2') {
+      wx.navigateTo({
+        url: '/pages/orderPage/orderListPage/orderListPage',
+      })
+    } else if (index === '3') {
+      wx.navigateTo({
+        url: '/pages/orderPage/orderListPage/orderListPage',
+      })
+    } else if (index === '4') {
+      wx.navigateTo({
+        url: '/pages/orderPage/orderListPage/orderListPage',
+      })
+    } else if (index === '0') {
+      wx.navigateTo({
+        url: '/pages/orderPage/orderListPage/orderListPage',
+      })
+    }
+  },
   /**
    * 生命周期函数--监听页面隐藏
    */

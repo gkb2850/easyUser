@@ -1,4 +1,4 @@
-<view class="container">
+<view class="container" bindtap="toSeeShopInfo">
   <view class="left">
     <image class="l_img" src="../../assets/images/login_logo.png"></image>
     <view class="identi_box">

@@ -121,8 +121,8 @@
 				},
 				{
 					"id": 9,
-					"name": "提交",
-					"pathName": "pages/hotelPage/submitHotelShop/submitHotelShop",
+					"name": "pages/carPage/car/car",
+					"pathName": "pages/carPage/car/car",
 					"query": "",
 					"scene": null
 				},

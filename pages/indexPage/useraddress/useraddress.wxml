@@ -1,6 +1,6 @@
 <view class="container">
   <view class="address_box">
-    <view class="left">
+    <view class="left" catchtap="toUserMessageInfo">
       <view class="title">我的地址我的地址我的地址我的地址我的地址我的地址我的地址我的地址我的地址我的地址我的地址我的地址</view>
       <view class="people">
         <view>滴滴哒</view>
@@ -12,7 +12,7 @@
       <image class="delImg" src="../../../assets/images/del_icon.png"></image>
     </view>
   </view>
-  <view class="add_btn">
+  <view class="add_btn" bindtap="toAddressAdd">
     <view>新增收货地址</view>
   </view>
 </view>

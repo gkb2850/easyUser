@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "v-foodItem": "../../component/foodItem/foodItem"
+    "v-foodItem": "../../component/foodItem/foodItem",
+    "v-search":"../../component/searchItem/searchItem"
   },
   "navigationBarTitleText": "我的"
 }

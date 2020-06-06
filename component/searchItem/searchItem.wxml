@@ -1,5 +1,17 @@
 <view class="searchBox">
  <image class="searchImg" src="../../assets/images/search_iocn.png"></image>
- <input type="text" placeholder="搜你喜欢" placeholder-class="inputplace"></input>
- <image class="audioImg" src="../../assets/images/vioce_icon.png" catch:touchstart="handleTouchStart" catch:touchend="handleTouchEnd"  catchtap="yuyinClick"></image>
+ <input type="text" value="{{search}}" placeholder="搜你喜欢" placeholder-class="inputplace"></input>
+ <image class="audioImg" src="../../assets/images/vioce_icon.png" catchtap="handleTouchStart"  catchlongpress="handleLongTap" catch:touchend="handleTouchEnd"></image>
+</view>
+
+
+<view class="setBox" wx:if="{{setVioceBoxShow}}">
+  <view class="seting_mask_bg"></view>
+  <view class="set_cont">
+    <view class="txt">检测到您没有打开保存录音权限，是否去设置打开？</view>
+    <view class="bot_btn">
+      <view bindtap="toCancelVioceSet">取消</view>
+      <view bindtap="toSureVioceSet">确认</view>
+    </view>
+  </view>
 </view>

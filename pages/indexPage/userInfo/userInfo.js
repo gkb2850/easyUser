@@ -28,7 +28,31 @@ Page({
   onShow: function () {
 
   },
-
+  toSeeMyCode () {
+    wx.navigateTo({
+      url: '/pages/indexPage/myCode/myCode',
+    })
+  },
+  toSeeMyMessageInfo () {
+    wx.navigateTo({
+      url: '/pages/indexPage/personalInfo/personalInfo',
+    })
+  },
+  toSeeUserId () {
+    wx.navigateTo({
+      url: '/pages/indexPage/submitIDcard/submitIDcard',
+    })
+  },
+  toSeeUserAccount () {
+    wx.navigateTo({
+      url: '/pages/indexPage/userAccount/userAccount',
+    })
+  },
+  toSetPay () {
+    wx.navigateTo({
+      url: '',
+    })
+  },
   /**
    * 生命周期函数--监听页面隐藏
    */

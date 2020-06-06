@@ -18,6 +18,10 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    toSeeShopInfo () {
+      wx.navigateTo({
+        url: '/pages/takeoutPage/takeoutShop/takeoutShop',
+      })
+    },
   }
 })

@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    navIndex: '0'
   },
 
   /**
@@ -28,7 +28,17 @@ Page({
   onShow: function () {
 
   },
-
+  navClickItem (e) {
+    let index = e.currentTarget.dataset.index
+    this.setData({
+      navIndex: index
+    })
+  },
+  toSeeOrderDetail () {
+    wx.navigateTo({
+      url: '/pages/orderPage/orderDateil/orderDateil',
+    })
+  },
   /**
    * 生命周期函数--监听页面隐藏
    */

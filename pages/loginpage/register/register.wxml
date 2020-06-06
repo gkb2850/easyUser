@@ -11,14 +11,8 @@
     <view class="item_box">
       <image class="header_icon" src="../../../assets/images/login_iphone.png"></image>
       <view class="padd_view">
-        <view class="prefix_box" bindtap='toPhonePrefix'>
-          <view class="txt">{{prefixTxt}}</view>
-          <image class="more_icon" src="../../../assets/images/toboth_icon.png"></image>
-        </view>
-        <view class="eject_box" wx:if="{{prefixTxtShow}}">
-          <image src=""></image>
-          <view class="item_txt" bindtap='phonePrefixItem' data-str='+86'>+86</view>
-          <view class="item_txt" bindtap='phonePrefixItem' data-str='+853'>+853</view>
+        <view class="prefix_box">
+          <v-phone></v-phone>
         </view>
       </view>
       <input type="number" placeholder="请输入手机号" placeholder-class="input_place"></input>

@@ -28,7 +28,11 @@ Page({
   onShow: function () {
 
   },
-
+  toCountMoney () {
+    wx.navigateTo({
+      url: '/pages/carPage/submitProduct/submitProduct',
+    })
+  },
   /**
    * 生命周期函数--监听页面隐藏
    */

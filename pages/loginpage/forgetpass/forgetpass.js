@@ -5,8 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    prefixTxt:'+853',
-    prefixTxtShow: false
+
   },
 
   /**
@@ -28,18 +27,6 @@ Page({
    */
   onShow: function () {
 
-  },
-  toPhonePrefix() {
-    this.setData({
-      prefixTxtShow: true
-    })
-  },
-  phonePrefixItem(e) {
-    let str = e.currentTarget.dataset.str
-    this.setData({
-      prefixTxt: str,
-      prefixTxtShow: false
-    })
   },
   /**
    * 生命周期函数--监听页面隐藏

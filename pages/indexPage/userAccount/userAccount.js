@@ -28,7 +28,16 @@ Page({
   onShow: function () {
 
   },
-
+  toChangePhone () {
+    wx.navigateTo({
+      url: '/pages/indexPage/changePhone/changePhone',
+    })
+  },
+  toChangePass () {
+    wx.navigateTo({
+      url: '/pages/indexPage/changePassword/changePassword',
+    })
+  },
   /**
    * 生命周期函数--监听页面隐藏
    */

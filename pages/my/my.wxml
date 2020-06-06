@@ -26,12 +26,12 @@
           </swiper-item>
         </swiper>
       </view>
-      <view class="trem_box">
+      <view class="trem_box" bindtap="toSeeMessageorGg">
         <image src="../../assets/images/my_tz_icon.png" class="l_img"></image>
         <view>查看站内通知及信息</view>
         <image class="right_icon" src="../../assets/images/rightbtn_iocn.png"></image>
       </view>
-      <view class="trem_box">
+      <view class="trem_box" bindtap="toSeeMessge">
         <image src="../../assets/images/my_message_icon.png" class="l_img"></image>
         <view>信息</view>
         <image class="right_icon" src="../../assets/images/rightbtn_iocn.png"></image>
@@ -39,15 +39,15 @@
       <view class="repenvelop_box">
         <image src="../../assets/images/my_hb_bg.png"></image>
         <view class="hb_box">
-          <view>我的红包</view>
-          <view>待领红包</view>
-          <view>到账红包</view>
+          <view bindtap="toSeeRedWallet" data-index="1">我的红包</view>
+          <view bindtap="toSeeRedWallet" data-index="2">待领红包</view>
+          <view bindtap="toSeeRedWallet" data-index="3">到账红包</view>
         </view>
       </view>
     </view>
   </view>
   <view class="main_box">
-    <view class="my_yq_box">
+    <view class="my_yq_box" bindtap="toSeeMyInvit">
       <view class="title_txt">我的邀请</view>
       <view class="cont_box">
         <view class="item_box">
@@ -62,7 +62,7 @@
       </view>
     </view>
     <view class="my_order_box">
-      <view class="title_box">
+      <view class="title_box" bindtap="toSeeOrder" data-index="1">
         <view class="l_txt">我的订单</view>
         <view class="r_box">
           <view>全部订单</view>
@@ -70,25 +70,25 @@
         </view>
       </view>
       <view class="box_icon">
-        <view class="item_icon">
+        <view class="item_icon" bindtap="toSeeOrder" data-index="1">
           <image src="../../assets/images/my_topay_icon.png"></image>
           <view>待付款</view>
         </view>
-        <view class="item_icon">
+        <view class="item_icon" bindtap="toSeeOrder" data-index="2">
           <image src="../../assets/images/my_tops_icon.png"></image>
           <view>配送中</view>
         </view>
-        <view class="item_icon">
+        <view class="item_icon" bindtap="toSeeOrder" data-index="3">
           <image src="../../assets/images/my_topj_icon.png"></image>
           <view>待评价</view>
         </view>
-        <view class="item_icon">
+        <view class="item_icon" bindtap="toSeeOrder" data-index="4">
           <image src="../../assets/images/my_totz_icon.png"></image>
           <view>退款/售后</view>
         </view>
       </view>
     </view>
-    <view class="my_wallet_box">
+    <view class="my_wallet_box" bindtap="toSeeMyWallet">
       <view class="titile_txt">我的钱包</view>
       <view class="cont_box">
         <view class="item_txtbox">

@@ -45,7 +45,8 @@
     "pages/myPage/selectRedWallet/selectRedWallet",
     "pages/myPage/accountRedWallet/accountRedWallet",
     "pages/myPage/myInvitaition/myInvitaition",
-    "pages/myPage/myWallet/myWallet"
+    "pages/myPage/myWallet/myWallet",
+    "pages/takeoutPage/takeoutShopDetail/takeoutShopDetail"
   ],
   "window": {
     "backgroundTextStyle": "light",

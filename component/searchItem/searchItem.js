@@ -16,7 +16,9 @@ Component({
   data: {
     search: '',
     setVioceBoxShow: false,
-    voiceStartType: false
+    voiceStartType: false,
+    vioceShowBox: false,
+    vioceTxt: '聆听中...'
   },
 
   /**
@@ -37,7 +39,9 @@ Component({
       manager.onStop = function (res) {
         console.log("record file path", res.tempFilePath)
         console.log("result", res.result.slice(0, res.result.length))
-        app.alert.closeLoading()
+        that.setData({
+          vioceShowBox: false
+        })
         if (res.duration < 500) {
           app.alert.error('录音时间太短，请重试!')
         } else {
@@ -63,9 +67,11 @@ Component({
       }
     },
     handleTouchStart (e) {
-      console.log( 'tostart')
       let that = this
       let voiceQX = wx.getStorageSync('voiceNumType') || 0;
+      if (this.data.vioceShowBox) {
+        return;
+      }
       wx.getSetting({
         success (res) {
           console.log(res)
@@ -98,6 +104,7 @@ Component({
     startVoice () {
       console.log('bigin')
       this.setData({
+        vioceTxt: '聆听中...',
         voiceStartType: true
       })
       //录音参数
@@ -106,13 +113,16 @@ Component({
       }
       //开启录音
       manager.start(options);
-      // app.alert.loading('录音中...')
+      this.setData({
+        vioceShowBox: true
+      })
     },
     handleTouchEnd: function (e) {
       console.log(e.timeStamp + 'touchend')
+      this.setData({
+        vioceTxt: '识别中...'
+      })
       if (this.data.voiceStartType) {
-        // app.alert.closeLoading()
-        // app.alert.loading('正在识别中...')
         manager.stop();
       }
       setTimeout(() => {

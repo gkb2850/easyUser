@@ -1,0 +1,32 @@
+.container {
+ padding: 55rpx 40rpx 0;
+ box-sizing: border-box; 
+}
+
+.container .title_txt {
+  height: 42rpx;
+  line-height: 42rpx;
+  font-size:44rpx;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:rgba(0,0,0,1);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.container .item_box .txt {
+  margin: 40rpx 0;
+  line-height: 40rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+}
+
+.container .item_box .img_shop {
+  height: 400rpx;
+  width: 100%;
+  display: block;
+  border-radius: 20rpx;
+}

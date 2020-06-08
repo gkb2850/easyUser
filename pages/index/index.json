@@ -3,5 +3,5 @@
     "v-foodItem": "../../component/foodItem/foodItem",
     "v-search":"../../component/searchItem/searchItem"
   },
-  "navigationBarTitleText": "我的"
+  "navigationBarTitleText": "首页"
 }

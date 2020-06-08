@@ -42,7 +42,7 @@ Page({
     let index = e.currentTarget.dataset.index
     if (index === '1') {
       wx.navigateTo({
-        url: '/pages/myPage/myRedWallent/myRedWallent',
+        url: '/pages/myPage/myRedWallet/myRedWallet',
       })
     } else if (index === '2') {
       wx.navigateTo({

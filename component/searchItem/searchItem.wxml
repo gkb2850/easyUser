@@ -15,3 +15,13 @@
     </view>
   </view>
 </view>
+
+
+<cover-view class="vioce_mask_box" wx:if="{{vioceShowBox}}">
+  <cover-view class="mask_bg"></cover-view>
+  <cover-view class="main_box">
+    <cover-image src="../../assets/images/vioce_icon_big.png" class="img_icon"></cover-image>
+    <cover-view class="txt">{{vioceTxt}}</cover-view>
+    <cover-view class="txts">抬起识别或抬起后点击录音图标开始识别</cover-view>
+  </cover-view>
+</cover-view>

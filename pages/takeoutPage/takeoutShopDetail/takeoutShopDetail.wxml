@@ -1,0 +1,7 @@
+<view class="container">
+  <view class="title_txt">海底捞自助餐</view>
+  <view class="item_box">
+    <view class="txt">滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴滴</view>
+    <image class="img_shop" src="../../../assets/images/banner@2x.png"></image>
+  </view>
+</view>

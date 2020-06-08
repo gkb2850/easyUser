@@ -112,3 +112,62 @@
  .setBox .set_cont .bot_btn>view:nth-child(2) {
   color: #2D82FF;
 }
+
+.vioce_mask_box {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 60%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  border-radius: 10rpx;
+  z-index: 60rpx;
+}
+
+.vioce_mask_box .mask_bg {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.vioce_mask_box .main_box {
+  width: 100%;
+  padding: 20rpx 30rpx;
+  position: relative;
+  z-index: 60rpx;
+  box-sizing: border-box;
+}
+
+.vioce_mask_box .main_box .img_icon {
+  height: 80rpx;
+  width: 80rpx;
+  margin: 0 auto;
+  display: block;
+}
+
+.vioce_mask_box .main_box .txt {
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:#fff;
+  margin-top: 20rpx;
+  text-align: center;
+}
+
+.vioce_mask_box .main_box .txts {
+  line-height: 40rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:#fff;
+  margin-top: 8rpx;
+  text-align: center;
+  white-space: normal;
+}
+
+

@@ -121,8 +121,8 @@
 				},
 				{
 					"id": 9,
-					"name": "pages/carPage/car/car",
-					"pathName": "pages/carPage/car/car",
+					"name": "pages/takeoutPage/takeoutShopDetail/takeoutShopDetail",
+					"pathName": "pages/takeoutPage/takeoutShopDetail/takeoutShopDetail",
 					"query": "",
 					"scene": null
 				},

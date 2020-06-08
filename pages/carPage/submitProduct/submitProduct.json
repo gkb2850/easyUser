@@ -1,5 +1,6 @@
 {
   "usingComponents": {
     "v-phone": "../../../component/selectPhone/selectPhone"
-  }
+  },
+  "navigationBarTitleText": "提交订单"
 }

@@ -32,14 +32,14 @@
         <input wx:if="{{!setBoxShow}}" placeholder="请输入发货人姓名" placeholder-class="inputPlace" value="{{addressData.peopleName}}" bindblur="peopleInput"></input>
         <view class="inputview" wx:else>{{addressData.peopleName ? addressData.peopleName : '请输入发货人姓名'}}</view>
         <view class="radio_box">
-          <view class="btn">
-           <label class="radio">
-             <radio value="r2" color="#31CC90" />男
-           </label>
-           <label class="radio">
-             <radio value="r2" color="#31CC90" />女
-           </label>
-          </view>
+          <radio-group bindchange="toSelectRadio" class="btn">
+             <label class="radio">
+               <radio value="0" checked="{{addressData.sex === '0'}}" color="#31CC90" bindchange="toSelectRadio"/>男
+             </label>
+             <label class="radio">
+               <radio value="1" checked="{{addressData.sex === '1'}}" color="#31CC90" bindchange="toSelectRadio"/>女
+             </label>
+          </radio-group>
         </view>
       </view>
     </view>
@@ -47,7 +47,7 @@
       <view class="l_txt">收货人电话</view>
       <view class="r_box">
         <v-phone></v-phone>
-        <input wx:if="{{!setBoxShow}}" placeholder="请输入电话" placeholder-class="inputPlace" value="{{addressData.phone}}" bindblur="phoneInput"></input>
+        <input wx:if="{{!setBoxShow}}" type="number" placeholder="请输入电话" placeholder-class="inputPlace" value="{{addressData.phone}}" bindblur="phoneInput"></input>
         <view class="inputview" wx:else>{{addressData.phone ? addressData.phone: '请输入电话'}}</view>
       </view>
     </view>

@@ -14279,7 +14279,9 @@ Page({
     setBoxShow: false,
     addressData: {
       nameTxtAddress: '',
-      peopleName: ''
+      peopleName: '',
+      sex: '0',
+      phone: ''
     }
   },
 
@@ -14422,6 +14424,12 @@ Page({
   phoneInput (e) {
     this.setData({
       'addressData.phone': e.detail.value
+    })
+  },
+  toSelectRadio (e) {
+    console.log(e)
+    this.setData({
+      'addressData.sex': e.detail.value
     })
   },
   /**

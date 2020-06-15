@@ -1,0 +1,10 @@
+<view class="setBox" wx:if="{{setBoxShow}}">
+  <view class="seting_mask_bg"></view>
+  <view class="set_cont">
+    <view class="txt">{{titleTxt}}</view>
+    <view class="bot_btn">
+      <view bindtap="toCancelSet">取消</view>
+      <view bindtap="toSureSet">确认</view>
+    </view>
+  </view>
+</view>

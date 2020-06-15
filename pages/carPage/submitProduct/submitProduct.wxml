@@ -18,7 +18,7 @@
       <view class="takeoutType">
         <view class="address_no" v-if="{{true}}">
           <view class="title_txt">您还没有添加过收货地址</view>
-          <view class="add_btn">点击添加收货地址</view>
+          <view class="add_btn" bindtap="toAddAddress">点击添加收货地址</view>
         </view>
         <view class="address_yes">
           <view class="address_img">

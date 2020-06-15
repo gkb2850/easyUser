@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "v-phone":"../../../component/selectPhone/selectPhone"
+    "v-phone":"../../../component/selectPhone/selectPhone",
+    "authorizeItem": "../../../component/authorizeItem/authorizeItem"
   }
 }

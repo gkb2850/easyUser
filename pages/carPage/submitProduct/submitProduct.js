@@ -34,6 +34,11 @@ Page({
       navIndex: index
     })
   },
+  toAddAddress () {
+    wx.navigateTo({
+      url: '/pages/runningPage/sendGoodsAddress/sendGoodsAddress',
+    })
+  },
   /**
    * 生命周期函数--监听页面隐藏
    */

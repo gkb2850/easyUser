@@ -2,27 +2,35 @@
   <view class="address_box">
     <view class="item_box">
       <view class="l_txt">地图位置</view>
-      <view class="r_box">
+      <view class="r_box" bindtap="toSelectAddress">
         <image src="../../../assets/images/running_address_icon.png" class="address_icon"></image>
       </view>
     </view>
     <view class="item_box">
       <view class="l_txt">所属区域</view>
       <view class="r_box">
-        <view class="r_txt">请选择</view>
-        <image src="../../../assets/images/torighth_icon.png" class="right_icon"></image>
+        <view class="select_address_box">
+          <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{addressArray}}" class="pickerbox">
+            <view class="picker" wx:if="{{multiIndex.length}}">{{addressArray[0][multiIndex[0]]}}，{{addressArray[1][multiIndex[1]]}}，{{addressArray[2][multiIndex[2]]}}</view>
+            <view class="picker" wx:else></view>
+          </picker>
+        </view>
+        <view class="r_txt" wx:if="{{!multiIndex.length}}">请选择</view>
+        <image src="../../../assets/images/torighth_icon.png" class="right_icon"  wx:if="{{!multiIndex.length}}"></image>
       </view>
     </view>
     <view class="item_box">
       <view class="l_txt">详细地址</view>
       <view class="r_box">
-        <input placeholder="请输入详细地址" placeholder-class="inputPlace"></input>
+        <input wx:if="{{!setBoxShow}}" placeholder="请输入详细地址" placeholder-class="inputPlace" value="{{addressData.nameTxtAddress}}" bindblur="addressInput"></input>
+        <view class="inputview" wx:else>{{addressData.nameTxtAddress ? addressData.nameTxtAddress :'请输入详细地址'}}</view>
       </view>
     </view>
     <view class="item_box">
       <view class="l_txt">收货人姓名</view>
       <view class="rs_box">
-        <input placeholder="请输入发货人姓名" placeholder-class="inputPlace"></input>
+        <input wx:if="{{!setBoxShow}}" placeholder="请输入发货人姓名" placeholder-class="inputPlace" value="{{addressData.peopleName}}" bindblur="peopleInput"></input>
+        <view class="inputview" wx:else>{{addressData.peopleName ? addressData.peopleName : '请输入发货人姓名'}}</view>
         <view class="radio_box">
           <view class="btn">
            <label class="radio">
@@ -39,9 +47,11 @@
       <view class="l_txt">收货人电话</view>
       <view class="r_box">
         <v-phone></v-phone>
-        <input placeholder="请输入详细地址" placeholder-class="inputPlace"></input>
+        <input wx:if="{{!setBoxShow}}" placeholder="请输入电话" placeholder-class="inputPlace" value="{{addressData.phone}}" bindblur="phoneInput"></input>
+        <view class="inputview" wx:else>{{addressData.phone ? addressData.phone: '请输入电话'}}</view>
       </view>
     </view>
   </view>
   <view class="bot_btn_box">确定</view>
+  <authorizeItem bind:toSetAuthor="toSetAuthor" titleTxt="检测到您没有打开保存位置权限，是否去设置打开？" authorStr="{{authorStr}}" setBoxShow="{{setBoxShow}}"></authorizeItem>
 </view>

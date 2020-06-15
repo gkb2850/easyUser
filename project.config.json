@@ -121,8 +121,8 @@
 				},
 				{
 					"id": 9,
-					"name": "pages/takeoutPage/takeoutShopDetail/takeoutShopDetail",
-					"pathName": "pages/takeoutPage/takeoutShopDetail/takeoutShopDetail",
+					"name": "添加地址",
+					"pathName": "pages/runningPage/sendGoodsAddress/sendGoodsAddress",
 					"query": "",
 					"scene": null
 				},

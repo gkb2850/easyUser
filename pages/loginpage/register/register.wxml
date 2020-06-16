@@ -12,10 +12,10 @@
       <image class="header_icon" src="../../../assets/images/login_iphone.png"></image>
       <view class="padd_view">
         <view class="prefix_box">
-          <v-phone></v-phone>
+          <v-phone bind:selectPhone="selectPhone"></v-phone>
         </view>
       </view>
-      <input type="number" placeholder="请输入手机号" placeholder-class="input_place"></input>
+      <input type="number" placeholder="请输入手机号" value="{{registerData.phone}}" placeholder-class="input_place" bindblur="numPhoneInput"></input>
       <image src="" class="last_icon"></image>
     </view>
     <view class="item_box">
@@ -25,22 +25,17 @@
     </view>
     <view class="item_box">
       <image class="header_icon" src="../../../assets/images/login_pass.png"></image>
-      <input type="number" password placeholder="请输入密码" placeholder-class="input_place"></input>
+      <input password placeholder="请输入密码" value="{{registerData.passF}}" placeholder-class="input_place" bindblur="passInput" data-type="f"></input>
       <image src="" class="last_icon"></image>
     </view>
     <view class="item_box">
       <image class="header_icon" src="../../../assets/images/login_pass.png"></image>
-      <input type="number" password placeholder="请再次输入密码" placeholder-class="input_place"></input>
+      <input password placeholder="请再次输入密码" value="{{registerData.passS}}" placeholder-class="input_place" bindblur="passInput" data-type="s"></input>
       <image src="" class="last_icon"></image>
     </view>
     <view class="item_box">
-      <image class="header_icon" src="../../../assets/images/login_type.png"></image>
-      <view class="v_txt {{labelTxt === '请选择入驻分类'? 'noActive':''}}" bindtap="toShowLabelBox">{{labelTxt}}</view>
-      <image src="../../../assets/images/tobotg_icon.png" class="itmeimgicon"></image>
-    </view>
-    <view class="item_box">
       <image class="header_icon" src="../../../assets/images/login_yq.png"></image>
-      <input type="number" password placeholder="请输入邀请码(选填)" placeholder-class="input_place"></input>
+      <input password placeholder="请输入邀请码(选填)" placeholder-class="input_place" bindblur="codeInput"></input>
     </view>
     <view class="bot_txt">
       <image src="../../../assets/images/login_kk.png"></image>
@@ -48,7 +43,7 @@
     </view>
   </view>
   <view class="login_box">
-    <view class="login_btn">登录</view>
+    <view class="login_btn" bindtap="toRegisterNow">注册</view>
     <view class="btn_txt">
       <view bindtap="toLoginPage">立即登录</view>
     </view>

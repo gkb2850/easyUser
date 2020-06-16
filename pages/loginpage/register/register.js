@@ -1,4 +1,5 @@
 // pages/loginpage/register/register.js
+const app = getApp()
 Page({
 
   /**
@@ -6,8 +7,12 @@ Page({
    */
   data: {
     registerData: {
-      label:''
+      phone:'',
+      passF:'',
+      passS: '',
+      yqCode: ''
     },
+    numPhone: '853',
     labelTxt: '请选择入驻分类'
   },
 
@@ -34,6 +39,79 @@ Page({
   toLoginPage () {
     wx.navigateTo({
       url: '/pages/loginpage/login/login',
+    })
+  },
+  selectPhone (e) {
+    let data = e.detail.value
+    if (data.str === 'register') {
+      this.setData({
+        numPhone: data.num
+      })
+    }
+  },
+  numPhoneInput (e) {
+    let value = e.detail.value
+    let test = '^[1][3-8]\d{9}$|^([6|9])\d{7}$|^[0][9]\d{8}$|^[6]([8|6])\d{5}$'
+    if (!(/^[1][3-8]\d{9}$|^([6|9])\d{7}$|^[0][9]\d{8}$|^[6]([8|6])\d{5}$/.test(value))) {
+      this.setData({
+        'registerData.phone': ''
+      })
+      app.alert.error('请填写正确的号码')
+      return
+    }
+    this.setData({
+      'registerData.phone': value
+    })
+  },
+  passInput (e) {
+    let type = e.currentTarget.dataset.type
+    let value = e.detail.value
+    console.log(type)
+    console.log(value)
+    console.log(this.data.registerData.passF)
+    if (type === 'f') {
+      this.setData({
+        'registerData.passF': value
+      })
+    } else if (type === 's') {
+      if (this.data.registerData.passF !== value) {
+        this.setData({
+          'registerData.passS': ''
+        })
+        app.alert.error('两次密码不一致，请重试')
+        return
+      }
+      this.setData({
+        'registerData.passS': value
+      })
+    }
+  },
+  codeInput (e) {
+    this.setData({
+      'registerData.yqCode': e.detail.value
+    })
+  },
+  toRegisterNow () {
+    if (this.data.registerData.phone === '') {
+      app.alert.error('请输入手机号')
+      return
+    }
+    console.log(this.data.registerData)
+    if (this.data.registerData.passS === '') {
+      app.alert.error('请输入密码')
+      return
+    }
+
+    let data = {
+      cpassword: this.data.registerData.passS,
+      invitationCode: this.data.registerData.yqCode,
+      tel: this.data.numPhone + this.data.registerData.phone,
+      registerChannel: '3'
+    }
+    app.ajax.registerFeatch(data).then(res => {
+      console.log(res)
+    }).catch(err => {
+      console.log(err)
     })
   },
   /**

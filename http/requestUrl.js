@@ -4,9 +4,10 @@ const requestUrl = (url, data= {}, method) => {
     wx.request({
       url: url,
       header: {
-        'content-type': htype === 1 ? 'application/json' : 'application/x-www-form-urlencoded'
+        // 'content-type': htype === 1 ? 'application/json' : 'application/x-www-form-urlencoded'
+        'content-type': 'application/jason;charset=utf-8'
       },
-      data: data,
+      data: JSON.stringify(data),
       method: method,
       success: res => {
         resolve(res)

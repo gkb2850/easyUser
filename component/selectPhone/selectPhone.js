@@ -33,9 +33,14 @@ Component({
     selectphonetxt (e) {
       let txt = e.currentTarget.dataset.txt
       this.setData({
-        phoneTxt: txt,
+        phoneTxt: '+' + txt,
         showPhoneBox: false
       })
+      let obj = {
+        str:'register',
+        num: txt
+      }
+      this.triggerEvent('selectPhone', obj)
     }
   }
 })

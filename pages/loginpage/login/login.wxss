@@ -72,6 +72,7 @@ page {
   border-radius: 10rpx;
   display: flex;
   margin-top: 20rpx;
+  align-items: center;
 }
 
 .container .input_box .item_box:nth-child(1) {
@@ -79,10 +80,10 @@ page {
 }
 
 .container .input_box .item_box .header_icon {
-  height: 36rpx;
-  width: 26rpx;
+  height: 40rpx;
+  width: 40rpx;
   display: block;
-  margin: 26rpx 21rpx;
+  margin: 0 21rpx;
 }
 
 .container .input_box .item_box .last_icon {

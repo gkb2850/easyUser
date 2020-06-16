@@ -35,7 +35,7 @@
     </view>
     <view class="item_box">
       <image class="header_icon" src="../../../assets/images/login_type.png"></image>
-      <input type="number" password placeholder="请选择入驻分类" placeholder-class="input_place"></input>
+      <view class="v_txt {{labelTxt === '请选择入驻分类'? 'noActive':''}}" bindtap="toShowLabelBox">{{labelTxt}}</view>
       <image src="../../../assets/images/tobotg_icon.png" class="itmeimgicon"></image>
     </view>
     <view class="item_box">

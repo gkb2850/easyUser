@@ -1,15 +1,15 @@
 <view class="container">
-  <view class="address_box">
+  <view class="address_box" wx:for="{{adressList}}">
     <view class="left" catchtap="toUserMessageInfo">
       <view class="title">我的地址我的地址我的地址我的地址我的地址我的地址我的地址我的地址我的地址我的地址我的地址我的地址</view>
       <view class="people">
         <view>滴滴哒</view>
-        <view>+853 5556566815</view>
+        <view>+853 {{item.tel}}</view>
       </view>
     </view>
     <view class="right">
-      <image class="editImg" src="../../../assets/images/edit_icon.png"></image>
-      <image class="delImg" src="../../../assets/images/del_icon.png"></image>
+      <image bindtap="addressClickBtn" data-type="edit" data-addressdata="{{item}}"  class="editImg" src="../../../assets/images/edit_icon.png"></image>
+      <image bindtap="addressClickBtn" data-type="del"  data-addressdata="{{item}}" class="delImg" src="../../../assets/images/del_icon.png"></image>
     </view>
   </view>
   <view class="add_btn" bindtap="toAddressAdd">

@@ -12,15 +12,15 @@
       <image class="header_icon" src="../../../assets/images/login_iphone.png"></image>
       <view class="padd_view">
         <view class="prefix_box">
-          <v-phone></v-phone>
+          <v-phone bind:selectPhone="selectPhone"></v-phone>
         </view>
       </view>
-      <input type="number" placeholder="请输入手机号" placeholder-class="input_place"></input>
+      <input type="number" placeholder="请输入手机号" placeholder-class="input_place" value="{{loginData.phone}}" bindblur="phoneInput"></input>
       <image src="" class="last_icon"></image>
     </view>
     <view class="item_box">
       <image class="header_icon" src="../../../assets/images/login_pass.png"></image>
-      <input type="number" password placeholder="请输入密码" placeholder-class="input_place"></input>
+      <input password placeholder="请输入密码" placeholder-class="input_place" value="{{loginData.pass}}" bindblur="passInput"></input>
       <image src="" class="last_icon"></image>
     </view>
     <view class="bot_txt">

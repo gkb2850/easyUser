@@ -1,11 +1,13 @@
 // pages/indexPage/useraddress/useraddress.js
+const app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    pageBackStatus: false,
+    adressList: []
   },
 
   /**
@@ -26,17 +28,64 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    this.getUserAddress()
   },
   toUserMessageInfo () {
-    wx.navigateBack({
-      delta: 1
-    })
+    if (this.data.pageBackStatus) {
+      wx.navigateBack({
+        delta: 1
+      })
+    } else {
+      wx.navigateTo({
+        url: '/pages/indexPage/editUserAddress/editUserAddress',
+      })
+    }
   },
   toAddressAdd () {
     wx.navigateTo({
       url: '/pages/indexPage/editUserAddress/editUserAddress',
     })
+  },
+  getUserAddress () {
+    let data = {
+      userId: wx.getStorageSync('userInfo').userId
+    }
+    app.ajax.addressListFeatch(data, 'formType').then(res => {
+      console.log(res)
+      if (res.code === 200) {
+        this.setData({
+          adressList: res.adressList
+        })
+      } else {
+        app.alert.error(res.msg)
+      }
+    }).catch(err => {
+      app.alert.error(err.msg)
+    })
+  },
+  addressClickBtn (e) {
+    let type = e.currentTarget.dataset.type
+    let addressdata = e.currentTarget.dataset.addressdata
+    console.log(addressdata)
+    if (type === 'edit') {
+      wx.navigateTo({
+        url: '/pages/indexPage/editUserAddress/editUserAddress?addressId=' + addressdata.id,
+      })
+    } else {
+      let data = {
+        userId: addressdata.id
+      }
+      app.ajax.addressUserDelFeatch(data, 'formType').then(res => {
+        if (res.code === 200) {
+          app.alert.error('删除成功')
+          this.getUserAddress()
+        } else {
+          app.alert.error(res.msg)
+        }
+      }).catch(err => {
+        app.alert.error(err.msg)
+      })
+    }
   },
   /**
    * 生命周期函数--监听页面隐藏

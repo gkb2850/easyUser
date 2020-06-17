@@ -51,7 +51,6 @@ Page({
   },
   numPhoneInput (e) {
     let value = e.detail.value
-    let test = '^[1][3-8]\d{9}$|^([6|9])\d{7}$|^[0][9]\d{8}$|^[6]([8|6])\d{5}$'
     if (!(/^[1][3-8]\d{9}$|^([6|9])\d{7}$|^[0][9]\d{8}$|^[6]([8|6])\d{5}$/.test(value))) {
       this.setData({
         'registerData.phone': ''
@@ -105,13 +104,24 @@ Page({
     let data = {
       cpassword: this.data.registerData.passS,
       invitationCode: this.data.registerData.yqCode,
-      tel: this.data.numPhone + this.data.registerData.phone,
+      tel: this.data.registerData.phone,
       registerChannel: '3'
     }
     app.ajax.registerFeatch(data).then(res => {
       console.log(res)
+      if (res.code === 0) {
+        app.alert.error('注册成功')
+        setTimeout(() => {
+          wx.navigateTo({
+            url: '/pages/loginpage/login/login',
+          })
+        }, 1000)
+      } else {
+        app.alert.error(res.msg)
+      }
     }).catch(err => {
       console.log(err)
+      app.alert.error(err.msg)
     })
   },
   /**

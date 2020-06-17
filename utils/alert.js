@@ -1,6 +1,6 @@
 export const loading = (title) => {
   wx.showLoading({
-    title: title || '数据加载中',
+    title: title || '加载中',
     mask: true
   })
 }

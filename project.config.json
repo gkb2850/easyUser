@@ -121,8 +121,8 @@
 				},
 				{
 					"id": 9,
-					"name": "添加地址",
-					"pathName": "pages/runningPage/sendGoodsAddress/sendGoodsAddress",
+					"name": "地址列表(用户)",
+					"pathName": "pages/indexPage/useraddress/useraddress",
 					"query": "",
 					"scene": null
 				},

@@ -14470,7 +14470,31 @@ Page({
       return
     }
     if (this.data.addressId) {
-
+      let data = {
+        defaultAddress: this.data.addressData.status,
+        detailedAddress: this.data.addressData.addressTxt,
+        location: this.data.addressData.locationId,
+        name: this.data.addressData.name,
+        tab: this.data.addressData.addressTab,
+        tel: this.data.addressData.phone,
+        userId: wx.getStorageSync('userInfo').user.id,
+        id: this.data.addressId
+      }
+      app.ajax.addressUserUpdateFeatch(data).then(res => {
+        console.log(res)
+        if (res.code === 200) {
+          app.alert.error('保存成功')
+          setTimeout(() => {
+            wx.navigateTo({
+              url: '/pages/indexPage/useraddress/useraddress',
+            })
+          }, 1000)
+        } else {
+          app.alert.error(res.msg)
+        }
+      }).catch(err => {
+        app.alert.error(err.msg)
+      })
     } else {
       let data = {
         defaultAddress: this.data.addressData.status,
@@ -14479,7 +14503,7 @@ Page({
         name: this.data.addressData.name,
         tab: this.data.addressData.addressTab,
         tel: this.data.addressData.phone,
-        userId: wx.getStorageSync('userInfo').userId
+        userId: wx.getStorageSync('userInfo').user.id
       }
       app.ajax.addAddressFeatch(data).then(res => {
         console.log(res)

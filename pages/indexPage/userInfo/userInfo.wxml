@@ -58,5 +58,5 @@
       </view>
     </view>
   </view>
-  <view class="user_bot">退出登录</view>
+  <view class="user_bot" bindtap="toLoginOut">退出登录</view>
 </view>

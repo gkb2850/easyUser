@@ -79,9 +79,9 @@ Page({
     }
     app.ajax.loginFeatch(data).then(res => {
       console.log(res)
-      if (res.code === 0) {
+      if (res.code === 200) {
         app.alert.error('登录成功')
-        wx.setStorageSync('userInfo', res)
+        wx.setStorageSync('userInfo', res.data)
         setTimeout(() =>{
           wx.reLaunch({
             url:'/pages/index/index'

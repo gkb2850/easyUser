@@ -26,11 +26,11 @@
         <image src="../../../assets/images/rightbtn_iocn.png"></image>
       </view>
     </view>
-    <view class="item_box">
+    <view class="item_box" bindtap="toSelectAddress">
       <view class="left">
         <view>收货地址</view>
       </view>
-      <view class="right" bindtap="toSelectAddress">
+      <view class="right">
         <view>添加修改</view>
         <image src="../../../assets/images/rightbtn_iocn.png"></image>
       </view>

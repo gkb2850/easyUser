@@ -1,9 +1,9 @@
 <view class="container">
-  <view class="address_box" wx:for="{{adressList}}">
+  <view class="address_box" wx:for="{{adressList}}" wx:key="index">
     <view class="left" catchtap="toUserMessageInfo">
-      <view class="title">我的地址我的地址我的地址我的地址我的地址我的地址我的地址我的地址我的地址我的地址我的地址我的地址</view>
+      <view class="title">{{item.detailedAddress}}</view>
       <view class="people">
-        <view>滴滴哒</view>
+        <view>{{item.name}}</view>
         <view>+853 {{item.tel}}</view>
       </view>
     </view>

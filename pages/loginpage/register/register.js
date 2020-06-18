@@ -109,7 +109,7 @@ Page({
     }
     app.ajax.registerFeatch(data).then(res => {
       console.log(res)
-      if (res.code === 0) {
+      if (res.code === 200) {
         app.alert.error('注册成功')
         setTimeout(() => {
           wx.navigateTo({

@@ -48,7 +48,7 @@ Page({
   },
   getUserAddress () {
     let data = {
-      userId: wx.getStorageSync('userInfo').userId
+      userId: wx.getStorageSync('userInfo').user.id
     }
     app.ajax.addressListFeatch(data, 'formType').then(res => {
       console.log(res)

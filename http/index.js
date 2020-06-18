@@ -9,4 +9,7 @@ export const changePassFeatch = (data, formType) => requestUrl(requestApi + '/ap
 export const addAddressFeatch = (data, formType) => requestUrl(requestApi + '/api/cuser/cUserAdressAdd', data, 'POST', formType);// 添加地址
 export const addressListFeatch = (data, formType) => requestUrl(requestApi + '/api/cuser/cUserAdress', data, 'POST', formType);// 地址列表
 export const addressUserDelFeatch = (data, formType) => requestUrl(requestApi + '/api/cuser/cUserAdressDel', data, 'POST', formType);// 地址删除
+export const addressUserUpdateFeatch = (data, formType) => requestUrl(requestApi + '/api/cuser/cUserAdressUpdate', data, 'POST', formType);// 地址更新
+export const userInfoDataFeatch = (data, formType) => requestUrl(requestApi + '/api/cuser/cUserInformation', data, 'POST', formType);// 用户信息
+export const loginOutFeatch = (data, formType) => requestUrl(requestApi + '/api/cLogout', data, 'POST', formType);// 退出登录
 

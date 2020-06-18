@@ -121,8 +121,8 @@
 				},
 				{
 					"id": 9,
-					"name": "地址列表(用户)",
-					"pathName": "pages/indexPage/useraddress/useraddress",
+					"name": "用户信息",
+					"pathName": "pages/indexPage/userInfo/userInfo",
 					"query": "",
 					"scene": null
 				},

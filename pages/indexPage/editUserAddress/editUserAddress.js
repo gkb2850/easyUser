@@ -14299,6 +14299,11 @@ Page({
         addressId: options.addressId
       })
     }
+    if (options.type) {
+      this.setData({
+        addressType: options.type
+      })
+    }
   },
 
   /**
@@ -14314,6 +14319,12 @@ Page({
   onShow: function () {
     wx.setStorageSync('addressList', this.data.addressList)
     this.countAddressArray(0, 0)
+    if (this.data.addressType === 'edit') {
+      let item = wx.getStorageSync('addressItem')
+      this.setData({
+        
+      })
+    }
   },
   countAddressArray (fnum, snum) {
     let fAddressName = []

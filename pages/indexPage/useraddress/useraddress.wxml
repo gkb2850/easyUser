@@ -1,6 +1,6 @@
 <view class="container">
   <view class="address_box" wx:for="{{adressList}}" wx:key="index">
-    <view class="left" catchtap="toUserMessageInfo">
+    <view class="left" catchtap="toUserMessageInfo" data-item="{{item}}">
       <view class="title">{{item.detailedAddress}}</view>
       <view class="people">
         <view>{{item.name}}</view>

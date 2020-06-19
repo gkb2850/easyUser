@@ -30,20 +30,22 @@ Page({
   onShow: function () {
     this.getUserAddress()
   },
-  toUserMessageInfo () {
+  toUserMessageInfo (e) {
+    let item = e.currentTarget.dataset.item
     if (this.data.pageBackStatus) {
       wx.navigateBack({
         delta: 1
       })
     } else {
+      wx.setStorageSync('addressItem', item)
       wx.navigateTo({
-        url: '/pages/indexPage/editUserAddress/editUserAddress',
+        url: '/pages/indexPage/editUserAddress/editUserAddress?type=edit',
       })
     }
   },
   toAddressAdd () {
     wx.navigateTo({
-      url: '/pages/indexPage/editUserAddress/editUserAddress',
+      url: '/pages/indexPage/editUserAddress/editUserAddress?type=add',
     })
   },
   getUserAddress () {

@@ -39,7 +39,7 @@ Page({
     } else {
       wx.setStorageSync('addressItem', item)
       wx.navigateTo({
-        url: '/pages/indexPage/editUserAddress/editUserAddress?type=edit',
+        url: '/pages/indexPage/editUserAddress/editUserAddress?type=edit&addressId=' + item.id,
       })
     }
   },
@@ -71,7 +71,7 @@ Page({
     console.log(addressdata)
     if (type === 'edit') {
       wx.navigateTo({
-        url: '/pages/indexPage/editUserAddress/editUserAddress?addressId=' + addressdata.id,
+        url: '/pages/indexPage/editUserAddress/editUserAddress?type=edit&addressId=' + addressdata.id,
       })
     } else {
       let data = {

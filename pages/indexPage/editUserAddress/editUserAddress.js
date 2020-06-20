@@ -14298,6 +14298,7 @@ Page({
       this.setData({
         addressId: options.addressId
       })
+      console.log(options)
     }
     if (options.type) {
       this.setData({
@@ -14321,8 +14322,33 @@ Page({
     this.countAddressArray(0, 0)
     if (this.data.addressType === 'edit') {
       let item = wx.getStorageSync('addressItem')
+      let addressId = item.location.split(',')
+      let arr = []
+      this.data.addressList.forEach((i, oi) => {
+        if (i.areaId === addressId[0]) {
+          arr.push(oi)
+          i.cities.forEach((s, os) => {
+            if (s.areaId === addressId[1]) {
+              arr.push(os)
+              s.counties.forEach((t, ot) => {
+                if (t.areaId === addressId[2]) {
+                  arr.push(ot)
+                  this.setData({
+                    multiIndex: arr
+                  })
+                }
+              })
+            }
+          })
+        }
+      })
       this.setData({
-        
+        'addressData.name': item.name,
+        'addressData.phone': item.tel,
+        'addressData.addressTxt': item.detailedAddress,
+        'addressData.status': item.defaultAddress,
+        'addressData.addressTab': item.tab,
+
       })
     }
   },
@@ -14540,7 +14566,11 @@ Page({
     app.ajax.addressUserDelFeatch(data, 'formType').then(res => {
       if (res.code === 200) {
         app.alert.error('删除成功')
-        this.getUserAddress()
+        setTimeout(() =>{
+          wx.navigateBack({
+            delta: 1
+          })
+        }, 500)
       } else {
         app.alert.error(res.msg)
       }

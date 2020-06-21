@@ -21,7 +21,7 @@ export const success = (msg) => {
   wx.showToast({
     title: msg || '请求成功',
     icon: 'success',
-    duration: 1000
+    duration: 500
   })
 }
 
@@ -29,6 +29,6 @@ export const error = (msg) => {
   wx.showToast({
     title: msg || '返回失败',
     icon: 'none',
-    duration: 1000
+    duration: 500
   })
 }

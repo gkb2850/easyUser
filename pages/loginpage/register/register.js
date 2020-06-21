@@ -105,6 +105,7 @@ Page({
       cpassword: this.data.registerData.passS,
       invitationCode: this.data.registerData.yqCode,
       tel: this.data.registerData.phone,
+      telType: this.data.numPhone,
       registerChannel: '3'
     }
     app.ajax.registerFeatch(data).then(res => {
@@ -115,7 +116,7 @@ Page({
           wx.navigateTo({
             url: '/pages/loginpage/login/login',
           })
-        }, 1000)
+        }, 500)
       } else {
         app.alert.error(res.msg)
       }

@@ -14525,7 +14525,7 @@ Page({
             wx.navigateTo({
               url: '/pages/indexPage/useraddress/useraddress',
             })
-          }, 1000)
+          }, 500)
         } else {
           app.alert.error(res.msg)
         }
@@ -14550,7 +14550,7 @@ Page({
             wx.navigateTo({
               url: '/pages/indexPage/useraddress/useraddress',
             })
-          }, 1000)
+          }, 500)
         } else {
           app.alert.error(res.msg)
         }

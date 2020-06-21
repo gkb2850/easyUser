@@ -75,7 +75,8 @@ Page({
     let data = {
       cpassword: this.data.loginData.pass,
       registerChannel: '3',
-      tel: this.data.loginData.phone
+      tel: this.data.loginData.phone,
+      telType: this.data.numPhone
     }
     app.ajax.loginFeatch(data).then(res => {
       console.log(res)
@@ -86,7 +87,7 @@ Page({
           wx.reLaunch({
             url:'/pages/index/index'
           })
-        }, 1000)
+        }, 500)
       } else {
         app.alert.error(res.msg)
       }

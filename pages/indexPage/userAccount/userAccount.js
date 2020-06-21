@@ -1,18 +1,19 @@
 // pages/indexPage/userAccount/userAccount.js
+const app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    userInfo:''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.getUserInfo()
   },
 
   /**
@@ -36,6 +37,26 @@ Page({
   toChangePass () {
     wx.navigateTo({
       url: '/pages/indexPage/changePassword/changePassword',
+    })
+  },
+  getUserInfo () {
+    let data = {
+      userId: wx.getStorageSync('userInfo').user.id
+    }
+    app.alert.loading()
+    app.ajax.userInfoDataFeatch(data, 'formType').then(res => {
+      app.alert.closeLoading();
+      console.log(res)
+      if (res.code === 200) {
+        this.setData({
+          userInfo: res.user
+        })
+      } else {
+        app.alert.error(res.msg)
+      }
+    }).catch(err => {
+      app.alert.closeLoading();
+      app.alert.error(err.msg)
     })
   },
   /**

@@ -12,4 +12,5 @@ export const addressUserDelFeatch = (data, formType) => requestUrl(requestApi + 
 export const addressUserUpdateFeatch = (data, formType) => requestUrl(requestApi + '/api/cuser/cUserAdressUpdate', data, 'POST', formType);// 地址更新
 export const userInfoDataFeatch = (data, formType) => requestUrl(requestApi + '/api/cuser/cUserInformation', data, 'POST', formType);// 用户信息
 export const loginOutFeatch = (data, formType) => requestUrl(requestApi + '/api/cLogout', data, 'POST', formType);// 退出登录
+export const userBrigthdayFeatch = (data, formType) => requestUrl(requestApi + '/api/cuser/cUpdateBirthday', data, 'POST', formType);// 修改生日
 

@@ -17,7 +17,7 @@
         <image src="../../../assets/images/rightbtn_iocn.png"></image>
       </view>
     </view>
-    <view class="item_box">
+    <view class="item_box" bindtap="toChangeBriDay">
       <view class="left">
         <view>生日</view>
       </view>
@@ -47,7 +47,7 @@
     </view>
   </view>
   <view class="mask_box" wx:if="{{dateBoxShow}}">
-    <view class="mask_bg"></view>
+    <view class="mask_bg" bindtap="hideDateBox"></view>
     <view class="user_datebox">
       <view class="title">出生日期</view>
       <view class="cont">
@@ -64,7 +64,7 @@
             </picker-view-column>
           </picker-view>
         </view>
-        <view class="submit_name">提交</view>
+        <view class="submit_name" bindtap="toSubmitBriDay">提交</view>
       </view>
     </view>
   </view>

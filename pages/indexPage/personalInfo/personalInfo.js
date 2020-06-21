@@ -1,4 +1,5 @@
 // pages/indexPage/personalInfo/personalInfo.js
+const app = getApp();
 Page({
 
   /**
@@ -9,7 +10,8 @@ Page({
     years: [],
     months: [],
     days: [],
-    dateBoxShow: false
+    dateBoxShow: false,
+    briDay: ''
   },
 
   /**
@@ -35,7 +37,7 @@ Page({
     let months = []
     let days = []
 
-    for (let i = 1990; i<= date.getFullYear(); i++) {
+    for (let i = 1960; i<= date.getFullYear(); i++) {
       years.push(i)
     }
 
@@ -60,10 +62,44 @@ Page({
       days
     })
   },
-  bindChangeDate () {},
+  bindChangeDate (e) {
+    console.log(e)
+    let arrayIndex = e.detail.value
+    this.setData({
+      briDay: this.data.years[arrayIndex[0]] + this.data.months[arrayIndex[1]] + this.data.days[arrayIndex[2]]
+    })
+  },
   toSelectAddress () {
     wx.navigateTo({
       url: '/pages/indexPage/useraddress/useraddress',
+    })
+  },
+  toChangeBriDay () {
+    this.setData({
+      dateBoxShow: true
+    })
+  },
+  hideDateBox () {
+    this.setData({
+      dateBoxShow: false
+    })
+  },
+  toSubmitBriDay () {
+    let data = {
+      userId: wx.getStorageSync('userInfo').user.id,
+      birthday: this.data.briDay.toString()
+    }
+    app.ajax.userBrigthdayFeatch(data).then(res => {
+      if (res.code === 200) {
+        app.alert.error('修改成功')
+      } else {
+        app.alert.error(res.msg)
+      }
+      this.setData({
+        dateBoxShow: false
+      })
+    }).catch(err => {
+      app.alert.error(err.msg)
     })
   },
   /**

@@ -72,7 +72,7 @@ Page({
                 wx.reLaunch({
                   url: '/pages/loginpage/login/login'
                 })
-              }, 1000)
+              }, 500)
             } else {
               app.alert.error(res.msg)
             }

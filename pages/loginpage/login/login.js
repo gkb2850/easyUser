@@ -51,6 +51,9 @@ Page({
     let value = e.detail.value
     if (!(/^[1][3-8]\d{9}$|^([6|9])\d{7}$|^[0][9]\d{8}$|^[6]([8|6])\d{5}$/.test(value))) {
       app.alert.error('请填写正确的号码')
+      this.setData({
+        'loginData.phone': ''
+      })
       return
     }
     this.setData({

@@ -21,7 +21,7 @@
     <view class="item_box">
       <image class="header_icon" src="../../../assets/images/login_txt.png"></image>
       <input type="number" placeholder="请输入验证码" placeholder-class="input_place"></input>
-      <view class="yz_txt">获取验证码</view>
+      <view class="yz_txt" bindtap="toGetPhoneCode">获取验证码</view>
     </view>
     <view class="item_box">
       <image class="header_icon" src="../../../assets/images/login_pass.png"></image>

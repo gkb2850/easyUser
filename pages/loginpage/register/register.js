@@ -125,6 +125,23 @@ Page({
       app.alert.error(err.msg)
     })
   },
+  toGetPhoneCode () {
+    if (this.data.registerData.phone === '') {
+      app.alert.error('手机号不能为空')
+      return
+    }
+
+    let data = {
+      userId: 1,
+      tel: this.data.registerData.phone,
+      telType: this.data.numPhone
+    }
+    app.ajax.getPhoneCodeFeach(data).then(res => {
+      console.log(res)
+    }).catch(err => {
+      app.alert.error(err.msg)
+    })
+  },
   /**
    * 生命周期函数--监听页面隐藏
    */

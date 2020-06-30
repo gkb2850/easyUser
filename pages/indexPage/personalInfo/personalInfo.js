@@ -11,7 +11,9 @@ Page({
     months: [],
     days: [],
     dateBoxShow: false,
-    briDay: ''
+    briDay: '',
+    briDayTxt:'',
+    userName: ''
   },
 
   /**
@@ -66,7 +68,8 @@ Page({
     console.log(e)
     let arrayIndex = e.detail.value
     this.setData({
-      briDay: this.data.years[arrayIndex[0]] + this.data.months[arrayIndex[1]] + this.data.days[arrayIndex[2]]
+      briDay: this.data.years[arrayIndex[0]] + this.data.months[arrayIndex[1]] + this.data.days[arrayIndex[2]],
+      briDayTxt: this.data.years[arrayIndex[0]] + '-' + this.data.months[arrayIndex[1]] + '-' + this.data.days[arrayIndex[2]]
     })
   },
   toSelectAddress () {
@@ -100,6 +103,40 @@ Page({
       })
     }).catch(err => {
       app.alert.error(err.msg)
+    })
+  },
+  toChangeName () {
+    this.setData({
+      nameBoxShow: true
+    })
+  },
+  nameInput (e) {
+    this.setData({
+      userName: e.detail.value
+    })
+  },
+  toSubmitName () {
+    if (this.data.userName === '') {
+      app.alert.error('昵称不能为空')
+      return
+    }
+    let data = {
+      userId: wx.getStorageSync('userInfo').user.id,
+      userName: this.data.userName
+    }
+    this.setData({
+      nameBoxShow: false
+    })
+    app.ajax.userChangeNmaeFeatch(data).then(res => {
+      console.log(res)
+      app.alert.error(res.msg)
+    }).catch(err => {
+      app.alert.error(err.msg)
+    })
+  },
+  hideNameBox () {
+    this.setData({
+      nameBoxShow: false
     })
   },
   /**

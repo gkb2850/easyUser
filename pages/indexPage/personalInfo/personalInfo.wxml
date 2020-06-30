@@ -8,12 +8,12 @@
         <image src="../../../assets/images/login_logo.png"></image>
       </view>
     </view>
-    <view class="item_box">
+    <view class="item_box" bindtap="toChangeName">
       <view class="left">
         <view>昵称</view>
       </view>
       <view class="right">
-        <view>滴滴哒</view>
+        <view>{{userName}}</view>
         <image src="../../../assets/images/rightbtn_iocn.png"></image>
       </view>
     </view>
@@ -22,7 +22,7 @@
         <view>生日</view>
       </view>
       <view class="right">
-        <view>2020-01-01</view>
+        <view>{{briDayTxt}}</view>
         <image src="../../../assets/images/rightbtn_iocn.png"></image>
       </view>
     </view>
@@ -37,12 +37,12 @@
     </view>
   </view>
   <view class="mask_box" wx:if="{{nameBoxShow}}">
-    <view class="mask_bg"></view>
+    <view class="mask_bg" bindtap="hideNameBox"></view>
     <view class="user_namebox">
       <view class="title">修改昵称</view>
       <view class="cont">
-        <input placeholder="请输入昵称" placeholder-class="inputplace"></input>
-        <view class="submit_name">提交</view>
+        <input placeholder="请输入昵称" placeholder-class="inputplace" value="{{userName}}" bindblur="nameInput"></input>
+        <view class="submit_name" bindtap="toSubmitName">提交</view>
       </view>
     </view>
   </view>

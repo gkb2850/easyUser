@@ -14,4 +14,5 @@ export const userInfoDataFeatch = (data, formType) => requestUrl(requestApi + '/
 export const loginOutFeatch = (data, formType) => requestUrl(requestApi + '/api/cLogout', data, 'POST', formType);// 退出登录
 export const userBrigthdayFeatch = (data, formType) => requestUrl(requestApi + '/api/cuser/cUpdateBirthday', data, 'POST', formType);// 修改生日
 export const getPhoneCodeFeach = (data, formType) => requestUrl(requestApi + '/api/sms/sendCode', data, 'POST', formType);// 短信验证
+export const userChangeNmaeFeatch = (data, formType) => requestUrl(requestApi + '/api/cuser/cUpdateUserName', data, 'POST', formType);// 修改昵称
 

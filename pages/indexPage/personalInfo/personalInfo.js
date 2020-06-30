@@ -127,7 +127,7 @@ Page({
     this.setData({
       nameBoxShow: false
     })
-    app.ajax.userChangeNmaeFeatch(data).then(res => {
+    app.ajax.userChangeNmaeFeatch(data, 'formType').then(res => {
       console.log(res)
       app.alert.error(res.msg)
     }).catch(err => {

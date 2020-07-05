@@ -10,7 +10,8 @@ Page({
       phone:'',
       passF:'',
       passS: '',
-      yqCode: ''
+      yqCode: '',
+      codeNum: ''
     },
     numPhone: '853',
     labelTxt: '请选择入驻分类'
@@ -42,7 +43,8 @@ Page({
     })
   },
   selectPhone (e) {
-    let data = e.detail.value
+    let data = e.detail
+    console.log(e)
     if (data.str === 'register') {
       this.setData({
         numPhone: data.num
@@ -60,6 +62,11 @@ Page({
     }
     this.setData({
       'registerData.phone': value
+    })
+  },
+  numCodeInput (e) {
+    this.setData({
+      'registerData.codeNum': e.detail.value
     })
   },
   passInput (e) {
@@ -136,8 +143,8 @@ Page({
       tel: this.data.registerData.phone,
       telType: this.data.numPhone
     }
-    app.ajax.getPhoneCodeFeach(data).then(res => {
-      console.log(res)
+    app.ajax.getPhoneCodeFeach(data, 'fromType').then(res => {
+      app.alert.error('短信发送成功')
     }).catch(err => {
       app.alert.error(err.msg)
     })
